@@ -1,0 +1,55 @@
+{
+  "name": "@blamnetwork/megalo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Megalo scripting library for Halo: Reach (TypeScript)",
+  "type": "module",
+  "main": "./dist-cjs/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist-cjs/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "dist-cjs"
+  ],
+  "scripts": {
+    "build": "node scripts/clean-dist.mjs && tsc -p tsconfig.build.json && tsc -p tsconfig.build.cjs.json && node scripts/write-cjs-package-json.mjs",
+    "test": "vitest run --exclude tests/local/**",
+    "test:local": "vitest run tests/local/**",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.build.json --noEmit && tsc -p tsconfig.build.cjs.json --noEmit",
+    "docs:gen": "node scripts/generate-docs-language.mjs",
+    "docs": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "validate": "npm run test && npm run typecheck && npm run docs:build",
+    "prepack": "npm run build",
+    "predocs": "npm run docs:gen",
+    "predocs:build": "npm run docs:gen",
+    "link:blf": "npm link @blamnetwork/blf",
+    "unlink:blf": "npm unlink @blamnetwork/blf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blam-Network/megalo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Blam-Network/megalo/issues"
+  },
+  "homepage": "https://blam-network.github.io/megalo/",
+  "dependencies": {
+    "@blamnetwork/blf": "^1.1.0-alpha.5",
+    "@craftycodie/cstruct": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "^5.8.3",
+    "vitepress": "^1.6.4",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,11 @@
+Welcome to MegaCrow!
+Samples\nYou can find simple versions of gametypes in data\multiplayer\megalo\simple.  Load one of these up to get started!
+Syntax Errors\nErrors will be highlighted in red as you type.  If you have errors when you build, a list will appear at the bottom with more helpful messages about what's wrong.  Double-click on one of these to jump to the problematic token.
+Syntax Help\nThe right side of the status bar will show the syntax of the closest action or condition.\n[square brackets] denotes an optional parameter\n{curly | braces} indicate a choice\n(parentheses) just contain extra info
+Autocomplete\nIf you're not sure what you can type, press Ctrl+Space.  A list will appear with potential values.  The list will filter out elements as you type.  Press period, enter, tab, or space to insert the currently selected word, or escape to close the autocomplete box.
+Autocomplete Expert\nThe autocomplete box does substring matching.  It's useful for finding actions or conditions that apply to a specific category.  For example, to find all actions that have to do with navpoints, type "action navpoint" and hit Ctrl+Space.
+Find\nPress Ctrl-F to search for a string.  Press F3 to find the next instance of that string.
+Token References\nPress F12 when the cursor is on a token to go to the definition of that token (for example where a variable or game options is declared).  Press F11 to go to the next reference to that token.
+Tips\nBefore you add a Tips box that appears on startup, make sure you include a way to disable it!
+The Toys\nIf you want to see complete lists of all of the Actions, Conditions, Weapons, Loadouts, etc. that you have to play with, look in the Help dropdown.
+Know Your Limits\nFor very complicated scripts, you might run into one of the engine limits and need to adjust how your script is organized.  To see how you're doing, check Help->Engine Stats.
