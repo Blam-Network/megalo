@@ -3,3 +3,5 @@ dist/
 dist-cjs/
 docs/.vitepress/dist/
 docs/.vitepress/cache/
+docs/.vitepress/megalo-highlight.bundle.mjs
+docs/.vitepress/megalo-highlight-vocabulary.json

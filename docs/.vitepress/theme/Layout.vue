@@ -34,8 +34,8 @@ const { Layout: DefaultLayout } = DefaultTheme;
   background-position: center 35%;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.2;
-  filter: blur(4px);
+  opacity: 0.1;
+  filter: blur(6px);
   transform: scale(1.05);
 }
 
@@ -44,8 +44,8 @@ const { Layout: DefaultLayout } = DefaultTheme;
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(8, 10, 8, 0.72) 0%,
-    rgba(8, 10, 8, 0.86) 100%
+    rgba(10, 12, 10, 0.88) 0%,
+    rgba(10, 12, 10, 0.94) 100%
   );
 }
 

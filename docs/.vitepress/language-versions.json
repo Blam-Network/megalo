@@ -3,7 +3,8 @@
   "versions": [
     {
       "id": "mcc",
-      "label": "Halo: Reach MCC",
+      "docSlug": "107-mcc",
+      "label": "107 (MCC)",
       "buildId": "v_untracked_25_08_16_1352",
       "buildLabel": "16th Aug 2025",
       "blfGame": "haloreach_mcc",
@@ -12,7 +13,10 @@
       "description": "Current Halo: The Master Chief Collection Reach megalo build. This is the default megalo version for @blamnetwork/megalo compile and decompile.",
       "importPath": "@blamnetwork/blf/haloreach_mcc/v_untracked_25_08_16_1352",
       "sourcePath": "haloreach_mcc/v_untracked_25_08_16_1352/game/megalogamengine/megalogamengine_actions.ts",
-      "docLink": "/versions/mcc",
+      "docLink": "/versions/107-mcc/",
+      "aboutLink": "/versions/107-mcc/about",
+      "actionsLink": "/versions/107-mcc/actions",
+      "previousVersionId": "tu1",
       "actions": [
         {
           "name": "set_score",
@@ -439,6 +443,17 @@
           "opcode": 106
         }
       ],
+      "addedActionNames": [
+        "begin",
+        "hs_function_call",
+        "get_button_time",
+        "team_set_vehicle_spawning",
+        "player_set_vehicle_spawning",
+        "set_player_respawn_vehicle",
+        "set_team_respawn_vehicle",
+        "hide_object"
+      ],
+      "removedActionNames": [],
       "mccOnlyActionNames": [
         "begin",
         "get_button_time",
@@ -452,7 +467,8 @@
     },
     {
       "id": "tu1",
-      "label": "Halo: Reach Xbox 360 TU1",
+      "docSlug": "107",
+      "label": "107",
       "buildId": "v12065_11_08_24_1738_tu1actual",
       "buildLabel": "Title Update 1",
       "blfGame": "haloreach",
@@ -461,7 +477,10 @@
       "description": "Final Xbox 360 Reach Title Update megalo build. The TU1 megalo version is available in @blamnetwork/megalo but still routes through MCC codec wiring until TU1-specific tables are fully integrated.",
       "importPath": "@blamnetwork/blf/haloreach/v12065_11_08_24_1738_tu1actual",
       "sourcePath": "haloreach/v12065_11_08_24_1738_tu1actual/game/megalogamengine/megalogamengine_actions.ts",
-      "docLink": "/versions/tu1",
+      "docLink": "/versions/107/",
+      "aboutLink": "/versions/107/about",
+      "actionsLink": "/versions/107/actions",
+      "previousVersionId": "release",
       "actions": [
         {
           "name": "set_score",
@@ -855,7 +874,1198 @@
           "name": "boundary_set_player_color",
           "opcode": 98
         }
+      ],
+      "addedActionNames": [],
+      "removedActionNames": []
+    },
+    {
+      "id": "release",
+      "docSlug": "106",
+      "label": "106",
+      "buildId": "v11860_10_07_24_0147_omaha_release",
+      "buildLabel": "Release",
+      "blfGame": "haloreach",
+      "versionId": null,
+      "librarySupport": "blf-only",
+      "description": "Original Xbox 360 Reach launch megalo build (encoding version 106). Action opcodes match Title Update 1; the custom variant layout omits AU1 settings added in TU1.",
+      "importPath": "@blamnetwork/blf/haloreach/v11860_10_07_24_0147_omaha_release",
+      "sourcePath": "haloreach/v11860_10_07_24_0147_omaha_release/game/megalogamengine/megalogamengine_actions.ts",
+      "docLink": "/versions/106/",
+      "aboutLink": "/versions/106/about",
+      "actionsLink": "/versions/106/actions",
+      "previousVersionId": "omaha-delta",
+      "actions": [
+        {
+          "name": "set_score",
+          "opcode": 1
+        },
+        {
+          "name": "create_object",
+          "opcode": 2
+        },
+        {
+          "name": "delete_object",
+          "opcode": 3
+        },
+        {
+          "name": "navpoint_set_visible",
+          "opcode": 4
+        },
+        {
+          "name": "navpoint_set_icon",
+          "opcode": 5
+        },
+        {
+          "name": "navpoint_set_priority",
+          "opcode": 6
+        },
+        {
+          "name": "navpoint_set_timer",
+          "opcode": 7
+        },
+        {
+          "name": "navpoint_set_visible_range",
+          "opcode": 8
+        },
+        {
+          "name": "set",
+          "opcode": 9
+        },
+        {
+          "name": "set_boundary",
+          "opcode": 10
+        },
+        {
+          "name": "apply_player_traits",
+          "opcode": 11
+        },
+        {
+          "name": "set_pickup_filter",
+          "opcode": 12
+        },
+        {
+          "name": "set_respawn_filter",
+          "opcode": 13
+        },
+        {
+          "name": "set_fireteam_respawn_filter",
+          "opcode": 14
+        },
+        {
+          "name": "set_progress_bar",
+          "opcode": 15
+        },
+        {
+          "name": "hud_post_message",
+          "opcode": 16
+        },
+        {
+          "name": "timer_set_rate",
+          "opcode": 17
+        },
+        {
+          "name": "print_variable",
+          "opcode": 18
+        },
+        {
+          "name": "get_player_holding_object",
+          "opcode": 19
+        },
+        {
+          "name": "for_each",
+          "opcode": 20
+        },
+        {
+          "name": "end_round",
+          "opcode": 21
+        },
+        {
+          "name": "boundary_set_visible",
+          "opcode": 22
+        },
+        {
+          "name": "object_destroy",
+          "opcode": 23
+        },
+        {
+          "name": "object_set_invincibility",
+          "opcode": 24
+        },
+        {
+          "name": "random",
+          "opcode": 25
+        },
+        {
+          "name": "break_into_debugger",
+          "opcode": 26
+        },
+        {
+          "name": "object_get_orientation",
+          "opcode": 27
+        },
+        {
+          "name": "object_get_velocity",
+          "opcode": 28
+        },
+        {
+          "name": "player_death_get_killing_player",
+          "opcode": 29
+        },
+        {
+          "name": "player_death_get_damage_type",
+          "opcode": 30
+        },
+        {
+          "name": "player_death_get_special_type",
+          "opcode": 31
+        },
+        {
+          "name": "debugging_enable_tracing",
+          "opcode": 32
+        },
+        {
+          "name": "object_attach",
+          "opcode": 33
+        },
+        {
+          "name": "object_detach",
+          "opcode": 34
+        },
+        {
+          "name": "player_get_place",
+          "opcode": 35
+        },
+        {
+          "name": "team_get_place",
+          "opcode": 36
+        },
+        {
+          "name": "player_get_killing_spree_count",
+          "opcode": 37
+        },
+        {
+          "name": "player_adjust_money",
+          "opcode": 38
+        },
+        {
+          "name": "player_enable_purchases",
+          "opcode": 39
+        },
+        {
+          "name": "player_get_vehicle",
+          "opcode": 40
+        },
+        {
+          "name": "player_set_vehicle",
+          "opcode": 41
+        },
+        {
+          "name": "player_set_unit",
+          "opcode": 42
+        },
+        {
+          "name": "timer_reset",
+          "opcode": 43
+        },
+        {
+          "name": "weapon_set_pickup_priority",
+          "opcode": 44
+        },
+        {
+          "name": "object_bounce",
+          "opcode": 45
+        },
+        {
+          "name": "hud_widget_set_text",
+          "opcode": 46
+        },
+        {
+          "name": "hud_widget_set_value",
+          "opcode": 47
+        },
+        {
+          "name": "hud_widget_set_meter",
+          "opcode": 48
+        },
+        {
+          "name": "hud_widget_set_icon",
+          "opcode": 49
+        },
+        {
+          "name": "hud_widget_set_visibility",
+          "opcode": 50
+        },
+        {
+          "name": "play_sound",
+          "opcode": 51
+        },
+        {
+          "name": "object_set_scale",
+          "opcode": 52
+        },
+        {
+          "name": "navpoint_set_text",
+          "opcode": 53
+        },
+        {
+          "name": "object_get_shield",
+          "opcode": 54
+        },
+        {
+          "name": "object_get_health",
+          "opcode": 55
+        },
+        {
+          "name": "player_set_objective",
+          "opcode": 56
+        },
+        {
+          "name": "player_set_objective_allegiance",
+          "opcode": 57
+        },
+        {
+          "name": "player_set_objective_allegiance_icon",
+          "opcode": 58
+        },
+        {
+          "name": "team_set_coop_spawning",
+          "opcode": 59
+        },
+        {
+          "name": "team_set_primary_respawn_object",
+          "opcode": 60
+        },
+        {
+          "name": "player_set_primary_respawn_object",
+          "opcode": 61
+        },
+        {
+          "name": "player_get_fireteam_index",
+          "opcode": 62
+        },
+        {
+          "name": "player_set_fireteam_index",
+          "opcode": 63
+        },
+        {
+          "name": "object_adjust_shield",
+          "opcode": 64
+        },
+        {
+          "name": "object_adjust_health",
+          "opcode": 65
+        },
+        {
+          "name": "object_get_distance",
+          "opcode": 66
+        },
+        {
+          "name": "object_adjust_maximum_shield",
+          "opcode": 67
+        },
+        {
+          "name": "object_adjust_maximum_health",
+          "opcode": 68
+        },
+        {
+          "name": "player_set_requisition_palette",
+          "opcode": 69
+        },
+        {
+          "name": "device_set_power",
+          "opcode": 70
+        },
+        {
+          "name": "device_get_power",
+          "opcode": 71
+        },
+        {
+          "name": "device_set_position",
+          "opcode": 72
+        },
+        {
+          "name": "device_get_position",
+          "opcode": 73
+        },
+        {
+          "name": "adjust_grenades",
+          "opcode": 74
+        },
+        {
+          "name": "submit_incident",
+          "opcode": 75
+        },
+        {
+          "name": "submit_incident_with_custom_value",
+          "opcode": 76
+        },
+        {
+          "name": "set_loadout_palette",
+          "opcode": 77
+        },
+        {
+          "name": "device_set_position_track",
+          "opcode": 78
+        },
+        {
+          "name": "device_animate_position",
+          "opcode": 79
+        },
+        {
+          "name": "device_set_position_immediate",
+          "opcode": 80
+        },
+        {
+          "name": "saved_film_insert_marker",
+          "opcode": 81
+        },
+        {
+          "name": "respawn_zone_enable",
+          "opcode": 82
+        },
+        {
+          "name": "player_get_weapon",
+          "opcode": 83
+        },
+        {
+          "name": "player_get_equipment",
+          "opcode": 84
+        },
+        {
+          "name": "object_set_never_garbage",
+          "opcode": 85
+        },
+        {
+          "name": "player_get_target_object",
+          "opcode": 86
+        },
+        {
+          "name": "create_tunnel",
+          "opcode": 87
+        },
+        {
+          "name": "debug_force_player_view_count",
+          "opcode": 88
+        },
+        {
+          "name": "player_pick_up_weapon",
+          "opcode": 89
+        },
+        {
+          "name": "player_set_coop_spawning",
+          "opcode": 90
+        },
+        {
+          "name": "object_set_orientation",
+          "opcode": 91
+        },
+        {
+          "name": "object_face_object",
+          "opcode": 92
+        },
+        {
+          "name": "biped_give_weapon",
+          "opcode": 93
+        },
+        {
+          "name": "biped_drop_weapon",
+          "opcode": 94
+        },
+        {
+          "name": "set_scenario_interpolator_state",
+          "opcode": 95
+        },
+        {
+          "name": "get_random_object",
+          "opcode": 96
+        },
+        {
+          "name": "game_grief_record_custom_penalty",
+          "opcode": 97
+        },
+        {
+          "name": "boundary_set_player_color",
+          "opcode": 98
+        }
+      ],
+      "addedActionNames": [
+        "player_set_objective_allegiance",
+        "player_set_objective_allegiance_icon",
+        "object_face_object",
+        "biped_give_weapon",
+        "biped_drop_weapon",
+        "set_scenario_interpolator_state",
+        "get_random_object",
+        "game_grief_record_custom_penalty",
+        "boundary_set_player_color"
+      ],
+      "removedActionNames": [
+        "player_set_fireteam_tier",
+        "give_weapon",
+        "set_loadout"
       ]
+    },
+    {
+      "id": "omaha-delta",
+      "docSlug": "73",
+      "label": "73",
+      "buildId": "v09730_10_04_09_1309_omaha_delta",
+      "buildLabel": "Public Beta",
+      "blfGame": "haloreach",
+      "versionId": null,
+      "librarySupport": "blf-only",
+      "description": "Public Beta (Omaha Delta) megalo build. Action tables are available in @blamnetwork/blf for historical comparison.",
+      "importPath": "@blamnetwork/blf/haloreach/v09730_10_04_09_1309_omaha_delta",
+      "sourcePath": "haloreach/v09730_10_04_09_1309_omaha_delta/game/megalogamengine/megalogamengine_actions.ts",
+      "docLink": "/versions/73/",
+      "aboutLink": "/versions/73/about",
+      "actionsLink": "/versions/73/actions",
+      "previousVersionId": "omaha-alpha",
+      "actions": [
+        {
+          "name": "set_score",
+          "opcode": 1
+        },
+        {
+          "name": "create_object",
+          "opcode": 2
+        },
+        {
+          "name": "delete_object",
+          "opcode": 3
+        },
+        {
+          "name": "navpoint_set_visible",
+          "opcode": 4
+        },
+        {
+          "name": "navpoint_set_icon",
+          "opcode": 5
+        },
+        {
+          "name": "navpoint_set_priority",
+          "opcode": 6
+        },
+        {
+          "name": "navpoint_set_timer",
+          "opcode": 7
+        },
+        {
+          "name": "navpoint_set_visible_range",
+          "opcode": 8
+        },
+        {
+          "name": "set",
+          "opcode": 9
+        },
+        {
+          "name": "set_boundary",
+          "opcode": 10
+        },
+        {
+          "name": "apply_player_traits",
+          "opcode": 11
+        },
+        {
+          "name": "set_pickup_filter",
+          "opcode": 12
+        },
+        {
+          "name": "set_respawn_filter",
+          "opcode": 13
+        },
+        {
+          "name": "set_fireteam_respawn_filter",
+          "opcode": 14
+        },
+        {
+          "name": "set_progress_bar",
+          "opcode": 15
+        },
+        {
+          "name": "hud_post_message",
+          "opcode": 16
+        },
+        {
+          "name": "timer_set_rate",
+          "opcode": 17
+        },
+        {
+          "name": "print_variable",
+          "opcode": 18
+        },
+        {
+          "name": "get_player_holding_object",
+          "opcode": 19
+        },
+        {
+          "name": "for_each",
+          "opcode": 20
+        },
+        {
+          "name": "end_round",
+          "opcode": 21
+        },
+        {
+          "name": "boundary_set_visible",
+          "opcode": 22
+        },
+        {
+          "name": "object_destroy",
+          "opcode": 23
+        },
+        {
+          "name": "object_set_invincibility",
+          "opcode": 24
+        },
+        {
+          "name": "random",
+          "opcode": 25
+        },
+        {
+          "name": "break_into_debugger",
+          "opcode": 26
+        },
+        {
+          "name": "object_get_orientation",
+          "opcode": 27
+        },
+        {
+          "name": "object_get_velocity",
+          "opcode": 28
+        },
+        {
+          "name": "player_death_get_killing_player",
+          "opcode": 29
+        },
+        {
+          "name": "player_death_get_damage_type",
+          "opcode": 30
+        },
+        {
+          "name": "player_death_get_special_type",
+          "opcode": 31
+        },
+        {
+          "name": "debugging_enable_tracing",
+          "opcode": 32
+        },
+        {
+          "name": "object_attach",
+          "opcode": 33
+        },
+        {
+          "name": "object_detach",
+          "opcode": 34
+        },
+        {
+          "name": "player_get_place",
+          "opcode": 35
+        },
+        {
+          "name": "team_get_place",
+          "opcode": 36
+        },
+        {
+          "name": "player_get_killing_spree_count",
+          "opcode": 37
+        },
+        {
+          "name": "player_adjust_money",
+          "opcode": 38
+        },
+        {
+          "name": "player_enable_purchases",
+          "opcode": 39
+        },
+        {
+          "name": "player_get_vehicle",
+          "opcode": 40
+        },
+        {
+          "name": "player_set_vehicle",
+          "opcode": 41
+        },
+        {
+          "name": "player_set_unit",
+          "opcode": 42
+        },
+        {
+          "name": "timer_reset",
+          "opcode": 43
+        },
+        {
+          "name": "weapon_set_pickup_priority",
+          "opcode": 44
+        },
+        {
+          "name": "object_bounce",
+          "opcode": 45
+        },
+        {
+          "name": "hud_widget_set_text",
+          "opcode": 46
+        },
+        {
+          "name": "hud_widget_set_value",
+          "opcode": 47
+        },
+        {
+          "name": "hud_widget_set_meter",
+          "opcode": 48
+        },
+        {
+          "name": "hud_widget_set_icon",
+          "opcode": 49
+        },
+        {
+          "name": "hud_widget_set_visibility",
+          "opcode": 50
+        },
+        {
+          "name": "play_sound",
+          "opcode": 51
+        },
+        {
+          "name": "object_set_scale",
+          "opcode": 52
+        },
+        {
+          "name": "navpoint_set_text",
+          "opcode": 53
+        },
+        {
+          "name": "object_get_shield",
+          "opcode": 54
+        },
+        {
+          "name": "object_get_health",
+          "opcode": 55
+        },
+        {
+          "name": "player_set_objective",
+          "opcode": 56
+        },
+        {
+          "name": "team_set_coop_spawning",
+          "opcode": 57
+        },
+        {
+          "name": "team_set_primary_respawn_object",
+          "opcode": 58
+        },
+        {
+          "name": "player_set_primary_respawn_object",
+          "opcode": 59
+        },
+        {
+          "name": "player_get_fireteam_index",
+          "opcode": 60
+        },
+        {
+          "name": "player_set_fireteam_index",
+          "opcode": 61
+        },
+        {
+          "name": "object_adjust_shield",
+          "opcode": 62
+        },
+        {
+          "name": "object_adjust_health",
+          "opcode": 63
+        },
+        {
+          "name": "object_get_distance",
+          "opcode": 64
+        },
+        {
+          "name": "object_adjust_maximum_shield",
+          "opcode": 65
+        },
+        {
+          "name": "object_adjust_maximum_health",
+          "opcode": 66
+        },
+        {
+          "name": "player_set_requisition_palette",
+          "opcode": 67
+        },
+        {
+          "name": "player_set_fireteam_tier",
+          "opcode": 68
+        },
+        {
+          "name": "device_set_power",
+          "opcode": 69
+        },
+        {
+          "name": "device_get_power",
+          "opcode": 70
+        },
+        {
+          "name": "device_set_position",
+          "opcode": 71
+        },
+        {
+          "name": "device_get_position",
+          "opcode": 72
+        },
+        {
+          "name": "give_weapon",
+          "opcode": 73
+        },
+        {
+          "name": "adjust_grenades",
+          "opcode": 74
+        },
+        {
+          "name": "submit_incident",
+          "opcode": 75
+        },
+        {
+          "name": "submit_incident_with_custom_value",
+          "opcode": 76
+        },
+        {
+          "name": "set_loadout",
+          "opcode": 77
+        },
+        {
+          "name": "set_loadout_palette",
+          "opcode": 78
+        },
+        {
+          "name": "device_set_position_track",
+          "opcode": 79
+        },
+        {
+          "name": "device_animate_position",
+          "opcode": 80
+        },
+        {
+          "name": "device_set_position_immediate",
+          "opcode": 81
+        },
+        {
+          "name": "saved_film_insert_marker",
+          "opcode": 82
+        },
+        {
+          "name": "respawn_zone_enable",
+          "opcode": 83
+        },
+        {
+          "name": "player_get_weapon",
+          "opcode": 84
+        },
+        {
+          "name": "player_get_equipment",
+          "opcode": 85
+        },
+        {
+          "name": "object_set_never_garbage",
+          "opcode": 86
+        },
+        {
+          "name": "player_get_target_object",
+          "opcode": 87
+        },
+        {
+          "name": "create_tunnel",
+          "opcode": 88
+        },
+        {
+          "name": "debug_force_player_view_count",
+          "opcode": 89
+        },
+        {
+          "name": "player_pick_up_weapon",
+          "opcode": 90
+        },
+        {
+          "name": "player_set_coop_spawning",
+          "opcode": 91
+        },
+        {
+          "name": "object_set_orientation",
+          "opcode": 92
+        }
+      ],
+      "addedActionNames": [
+        "player_set_unit",
+        "object_get_health",
+        "player_get_weapon",
+        "player_get_equipment",
+        "object_set_never_garbage",
+        "player_get_target_object",
+        "create_tunnel",
+        "debug_force_player_view_count",
+        "player_pick_up_weapon",
+        "player_set_coop_spawning",
+        "object_set_orientation"
+      ],
+      "removedActionNames": [
+        "object_set_minimap_visibility",
+        "object_set_minimap_priority",
+        "object_set_minimap_icon"
+      ]
+    },
+    {
+      "id": "omaha-alpha",
+      "docSlug": "49",
+      "label": "49",
+      "buildId": "v08516_10_02_19_1607_omaha_alpha",
+      "buildLabel": "Private Alpha",
+      "blfGame": "haloreach",
+      "versionId": null,
+      "librarySupport": "blf-only",
+      "description": "Earliest Reach megalo action table in @blamnetwork/blf — the Private Alpha (Omaha) build.",
+      "importPath": "@blamnetwork/blf/haloreach/v08516_10_02_19_1607_omaha_alpha",
+      "sourcePath": "haloreach/v08516_10_02_19_1607_omaha_alpha/game/megalogamengine/megalogamengine_actions.ts",
+      "docLink": "/versions/49/",
+      "aboutLink": "/versions/49/about",
+      "actionsLink": "/versions/49/actions",
+      "previousVersionId": null,
+      "actions": [
+        {
+          "name": "set_score",
+          "opcode": 1
+        },
+        {
+          "name": "create_object",
+          "opcode": 2
+        },
+        {
+          "name": "delete_object",
+          "opcode": 3
+        },
+        {
+          "name": "navpoint_set_visible",
+          "opcode": 4
+        },
+        {
+          "name": "navpoint_set_icon",
+          "opcode": 5
+        },
+        {
+          "name": "navpoint_set_priority",
+          "opcode": 6
+        },
+        {
+          "name": "navpoint_set_timer",
+          "opcode": 7
+        },
+        {
+          "name": "navpoint_set_visible_range",
+          "opcode": 8
+        },
+        {
+          "name": "set",
+          "opcode": 9
+        },
+        {
+          "name": "set_boundary",
+          "opcode": 10
+        },
+        {
+          "name": "apply_player_traits",
+          "opcode": 11
+        },
+        {
+          "name": "set_pickup_filter",
+          "opcode": 12
+        },
+        {
+          "name": "set_respawn_filter",
+          "opcode": 13
+        },
+        {
+          "name": "set_fireteam_respawn_filter",
+          "opcode": 14
+        },
+        {
+          "name": "set_progress_bar",
+          "opcode": 15
+        },
+        {
+          "name": "hud_post_message",
+          "opcode": 16
+        },
+        {
+          "name": "timer_set_rate",
+          "opcode": 17
+        },
+        {
+          "name": "print_variable",
+          "opcode": 18
+        },
+        {
+          "name": "get_player_holding_object",
+          "opcode": 19
+        },
+        {
+          "name": "for_each",
+          "opcode": 20
+        },
+        {
+          "name": "end_round",
+          "opcode": 21
+        },
+        {
+          "name": "boundary_set_visible",
+          "opcode": 22
+        },
+        {
+          "name": "object_destroy",
+          "opcode": 23
+        },
+        {
+          "name": "object_set_invincibility",
+          "opcode": 24
+        },
+        {
+          "name": "random",
+          "opcode": 25
+        },
+        {
+          "name": "break_into_debugger",
+          "opcode": 26
+        },
+        {
+          "name": "object_get_orientation",
+          "opcode": 27
+        },
+        {
+          "name": "object_get_velocity",
+          "opcode": 28
+        },
+        {
+          "name": "player_death_get_killing_player",
+          "opcode": 29
+        },
+        {
+          "name": "player_death_get_damage_type",
+          "opcode": 30
+        },
+        {
+          "name": "player_death_get_special_type",
+          "opcode": 31
+        },
+        {
+          "name": "debugging_enable_tracing",
+          "opcode": 32
+        },
+        {
+          "name": "object_attach",
+          "opcode": 33
+        },
+        {
+          "name": "object_detach",
+          "opcode": 34
+        },
+        {
+          "name": "player_get_place",
+          "opcode": 35
+        },
+        {
+          "name": "team_get_place",
+          "opcode": 36
+        },
+        {
+          "name": "player_get_killing_spree_count",
+          "opcode": 37
+        },
+        {
+          "name": "player_adjust_money",
+          "opcode": 38
+        },
+        {
+          "name": "player_enable_purchases",
+          "opcode": 39
+        },
+        {
+          "name": "player_get_vehicle",
+          "opcode": 40
+        },
+        {
+          "name": "player_set_vehicle",
+          "opcode": 41
+        },
+        {
+          "name": "timer_reset",
+          "opcode": 42
+        },
+        {
+          "name": "weapon_set_pickup_priority",
+          "opcode": 43
+        },
+        {
+          "name": "object_bounce",
+          "opcode": 44
+        },
+        {
+          "name": "hud_widget_set_text",
+          "opcode": 45
+        },
+        {
+          "name": "hud_widget_set_value",
+          "opcode": 46
+        },
+        {
+          "name": "hud_widget_set_meter",
+          "opcode": 47
+        },
+        {
+          "name": "hud_widget_set_icon",
+          "opcode": 48
+        },
+        {
+          "name": "hud_widget_set_visibility",
+          "opcode": 49
+        },
+        {
+          "name": "play_sound",
+          "opcode": 50
+        },
+        {
+          "name": "object_set_scale",
+          "opcode": 51
+        },
+        {
+          "name": "navpoint_set_text",
+          "opcode": 52
+        },
+        {
+          "name": "object_get_shield",
+          "opcode": 53
+        },
+        {
+          "name": "player_set_objective",
+          "opcode": 54
+        },
+        {
+          "name": "team_set_coop_spawning",
+          "opcode": 55
+        },
+        {
+          "name": "object_set_minimap_visibility",
+          "opcode": 56
+        },
+        {
+          "name": "object_set_minimap_priority",
+          "opcode": 57
+        },
+        {
+          "name": "object_set_minimap_icon",
+          "opcode": 58
+        },
+        {
+          "name": "team_set_primary_respawn_object",
+          "opcode": 59
+        },
+        {
+          "name": "player_set_primary_respawn_object",
+          "opcode": 60
+        },
+        {
+          "name": "player_get_fireteam_index",
+          "opcode": 61
+        },
+        {
+          "name": "player_set_fireteam_index",
+          "opcode": 62
+        },
+        {
+          "name": "object_adjust_shield",
+          "opcode": 63
+        },
+        {
+          "name": "object_adjust_health",
+          "opcode": 64
+        },
+        {
+          "name": "object_get_distance",
+          "opcode": 65
+        },
+        {
+          "name": "object_adjust_maximum_shield",
+          "opcode": 66
+        },
+        {
+          "name": "object_adjust_maximum_health",
+          "opcode": 67
+        },
+        {
+          "name": "player_set_requisition_palette",
+          "opcode": 68
+        },
+        {
+          "name": "player_set_fireteam_tier",
+          "opcode": 69
+        },
+        {
+          "name": "device_set_power",
+          "opcode": 70
+        },
+        {
+          "name": "device_get_power",
+          "opcode": 71
+        },
+        {
+          "name": "device_set_position",
+          "opcode": 72
+        },
+        {
+          "name": "device_get_position",
+          "opcode": 73
+        },
+        {
+          "name": "give_weapon",
+          "opcode": 74
+        },
+        {
+          "name": "adjust_grenades",
+          "opcode": 75
+        },
+        {
+          "name": "submit_incident",
+          "opcode": 76
+        },
+        {
+          "name": "submit_incident_with_custom_value",
+          "opcode": 77
+        },
+        {
+          "name": "set_loadout",
+          "opcode": 78
+        },
+        {
+          "name": "set_loadout_palette",
+          "opcode": 79
+        },
+        {
+          "name": "device_set_position_track",
+          "opcode": 80
+        },
+        {
+          "name": "device_animate_position",
+          "opcode": 81
+        },
+        {
+          "name": "device_set_position_immediate",
+          "opcode": 82
+        },
+        {
+          "name": "saved_film_insert_marker",
+          "opcode": 83
+        },
+        {
+          "name": "respawn_zone_enable",
+          "opcode": 84
+        }
+      ],
+      "addedActionNames": [],
+      "removedActionNames": []
     }
   ],
   "mccOnlyActionNames": [

@@ -2,7 +2,8 @@
 
 Recover Megalo source from compiled variant data.
 
-::: warning Lossy decompilation
+<DocsBlock type="warning" title="Lossy decompilation">
+
 Decompilation is **not** a perfect round-trip. The compiled binary does not store everything from the original source, so recovered scripts are incomplete:
 
 - **Variable names** — slots are emitted with generated names (for example `global_number_0`, `object_1`) instead of the names authors chose.
@@ -10,7 +11,8 @@ Decompilation is **not** a perfect round-trip. The compiled binary does not stor
 - **Comments** — `;` comments and section banners from the original file are not preserved (aside from structural headers added by the decompiler).
 
 Logic, triggers, and actions can still be recovered, but you should expect to rename variables and re-add constants and comments by hand before treating output as authoritative source.
-:::
+
+</DocsBlock>
 
 ## Custom variants
 

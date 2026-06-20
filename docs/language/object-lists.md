@@ -10,6 +10,8 @@ data/multiplayer/megalo/object_lists/
 
 Bungie's Megalo editor (**MegaloEdit**) loads these files for autocomplete, syntax help, and the **Help** menu reference lists. The game engine uses the same tables to turn symbolic names in scripts into numeric indices when a gametype or custom variant is compiled.
 
+These lists correspond to data in the `loadout_globals_definition` (`lgtd`), `megalo_string_id_table` (`msit`), and `multiplayer_object_type_list` (`motl`) tags.
+
 ## Format
 
 Each file is a simple lookup table:
@@ -55,4 +57,4 @@ If 343 Industries or mod tools ship an updated HREK build with changed lists, sy
 ## See also
 
 - [Megalo language overview](/language/) — `map_object`, `player_traits`, and actions that consume these names
-- [Supported megalo versions](/versions/) — action opcodes per Reach build
+- [Megalo Versions](/versions/) — action opcodes per Reach build
