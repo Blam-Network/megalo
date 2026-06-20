@@ -4,6 +4,7 @@ import type MarkdownIt from "markdown-it";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import languageVersions from "./language-versions.json";
+import languageActions from "./language-actions.json";
 
 const configDir = path.dirname(fileURLToPath(import.meta.url));
 const highlightBundleUrl = pathToFileURL(
@@ -66,6 +67,28 @@ function elementsSidebar(): DefaultTheme.SidebarItem[] {
   ];
 }
 
+function actionsSidebar(): DefaultTheme.SidebarItem[] {
+  const items: DefaultTheme.SidebarItem[] = [
+    { text: "Overview", link: "/language/actions/" },
+  ];
+
+  for (const action of languageActions.actions) {
+    items.push({
+      text: action.name,
+      link: action.docLink,
+    });
+  }
+
+  return items;
+}
+
+function enumsSidebar(): DefaultTheme.SidebarItem[] {
+  return [
+    { text: "Overview", link: "/language/enums/" },
+    { text: "Sounds", link: "/language/enums/sounds" },
+  ];
+}
+
 function megaloLanguageSidebar(): DefaultTheme.SidebarItem[] {
   return [
     { text: "Introduction", link: "/language/" },
@@ -75,6 +98,16 @@ function megaloLanguageSidebar(): DefaultTheme.SidebarItem[] {
       text: "Elements",
       collapsed: false,
       items: elementsSidebar(),
+    },
+    {
+      text: "Actions",
+      collapsed: true,
+      items: actionsSidebar(),
+    },
+    {
+      text: "Enums",
+      collapsed: true,
+      items: enumsSidebar(),
     },
     { text: "Variable model", link: "/language/variable-model" },
     { text: "References", link: "/language/references" },
@@ -92,11 +125,7 @@ function supportedVersionsSidebar(): DefaultTheme.SidebarItem[] {
   for (const version of languageVersions.versions) {
     items.push({
       text: versionSidebarLabel(version.label),
-      collapsed: true,
-      items: [
-        { text: "About", link: `${version.docLink}about` },
-        { text: "Actions", link: `${version.docLink}actions` },
-      ],
+      link: version.docLink,
     });
   }
 

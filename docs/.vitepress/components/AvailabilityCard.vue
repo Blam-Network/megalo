@@ -13,6 +13,7 @@ const STATUS_LABELS: Record<AvailabilityStatus, string> = {
 const base = import.meta.env.BASE_URL;
 const gamesImage = `${base}images/what-games.png`;
 const thumbImage = `${base}images/icons/mega-thumb.png`;
+const thinkImage = `${base}images/icons/mega-think.png`;
 
 type GameKey = "reach" | "halo4" | "h2a";
 
@@ -89,20 +90,41 @@ const resolvedVariant = computed((): ChipVariant => {
 
 const hasDefaultSlot = computed(() => Boolean(slots.default));
 
+const hasPartial = computed(() =>
+  gameRows.value.some((row) => row.status === "partial")
+);
+
 const isGreen = computed(() => resolvedVariant.value === "success");
 
-const artImage = computed(() => (isGreen.value ? thumbImage : gamesImage));
+const useThinkArt = computed(
+  () => hasPartial.value && !hasDefaultSlot.value && !isGreen.value
+);
+
+const useCompactArt = computed(() => isGreen.value || useThinkArt.value);
+
+const artImage = computed(() => {
+  if (isGreen.value) {
+    return thumbImage;
+  }
+  if (useThinkArt.value) {
+    return thinkImage;
+  }
+  return gamesImage;
+});
 </script>
 
 <template>
   <aside
     class="availability-card"
-    :class="`availability-card--${resolvedVariant}`"
+    :class="[
+      `availability-card--${resolvedVariant}`,
+      { 'availability-card--compact-art': useCompactArt },
+    ]"
     role="note"
   >
     <img
       class="availability-card__art"
-      :class="{ 'availability-card__art--thumb': isGreen }"
+      :class="{ 'availability-card__art--thumb': useCompactArt }"
       :src="artImage"
       alt=""
       aria-hidden="true"
@@ -173,7 +195,8 @@ const artImage = computed(() => (isGreen.value ? thumbImage : gamesImage));
   right: 0.75rem;
 }
 
-.availability-card--success {
+.availability-card--success,
+.availability-card--compact-art {
   padding-right: 8rem;
 }
 
@@ -311,7 +334,8 @@ const artImage = computed(() => (isGreen.value ? thumbImage : gamesImage));
     padding-top: 7.5rem;
   }
 
-  .availability-card--success {
+  .availability-card--success,
+  .availability-card--compact-art {
     padding-top: 5rem;
   }
 

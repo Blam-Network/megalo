@@ -149,7 +149,7 @@ action submit_incident inv_spartans_win_rd1 team attackers team defenders
 action submit_incident dlc_achieve_5 player killing_player player current_player
 ```
 
-Incident names come from [object lists](/language/object-lists) (`incidents.txt`).
+Sound tokens for `play_sound` and `hud_post_message` are listed in [Sounds](/language/enums/sounds). Incident names come from [object lists](/language/object-lists) (`incidents.txt`).
 
 ## Trait, loadout, and requisition actions
 
@@ -306,7 +306,7 @@ Set `show_in_scoreboard 1` in `player_rating` (or override it in a derived scrip
 
 ## Version-specific actions
 
-The exact set of action opcodes available depends on the Reach build. See [Megalo Versions](/versions/) for per-build action tables. This page describes how actions are written; the catalog of valid action names is version-specific.
+The exact set of action opcodes available depends on the Reach build. See [Actions](/language/actions/) for per-opcode documentation and [Megalo Versions](/versions/) for per-build opcode tables. This page describes how actions are written in source.
 
 ## See also
 

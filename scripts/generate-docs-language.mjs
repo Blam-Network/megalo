@@ -1,8 +1,11 @@
 /**
- * Generates Megalo language version docs from @blamnetwork/blf action tables:
+ * Generates Megalo language docs from @blamnetwork/blf action tables:
  * - docs/.vitepress/language-versions.json
- * - docs/versions/<id>/{index,actions,about}.md per supported build
+ * - docs/.vitepress/language-actions.json (sidebar + version opcode tables)
+ * - docs/versions/<slug>/index.md — one page per supported build
  * - docs/.vitepress/megalo-highlight.bundle.mjs (MegaloEdit-style highlighter)
+ *
+ * Action pages under docs/language/actions/ are maintained manually.
  */
 import { spawnSync } from "node:child_process";
 import fs from "node:fs";
@@ -12,6 +15,7 @@ import { fileURLToPath } from "node:url";
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const blfRoot = path.join(root, "node_modules", "@blamnetwork", "blf");
 const outPath = path.join(root, "docs", ".vitepress", "language-versions.json");
+const actionsOutPath = path.join(root, "docs", ".vitepress", "language-actions.json");
 const versionsDocsDir = path.join(root, "docs", "versions");
 const AUTOGEN_MARKER = "<!-- autogen:language-version -->";
 
@@ -82,7 +86,6 @@ const VERSIONS = [
   },
 ];
 
-const REACH_ICON_SRC = "/megalo/images/icons/game-reach.png";
 
 /** Newest-first rows for docs/versions/index.md. */
 const VERSION_INDEX_ROWS = [
@@ -167,7 +170,7 @@ function aboutSupportNote(version) {
 }
 
 function reachGameCell() {
-  return `<img class="version-reach-icon" src="${REACH_ICON_SRC}" alt="Halo: Reach" title="Halo: Reach" />`;
+  return "<ReachGameIcon />";
 }
 
 /**
@@ -277,29 +280,86 @@ function versionDocSlug(version) {
 }
 
 /**
+ * @param {string} name
+ */
+function actionNameToSlug(name) {
+  return name.replace(/_/g, "-");
+}
+
+/**
+ * @param {string} name
+ * @param {Map<string, Set<string>>} buildsByAction
+ */
+function reachAvailability(name, buildsByAction) {
+  const builds = buildsByAction.get(name);
+  if (!builds || builds.size === 0) {
+    return "no";
+  }
+  if (builds.size === VERSIONS.length) {
+    return "yes";
+  }
+  return "partial";
+}
+
+/**
+ * @param {Map<string, Set<string>>} buildsByAction
+ */
+function writeLanguageActionsJson(buildsByAction) {
+  const actionNames = [...buildsByAction.keys()].sort();
+  /** @type {{ name: string; slug: string; docLink: string; reach: string; builds: string[]; opcodesByBuild: Record<string, number> }[]} */
+  const actionEntries = actionNames.map((name) => {
+    const slug = actionNameToSlug(name);
+    const builds = buildsByAction.get(name) ?? new Set();
+    const reach = reachAvailability(name, buildsByAction);
+    /** @type {Record<string, number>} */
+    const opcodesByBuild = {};
+    for (const version of VERSIONS) {
+      if (builds.has(version.id)) {
+        const action = (parsedById.get(version.id) ?? []).find(
+          (entry) => entry.name === name
+        );
+        if (action) {
+          opcodesByBuild[version.id] = action.opcode;
+        }
+      }
+    }
+    return {
+      name,
+      slug,
+      docLink: `/language/actions/${slug}`,
+      reach,
+      builds: [...builds].sort(),
+      opcodesByBuild,
+    };
+  });
+
+  fs.mkdirSync(path.dirname(actionsOutPath), { recursive: true });
+  fs.writeFileSync(
+    actionsOutPath,
+    `${JSON.stringify({ actions: actionEntries }, null, 2)}\n`
+  );
+
+  return actionEntries;
+}
+
+/**
  * @param {typeof VERSIONS[number]} version
  * @param {{ name: string; opcode: number }[]} actions
  * @param {{ added: { name: string; opcode: number }[]; removed: { name: string; opcode: number }[] } | null} changeSet
  * @param {typeof VERSIONS[number] | null} previousVersion
- * @param {Set<string>} mccOnlyNames
  */
-function writeVersionPages(
-  version,
-  actions,
-  changeSet,
-  previousVersion,
-  mccOnlyNames
-) {
+function writeVersionPage(version, actions, changeSet, previousVersion) {
   const slug = versionDocSlug(version);
   const versionDir = path.join(versionsDocsDir, slug);
   const importPath = `@blamnetwork/blf/${version.blfGame}/${version.buildId}`;
   const sourcePath = `${version.blfGame}/${version.buildId}/game/megalogamengine/megalogamengine_actions.ts`;
-  const docBase = `/versions/${slug}`;
+  const indexRow = indexRowByVersionId.get(version.id);
+  const versionNumber = indexRow?.versionNumber;
   const megaloVersionRow = version.versionId
     ? `\n| **Megalo version** | \`${version.versionId}\` |`
     : "";
 
-  const indexBody = `# ${version.label}
+  let body = `# ${version.label}
 
 ${AUTOGEN_MARKER}
 
@@ -311,38 +371,14 @@ ${version.description}
 | **BLF import** | \`${importPath}\` |${megaloVersionRow}
 | **Library support** | ${librarySupportNote(version)} |
 | **Action count** | ${actions.length} (excluding \`none\`) |
-
-- [About](${docBase}/about) — version overview and changes from the prior build
-- [Actions](${docBase}/actions) — full \`e_action_type\` opcode table
-`;
-
-  const actionsBody = `# Actions
-
-${AUTOGEN_MARKER}
-
-Action names match \`e_action_type\` in [@blamnetwork/blf](${SOURCE_REPO_BASE}/${sourcePath}).
-
-<LanguageActionTable version="${version.id}" />
-`;
-
-  const indexRow = indexRowByVersionId.get(version.id);
-  const versionNumber = indexRow?.versionNumber;
-
-  let aboutBody = `# About
-
-${AUTOGEN_MARKER}
-
-${version.description}
-
 `;
 
   if (versionNumber !== undefined) {
-    aboutBody += `Megalo encoding version **${versionNumber}**.
-
-`;
+    body += `\nMegalo encoding version **${versionNumber}**.\n`;
   }
 
-  aboutBody += `## Supported Halo builds
+  body += `
+## Supported Halo builds
 
 ${supportedHaloBuildsMarkdown(version.id)}
 
@@ -355,28 +391,26 @@ ${aboutSupportNote(version)}
 `;
 
   if (!previousVersion || !changeSet) {
-    aboutBody += `Baseline megalo action table for **${version.buildLabel}**. No earlier Reach build with an \`e_action_type\` enum is tracked in @blamnetwork/blf.
-
-See the [Actions](${docBase}/actions) page for the full opcode list.
+    body += `Baseline megalo action table for **${version.buildLabel}**. No earlier Reach build with an \`e_action_type\` enum is tracked in @blamnetwork/blf.
 `;
   } else {
-    aboutBody += `Compared to [${previousVersion.label}](/versions/${versionDocSlug(previousVersion)}/about).
+    body += `Compared to [${previousVersion.label}](/versions/${versionDocSlug(previousVersion)}/).
 
 `;
 
     if (changeSet.added.length === 0 && changeSet.removed.length === 0) {
-      aboutBody += `No action types were added or removed between these builds.
+      body += `No action types were added or removed between these builds.
 `;
     } else {
       if (changeSet.added.length > 0) {
-        aboutBody += `### Actions added
+        body += `### Actions added
 
-${changeSet.added.map((action) => `- \`${action.name}\` (opcode ${action.opcode})`).join("\n")}
+${changeSet.added.map((action) => `- [\`${action.name}\`](/language/actions/${actionNameToSlug(action.name)}) (opcode ${action.opcode})`).join("\n")}
 
 `;
       }
       if (changeSet.removed.length > 0) {
-        aboutBody += `### Actions removed
+        body += `### Actions removed
 
 ${changeSet.removed.map((action) => `- \`${action.name}\` (opcode ${action.opcode})`).join("\n")}
 
@@ -385,24 +419,30 @@ ${changeSet.removed.map((action) => `- \`${action.name}\` (opcode ${action.opcod
     }
 
     if (version.id === "mcc") {
-      aboutBody += `### Language changes
+      body += `### Language changes
 
 Reach MCC also adds megalo language features beyond new action opcodes — bit-shift assignment operators, temporary explicit references, survival/firefight flags, and more. See [Megalo MCC changes](https://blam-network.github.io/blf/guide/megalo-mcc-changes) in the blf docs.
 
 `;
     }
-
-    aboutBody += `See the [Actions](${docBase}/actions) page for the full opcode list on this build.
-`;
   }
 
+  body += `
+## Action opcodes
+
+Action names match \`e_action_type\` in [@blamnetwork/blf](${SOURCE_REPO_BASE}/${sourcePath}). Per-action documentation lives under [Actions](/language/actions/).
+
+<LanguageActionTable version="${version.id}" />
+`;
+
   fs.mkdirSync(versionDir, { recursive: true });
-  fs.writeFileSync(path.join(versionDir, "index.md"), indexBody);
-  fs.writeFileSync(path.join(versionDir, "actions.md"), actionsBody);
-  fs.writeFileSync(path.join(versionDir, "about.md"), aboutBody);
-  const staleChangesPath = path.join(versionDir, "changes.md");
-  if (fs.existsSync(staleChangesPath)) {
-    fs.unlinkSync(staleChangesPath);
+  fs.writeFileSync(path.join(versionDir, "index.md"), body);
+
+  for (const stale of ["about.md", "actions.md", "changes.md"]) {
+    const stalePath = path.join(versionDir, stale);
+    if (fs.existsSync(stalePath)) {
+      fs.unlinkSync(stalePath);
+    }
   }
 }
 
@@ -508,8 +548,6 @@ const versions = displayVersions.map((version) => {
     importPath: `@blamnetwork/blf/${version.blfGame}/${version.buildId}`,
     sourcePath: `${version.blfGame}/${version.buildId}/game/megalogamengine/megalogamengine_actions.ts`,
     docLink: `/versions/${versionDocSlug(version)}/`,
-    aboutLink: `/versions/${versionDocSlug(version)}/about`,
-    actionsLink: `/versions/${versionDocSlug(version)}/actions`,
     previousVersionId: previousVersion?.id ?? null,
     actions,
     addedActionNames: changeSet?.added.map((action) => action.name) ?? [],
@@ -536,13 +574,7 @@ for (const version of VERSIONS) {
     ? diffActions(actions, previousActions)
     : null;
 
-  writeVersionPages(
-    version,
-    actions,
-    changeSet,
-    previousVersion,
-    mccOnlyNames
-  );
+  writeVersionPage(version, actions, changeSet, previousVersion);
 }
 
 for (const stale of ["mcc.md", "tu1.md"]) {
@@ -586,7 +618,7 @@ const versionsIndex = `# Megalo Versions
 
 ${AUTOGEN_MARKER}
 
-Halo: Reach gametypes carry a megalo **encoding version**. The table below lists each version we track, the Halo builds that use it, and whether @blamnetwork/megalo supports it for compile and decompile. Follow a version link for its **About** page (supported builds and changes since the prior version) and **Actions** page (full \`e_action_type\` opcode table).
+Halo: Reach gametypes carry a megalo **encoding version**. The table below lists each version we track, the Halo builds that use it, and whether @blamnetwork/megalo supports it for compile and decompile. Follow a version link for supported builds, changes since the prior version, and the full \`e_action_type\` opcode table. Per-action documentation lives under [Actions](/language/actions/).
 
 | Version | Game | Supported Halo Builds | Supported by @blamnetwork/megalo |
 |---------|------|-----------------------|----------------------------------|
@@ -599,6 +631,19 @@ Megalo encoding versions **69**, **41**, and **32** appear in recovered gametype
 
 fs.writeFileSync(path.join(versionsDocsDir, "index.md"), versionsIndex);
 
+/** @type {Map<string, Set<string>>} */
+const buildsByAction = new Map();
+for (const version of VERSIONS) {
+  for (const action of parsedById.get(version.id) ?? []) {
+    if (!buildsByAction.has(action.name)) {
+      buildsByAction.set(action.name, new Set());
+    }
+    buildsByAction.get(action.name).add(version.id);
+  }
+}
+
+const actionEntries = writeLanguageActionsJson(buildsByAction);
+
 const bundleResult = spawnSync(
   process.execPath,
   [path.join(root, "scripts", "bundle-docs-highlight.mjs")],
@@ -609,5 +654,5 @@ if (bundleResult.status !== 0) {
 }
 
 console.log(
-  `Wrote ${versions.length} language version page sets and ${outPath}`
+  `Wrote ${versions.length} version pages, ${actionEntries.length} action entries in ${actionsOutPath}, and ${outPath}`
 );

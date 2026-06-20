@@ -1,0 +1,241 @@
+{
+  "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\HREK\\data\\multiplayer\\megalo\\broken",
+  "examples": {
+    "play_sound": {
+      "line": "action play_sound everyone ctf",
+      "source": "1Flag_Boneyard.txt"
+    },
+    "for_each": {
+      "line": "action for_each team",
+      "source": "1Flag_Boneyard.txt"
+    },
+    "player_set_objective": {
+      "line": "action player_set_objective current_player \"+%n\" 1",
+      "source": "calvinball.txt"
+    },
+    "set": {
+      "line": "action set temp modulo 5",
+      "source": "equipment_slayer.txt"
+    },
+    "hud_post_message": {
+      "line": "action hud_post_message everyone none \"CTF\"",
+      "source": "derekball.txt"
+    },
+    "object_adjust_maximum_health": {
+      "line": "action object_adjust_maximum_health current_player set_to health_give",
+      "source": "1.txt"
+    },
+    "set_score": {
+      "line": "action set_score add 1 team attackers",
+      "source": "1Flag_Boneyard_Chunks.txt"
+    },
+    "player_set_fireteam_index": {
+      "line": "action player_set_fireteam_tier current_player 0",
+      "source": "1Flag_Boneyard.txt"
+    },
+    "player_adjust_money": {
+      "line": "action player_adjust_money current_player add 5",
+      "source": "1Flag_Boneyard.txt"
+    },
+    "player_set_requisition_palette": {
+      "line": "action player_set_requisition_palette current_player req_sniper",
+      "source": "tankinabox.txt"
+    },
+    "create_object": {
+      "line": "action create_object \"area\" main.team_a main",
+      "source": "dmiller_sve.txt"
+    },
+    "timer_set_rate": {
+      "line": "action timer_set_rate period_timer 1",
+      "source": "1Flag_Boneyard_Extreme.txt"
+    },
+    "object_set_invincibility": {
+      "line": "action object_set_invincibility my_spawn true",
+      "source": "1Flag_Boneyard.txt"
+    },
+    "set_boundary": {
+      "line": "action set_boundary helper cylinder 2 1 1",
+      "source": "calvinball.txt"
+    },
+    "set_pickup_filter": {
+      "line": "action set_pickup_filter flag enemies",
+      "source": "calvinball.txt"
+    },
+    "set_respawn_filter": {
+      "line": "action set_respawn_filter my_spawn allies",
+      "source": "1Flag_Boneyard.txt"
+    },
+    "team_set_primary_respawn_object": {
+      "line": "action team_set_primary_respawn_object my_team none",
+      "source": "1Flag_SvE_influence.txt"
+    },
+    "navpoint_set_visible": {
+      "line": "action navpoint_set_visible hill off",
+      "source": "calvinball.txt"
+    },
+    "navpoint_set_text": {
+      "line": "action navpoint_set_text current_object \"BUY\"",
+      "source": "1Flag_Boneyard.txt"
+    },
+    "navpoint_set_icon": {
+      "line": "action navpoint_set_icon hill king",
+      "source": "calvinball.txt"
+    },
+    "boundary_set_visible": {
+      "line": "action boundary_set_visible hill true",
+      "source": "calvinball.txt"
+    },
+    "player_enable_purchases": {
+      "line": "action player_enable_purchases current_player dead all true",
+      "source": "dmiller_sve.txt"
+    },
+    "team_set_coop_spawning": {
+      "line": "action team_set_coop_spawning current_team true",
+      "source": "1Flag_Boneyard.txt"
+    },
+    "navpoint_set_priority": {
+      "line": "action navpoint_set_priority hill high",
+      "source": "calvinball.txt"
+    },
+    "set_progress_bar": {
+      "line": "action set_progress_bar buy_zone off",
+      "source": "1Flag_Boneyard.txt"
+    },
+    "timer_reset": {
+      "line": "action timer_reset period_timer",
+      "source": "1Flag_Boneyard_Extreme.txt"
+    },
+    "get_player_holding_object": {
+      "line": "action get_player_holding_object flag player_holding_flag",
+      "source": "calvinball.txt"
+    },
+    "player_get_fireteam_index": {
+      "line": "action player_get_fireteam_index current_player ftindex",
+      "source": "kim-1flag-hill.txt"
+    },
+    "player_death_get_killing_player": {
+      "line": "action player_death_get_killing_player dead_player killing_player",
+      "source": "1Flag_Boneyard.txt"
+    },
+    "player_death_get_damage_type": {
+      "line": "action player_death_get_damage_type dead_player damage_id",
+      "source": "1Flag_Boneyard.txt"
+    },
+    "object_get_health": {
+      "line": "action object_get_vitality current_object helf",
+      "source": "1Flag_Boneyard.txt"
+    },
+    "device_set_position": {
+      "line": "action device_set_position \"db1\" 100",
+      "source": "1Flag_Boneyard.txt"
+    },
+    "object_destroy": {
+      "line": "action object_destroy ball",
+      "source": "hot_potato.txt"
+    },
+    "delete_object": {
+      "line": "action delete_object flag",
+      "source": "calvinball.txt"
+    },
+    "navpoint_set_timer": {
+      "line": "action navpoint_set_timer one_flag none",
+      "source": "1Flag_Boneyard.txt"
+    },
+    "apply_player_traits": {
+      "line": "action apply_player_traits current_player uber_traits",
+      "source": "derekball.txt"
+    },
+    "object_detach": {
+      "line": "action object_detach the_flag",
+      "source": "1Flag_Boneyard.txt"
+    },
+    "object_attach": {
+      "line": "action object_attach the_flag current_team.goal 0 0 0.15",
+      "source": "1Flag_Boneyard.txt"
+    },
+    "end_round": {
+      "line": "action end_round",
+      "source": "1Flag_Boneyard.txt"
+    },
+    "hud_widget_set_text": {
+      "line": "action hud_widget_set_text obj_bfg \"SECURE THE BFG\"",
+      "source": "kim-1flag-hill.txt"
+    },
+    "device_set_power": {
+      "line": "action device_set_power this_box 0",
+      "source": "1Flag_Boneyard_Extreme2.txt"
+    },
+    "device_get_position": {
+      "line": "action device_get_position allied_box box_position",
+      "source": "1Flag_Boneyard_Extreme.txt"
+    },
+    "biped_give_weapon": {
+      "line": "action biped_give_weapon current_player \"shotgun\" primary",
+      "source": "1Flag_Boneyard_Extreme.txt"
+    },
+    "hud_widget_set_visibility": {
+      "line": "action hud_widget_set_visibility obj_bfg current_player true",
+      "source": "kim-1flag-hill.txt"
+    },
+    "set_fireteam_respawn_filter": {
+      "line": "action set_fireteam_respawn_filter respawner 0",
+      "source": "1Flag_Boneyard_Extreme2.txt"
+    },
+    "navpoint_set_visible_range": {
+      "line": "action navpoint_set_visible_range current_object req_range_near req_range_far",
+      "source": "1Flag_Boneyard_Extreme2.txt"
+    },
+    "player_set_vehicle": {
+      "line": "action player_set_vehicle this_box.buyer product",
+      "source": "1Flag_Boneyard_Extreme2.txt"
+    },
+    "random": {
+      "line": "action random 0 5 randumb",
+      "source": "derekball.txt"
+    },
+    "player_get_vehicle": {
+      "line": "action player_get_vehicle current_player test_for_vehicle",
+      "source": "bumpercars.txt"
+    },
+    "object_set_scale": {
+      "line": "action object_set_scale juggernaut 2",
+      "source": "derekball.txt"
+    },
+    "object_adjust_shield": {
+      "line": "action object_adjust_shield current_player set_to 100",
+      "source": "derekball.txt"
+    },
+    "set_loadout_palette": {
+      "line": "action set_loadout_palette player current_player slayer_loadouts",
+      "source": "equipment_slayer.txt"
+    },
+    "player_get_place": {
+      "line": "action player_get_place current_player temp",
+      "source": "equipment_slayer.txt"
+    },
+    "team_get_place": {
+      "line": "action team_get_place current_player.team temp",
+      "source": "equipment_slayer.txt"
+    },
+    "player_death_get_special_type": {
+      "line": "action player_death_get_special_type dead_player special_death_type",
+      "source": "kim-slayer-alt.txt"
+    },
+    "player_get_killing_spree_count": {
+      "line": "action player_get_killing_spree_count killing_player temp",
+      "source": "equipment_slayer.txt"
+    },
+    "weapon_set_pickup_priority": {
+      "line": "action weapon_set_autopickup ball true",
+      "source": "hot_potato.txt"
+    },
+    "object_get_velocity": {
+      "line": "action object_get_velocity current_object speedness",
+      "source": "slayer-revenant.txt"
+    },
+    "object_get_distance": {
+      "line": "action object_get_distance current_object current_player distance_to_player",
+      "source": "slayer-revenant.txt"
+    }
+  }
+}

@@ -14,8 +14,6 @@
       "importPath": "@blamnetwork/blf/haloreach_mcc/v_untracked_25_08_16_1352",
       "sourcePath": "haloreach_mcc/v_untracked_25_08_16_1352/game/megalogamengine/megalogamengine_actions.ts",
       "docLink": "/versions/107-mcc/",
-      "aboutLink": "/versions/107-mcc/about",
-      "actionsLink": "/versions/107-mcc/actions",
       "previousVersionId": "tu1",
       "actions": [
         {
@@ -478,8 +476,6 @@
       "importPath": "@blamnetwork/blf/haloreach/v12065_11_08_24_1738_tu1actual",
       "sourcePath": "haloreach/v12065_11_08_24_1738_tu1actual/game/megalogamengine/megalogamengine_actions.ts",
       "docLink": "/versions/107/",
-      "aboutLink": "/versions/107/about",
-      "actionsLink": "/versions/107/actions",
       "previousVersionId": "release",
       "actions": [
         {
@@ -891,8 +887,6 @@
       "importPath": "@blamnetwork/blf/haloreach/v11860_10_07_24_0147_omaha_release",
       "sourcePath": "haloreach/v11860_10_07_24_0147_omaha_release/game/megalogamengine/megalogamengine_actions.ts",
       "docLink": "/versions/106/",
-      "aboutLink": "/versions/106/about",
-      "actionsLink": "/versions/106/actions",
       "previousVersionId": "omaha-delta",
       "actions": [
         {
@@ -1318,8 +1312,6 @@
       "importPath": "@blamnetwork/blf/haloreach/v09730_10_04_09_1309_omaha_delta",
       "sourcePath": "haloreach/v09730_10_04_09_1309_omaha_delta/game/megalogamengine/megalogamengine_actions.ts",
       "docLink": "/versions/73/",
-      "aboutLink": "/versions/73/about",
-      "actionsLink": "/versions/73/actions",
       "previousVersionId": "omaha-alpha",
       "actions": [
         {
@@ -1723,8 +1715,6 @@
       "importPath": "@blamnetwork/blf/haloreach/v08516_10_02_19_1607_omaha_alpha",
       "sourcePath": "haloreach/v08516_10_02_19_1607_omaha_alpha/game/megalogamengine/megalogamengine_actions.ts",
       "docLink": "/versions/49/",
-      "aboutLink": "/versions/49/about",
-      "actionsLink": "/versions/49/actions",
       "previousVersionId": null,
       "actions": [
         {

@@ -1,0 +1,2080 @@
+{
+  "actions": [
+    {
+      "name": "adjust_grenades",
+      "slug": "adjust-grenades",
+      "docLink": "/language/actions/adjust-grenades",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 75,
+        "omaha-delta": 74,
+        "release": 74,
+        "tu1": 74,
+        "mcc": 74
+      }
+    },
+    {
+      "name": "apply_player_traits",
+      "slug": "apply-player-traits",
+      "docLink": "/language/actions/apply-player-traits",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 11,
+        "omaha-delta": 11,
+        "release": 11,
+        "tu1": 11,
+        "mcc": 11
+      }
+    },
+    {
+      "name": "begin",
+      "slug": "begin",
+      "docLink": "/language/actions/begin",
+      "reach": "partial",
+      "builds": [
+        "mcc"
+      ],
+      "opcodesByBuild": {
+        "mcc": 99
+      }
+    },
+    {
+      "name": "biped_drop_weapon",
+      "slug": "biped-drop-weapon",
+      "docLink": "/language/actions/biped-drop-weapon",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "release": 94,
+        "tu1": 94,
+        "mcc": 94
+      }
+    },
+    {
+      "name": "biped_give_weapon",
+      "slug": "biped-give-weapon",
+      "docLink": "/language/actions/biped-give-weapon",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "release": 93,
+        "tu1": 93,
+        "mcc": 93
+      }
+    },
+    {
+      "name": "boundary_set_player_color",
+      "slug": "boundary-set-player-color",
+      "docLink": "/language/actions/boundary-set-player-color",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "release": 98,
+        "tu1": 98,
+        "mcc": 98
+      }
+    },
+    {
+      "name": "boundary_set_visible",
+      "slug": "boundary-set-visible",
+      "docLink": "/language/actions/boundary-set-visible",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 22,
+        "omaha-delta": 22,
+        "release": 22,
+        "tu1": 22,
+        "mcc": 22
+      }
+    },
+    {
+      "name": "break_into_debugger",
+      "slug": "break-into-debugger",
+      "docLink": "/language/actions/break-into-debugger",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 26,
+        "omaha-delta": 26,
+        "release": 26,
+        "tu1": 26,
+        "mcc": 26
+      }
+    },
+    {
+      "name": "create_object",
+      "slug": "create-object",
+      "docLink": "/language/actions/create-object",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 2,
+        "omaha-delta": 2,
+        "release": 2,
+        "tu1": 2,
+        "mcc": 2
+      }
+    },
+    {
+      "name": "create_tunnel",
+      "slug": "create-tunnel",
+      "docLink": "/language/actions/create-tunnel",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-delta": 88,
+        "release": 87,
+        "tu1": 87,
+        "mcc": 87
+      }
+    },
+    {
+      "name": "debug_force_player_view_count",
+      "slug": "debug-force-player-view-count",
+      "docLink": "/language/actions/debug-force-player-view-count",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-delta": 89,
+        "release": 88,
+        "tu1": 88,
+        "mcc": 88
+      }
+    },
+    {
+      "name": "debugging_enable_tracing",
+      "slug": "debugging-enable-tracing",
+      "docLink": "/language/actions/debugging-enable-tracing",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 32,
+        "omaha-delta": 32,
+        "release": 32,
+        "tu1": 32,
+        "mcc": 32
+      }
+    },
+    {
+      "name": "delete_object",
+      "slug": "delete-object",
+      "docLink": "/language/actions/delete-object",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 3,
+        "omaha-delta": 3,
+        "release": 3,
+        "tu1": 3,
+        "mcc": 3
+      }
+    },
+    {
+      "name": "device_animate_position",
+      "slug": "device-animate-position",
+      "docLink": "/language/actions/device-animate-position",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 81,
+        "omaha-delta": 80,
+        "release": 79,
+        "tu1": 79,
+        "mcc": 79
+      }
+    },
+    {
+      "name": "device_get_position",
+      "slug": "device-get-position",
+      "docLink": "/language/actions/device-get-position",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 73,
+        "omaha-delta": 72,
+        "release": 73,
+        "tu1": 73,
+        "mcc": 73
+      }
+    },
+    {
+      "name": "device_get_power",
+      "slug": "device-get-power",
+      "docLink": "/language/actions/device-get-power",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 71,
+        "omaha-delta": 70,
+        "release": 71,
+        "tu1": 71,
+        "mcc": 71
+      }
+    },
+    {
+      "name": "device_set_position",
+      "slug": "device-set-position",
+      "docLink": "/language/actions/device-set-position",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 72,
+        "omaha-delta": 71,
+        "release": 72,
+        "tu1": 72,
+        "mcc": 72
+      }
+    },
+    {
+      "name": "device_set_position_immediate",
+      "slug": "device-set-position-immediate",
+      "docLink": "/language/actions/device-set-position-immediate",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 82,
+        "omaha-delta": 81,
+        "release": 80,
+        "tu1": 80,
+        "mcc": 80
+      }
+    },
+    {
+      "name": "device_set_position_track",
+      "slug": "device-set-position-track",
+      "docLink": "/language/actions/device-set-position-track",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 80,
+        "omaha-delta": 79,
+        "release": 78,
+        "tu1": 78,
+        "mcc": 78
+      }
+    },
+    {
+      "name": "device_set_power",
+      "slug": "device-set-power",
+      "docLink": "/language/actions/device-set-power",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 70,
+        "omaha-delta": 69,
+        "release": 70,
+        "tu1": 70,
+        "mcc": 70
+      }
+    },
+    {
+      "name": "end_round",
+      "slug": "end-round",
+      "docLink": "/language/actions/end-round",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 21,
+        "omaha-delta": 21,
+        "release": 21,
+        "tu1": 21,
+        "mcc": 21
+      }
+    },
+    {
+      "name": "for_each",
+      "slug": "for-each",
+      "docLink": "/language/actions/for-each",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 20,
+        "omaha-delta": 20,
+        "release": 20,
+        "tu1": 20,
+        "mcc": 20
+      }
+    },
+    {
+      "name": "game_grief_record_custom_penalty",
+      "slug": "game-grief-record-custom-penalty",
+      "docLink": "/language/actions/game-grief-record-custom-penalty",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "release": 97,
+        "tu1": 97,
+        "mcc": 97
+      }
+    },
+    {
+      "name": "get_button_time",
+      "slug": "get-button-time",
+      "docLink": "/language/actions/get-button-time",
+      "reach": "partial",
+      "builds": [
+        "mcc"
+      ],
+      "opcodesByBuild": {
+        "mcc": 101
+      }
+    },
+    {
+      "name": "get_player_holding_object",
+      "slug": "get-player-holding-object",
+      "docLink": "/language/actions/get-player-holding-object",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 19,
+        "omaha-delta": 19,
+        "release": 19,
+        "tu1": 19,
+        "mcc": 19
+      }
+    },
+    {
+      "name": "get_random_object",
+      "slug": "get-random-object",
+      "docLink": "/language/actions/get-random-object",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "release": 96,
+        "tu1": 96,
+        "mcc": 96
+      }
+    },
+    {
+      "name": "give_weapon",
+      "slug": "give-weapon",
+      "docLink": "/language/actions/give-weapon",
+      "reach": "partial",
+      "builds": [
+        "omaha-alpha",
+        "omaha-delta"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 74,
+        "omaha-delta": 73
+      }
+    },
+    {
+      "name": "hide_object",
+      "slug": "hide-object",
+      "docLink": "/language/actions/hide-object",
+      "reach": "partial",
+      "builds": [
+        "mcc"
+      ],
+      "opcodesByBuild": {
+        "mcc": 106
+      }
+    },
+    {
+      "name": "hs_function_call",
+      "slug": "hs-function-call",
+      "docLink": "/language/actions/hs-function-call",
+      "reach": "partial",
+      "builds": [
+        "mcc"
+      ],
+      "opcodesByBuild": {
+        "mcc": 100
+      }
+    },
+    {
+      "name": "hud_post_message",
+      "slug": "hud-post-message",
+      "docLink": "/language/actions/hud-post-message",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 16,
+        "omaha-delta": 16,
+        "release": 16,
+        "tu1": 16,
+        "mcc": 16
+      }
+    },
+    {
+      "name": "hud_widget_set_icon",
+      "slug": "hud-widget-set-icon",
+      "docLink": "/language/actions/hud-widget-set-icon",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 48,
+        "omaha-delta": 49,
+        "release": 49,
+        "tu1": 49,
+        "mcc": 49
+      }
+    },
+    {
+      "name": "hud_widget_set_meter",
+      "slug": "hud-widget-set-meter",
+      "docLink": "/language/actions/hud-widget-set-meter",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 47,
+        "omaha-delta": 48,
+        "release": 48,
+        "tu1": 48,
+        "mcc": 48
+      }
+    },
+    {
+      "name": "hud_widget_set_text",
+      "slug": "hud-widget-set-text",
+      "docLink": "/language/actions/hud-widget-set-text",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 45,
+        "omaha-delta": 46,
+        "release": 46,
+        "tu1": 46,
+        "mcc": 46
+      }
+    },
+    {
+      "name": "hud_widget_set_value",
+      "slug": "hud-widget-set-value",
+      "docLink": "/language/actions/hud-widget-set-value",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 46,
+        "omaha-delta": 47,
+        "release": 47,
+        "tu1": 47,
+        "mcc": 47
+      }
+    },
+    {
+      "name": "hud_widget_set_visibility",
+      "slug": "hud-widget-set-visibility",
+      "docLink": "/language/actions/hud-widget-set-visibility",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 49,
+        "omaha-delta": 50,
+        "release": 50,
+        "tu1": 50,
+        "mcc": 50
+      }
+    },
+    {
+      "name": "navpoint_set_icon",
+      "slug": "navpoint-set-icon",
+      "docLink": "/language/actions/navpoint-set-icon",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 5,
+        "omaha-delta": 5,
+        "release": 5,
+        "tu1": 5,
+        "mcc": 5
+      }
+    },
+    {
+      "name": "navpoint_set_priority",
+      "slug": "navpoint-set-priority",
+      "docLink": "/language/actions/navpoint-set-priority",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 6,
+        "omaha-delta": 6,
+        "release": 6,
+        "tu1": 6,
+        "mcc": 6
+      }
+    },
+    {
+      "name": "navpoint_set_text",
+      "slug": "navpoint-set-text",
+      "docLink": "/language/actions/navpoint-set-text",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 52,
+        "omaha-delta": 53,
+        "release": 53,
+        "tu1": 53,
+        "mcc": 53
+      }
+    },
+    {
+      "name": "navpoint_set_timer",
+      "slug": "navpoint-set-timer",
+      "docLink": "/language/actions/navpoint-set-timer",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 7,
+        "omaha-delta": 7,
+        "release": 7,
+        "tu1": 7,
+        "mcc": 7
+      }
+    },
+    {
+      "name": "navpoint_set_visible",
+      "slug": "navpoint-set-visible",
+      "docLink": "/language/actions/navpoint-set-visible",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 4,
+        "omaha-delta": 4,
+        "release": 4,
+        "tu1": 4,
+        "mcc": 4
+      }
+    },
+    {
+      "name": "navpoint_set_visible_range",
+      "slug": "navpoint-set-visible-range",
+      "docLink": "/language/actions/navpoint-set-visible-range",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 8,
+        "omaha-delta": 8,
+        "release": 8,
+        "tu1": 8,
+        "mcc": 8
+      }
+    },
+    {
+      "name": "object_adjust_health",
+      "slug": "object-adjust-health",
+      "docLink": "/language/actions/object-adjust-health",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 64,
+        "omaha-delta": 63,
+        "release": 65,
+        "tu1": 65,
+        "mcc": 65
+      }
+    },
+    {
+      "name": "object_adjust_maximum_health",
+      "slug": "object-adjust-maximum-health",
+      "docLink": "/language/actions/object-adjust-maximum-health",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 67,
+        "omaha-delta": 66,
+        "release": 68,
+        "tu1": 68,
+        "mcc": 68
+      }
+    },
+    {
+      "name": "object_adjust_maximum_shield",
+      "slug": "object-adjust-maximum-shield",
+      "docLink": "/language/actions/object-adjust-maximum-shield",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 66,
+        "omaha-delta": 65,
+        "release": 67,
+        "tu1": 67,
+        "mcc": 67
+      }
+    },
+    {
+      "name": "object_adjust_shield",
+      "slug": "object-adjust-shield",
+      "docLink": "/language/actions/object-adjust-shield",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 63,
+        "omaha-delta": 62,
+        "release": 64,
+        "tu1": 64,
+        "mcc": 64
+      }
+    },
+    {
+      "name": "object_attach",
+      "slug": "object-attach",
+      "docLink": "/language/actions/object-attach",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 33,
+        "omaha-delta": 33,
+        "release": 33,
+        "tu1": 33,
+        "mcc": 33
+      }
+    },
+    {
+      "name": "object_bounce",
+      "slug": "object-bounce",
+      "docLink": "/language/actions/object-bounce",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 44,
+        "omaha-delta": 45,
+        "release": 45,
+        "tu1": 45,
+        "mcc": 45
+      }
+    },
+    {
+      "name": "object_destroy",
+      "slug": "object-destroy",
+      "docLink": "/language/actions/object-destroy",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 23,
+        "omaha-delta": 23,
+        "release": 23,
+        "tu1": 23,
+        "mcc": 23
+      }
+    },
+    {
+      "name": "object_detach",
+      "slug": "object-detach",
+      "docLink": "/language/actions/object-detach",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 34,
+        "omaha-delta": 34,
+        "release": 34,
+        "tu1": 34,
+        "mcc": 34
+      }
+    },
+    {
+      "name": "object_face_object",
+      "slug": "object-face-object",
+      "docLink": "/language/actions/object-face-object",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "release": 92,
+        "tu1": 92,
+        "mcc": 92
+      }
+    },
+    {
+      "name": "object_get_distance",
+      "slug": "object-get-distance",
+      "docLink": "/language/actions/object-get-distance",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 65,
+        "omaha-delta": 64,
+        "release": 66,
+        "tu1": 66,
+        "mcc": 66
+      }
+    },
+    {
+      "name": "object_get_health",
+      "slug": "object-get-health",
+      "docLink": "/language/actions/object-get-health",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-delta": 55,
+        "release": 55,
+        "tu1": 55,
+        "mcc": 55
+      }
+    },
+    {
+      "name": "object_get_orientation",
+      "slug": "object-get-orientation",
+      "docLink": "/language/actions/object-get-orientation",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 27,
+        "omaha-delta": 27,
+        "release": 27,
+        "tu1": 27,
+        "mcc": 27
+      }
+    },
+    {
+      "name": "object_get_shield",
+      "slug": "object-get-shield",
+      "docLink": "/language/actions/object-get-shield",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 53,
+        "omaha-delta": 54,
+        "release": 54,
+        "tu1": 54,
+        "mcc": 54
+      }
+    },
+    {
+      "name": "object_get_velocity",
+      "slug": "object-get-velocity",
+      "docLink": "/language/actions/object-get-velocity",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 28,
+        "omaha-delta": 28,
+        "release": 28,
+        "tu1": 28,
+        "mcc": 28
+      }
+    },
+    {
+      "name": "object_set_invincibility",
+      "slug": "object-set-invincibility",
+      "docLink": "/language/actions/object-set-invincibility",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 24,
+        "omaha-delta": 24,
+        "release": 24,
+        "tu1": 24,
+        "mcc": 24
+      }
+    },
+    {
+      "name": "object_set_minimap_icon",
+      "slug": "object-set-minimap-icon",
+      "docLink": "/language/actions/object-set-minimap-icon",
+      "reach": "partial",
+      "builds": [
+        "omaha-alpha"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 58
+      }
+    },
+    {
+      "name": "object_set_minimap_priority",
+      "slug": "object-set-minimap-priority",
+      "docLink": "/language/actions/object-set-minimap-priority",
+      "reach": "partial",
+      "builds": [
+        "omaha-alpha"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 57
+      }
+    },
+    {
+      "name": "object_set_minimap_visibility",
+      "slug": "object-set-minimap-visibility",
+      "docLink": "/language/actions/object-set-minimap-visibility",
+      "reach": "partial",
+      "builds": [
+        "omaha-alpha"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 56
+      }
+    },
+    {
+      "name": "object_set_never_garbage",
+      "slug": "object-set-never-garbage",
+      "docLink": "/language/actions/object-set-never-garbage",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-delta": 86,
+        "release": 85,
+        "tu1": 85,
+        "mcc": 85
+      }
+    },
+    {
+      "name": "object_set_orientation",
+      "slug": "object-set-orientation",
+      "docLink": "/language/actions/object-set-orientation",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-delta": 92,
+        "release": 91,
+        "tu1": 91,
+        "mcc": 91
+      }
+    },
+    {
+      "name": "object_set_scale",
+      "slug": "object-set-scale",
+      "docLink": "/language/actions/object-set-scale",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 51,
+        "omaha-delta": 52,
+        "release": 52,
+        "tu1": 52,
+        "mcc": 52
+      }
+    },
+    {
+      "name": "play_sound",
+      "slug": "play-sound",
+      "docLink": "/language/actions/play-sound",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 50,
+        "omaha-delta": 51,
+        "release": 51,
+        "tu1": 51,
+        "mcc": 51
+      }
+    },
+    {
+      "name": "player_adjust_money",
+      "slug": "player-adjust-money",
+      "docLink": "/language/actions/player-adjust-money",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 38,
+        "omaha-delta": 38,
+        "release": 38,
+        "tu1": 38,
+        "mcc": 38
+      }
+    },
+    {
+      "name": "player_death_get_damage_type",
+      "slug": "player-death-get-damage-type",
+      "docLink": "/language/actions/player-death-get-damage-type",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 30,
+        "omaha-delta": 30,
+        "release": 30,
+        "tu1": 30,
+        "mcc": 30
+      }
+    },
+    {
+      "name": "player_death_get_killing_player",
+      "slug": "player-death-get-killing-player",
+      "docLink": "/language/actions/player-death-get-killing-player",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 29,
+        "omaha-delta": 29,
+        "release": 29,
+        "tu1": 29,
+        "mcc": 29
+      }
+    },
+    {
+      "name": "player_death_get_special_type",
+      "slug": "player-death-get-special-type",
+      "docLink": "/language/actions/player-death-get-special-type",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 31,
+        "omaha-delta": 31,
+        "release": 31,
+        "tu1": 31,
+        "mcc": 31
+      }
+    },
+    {
+      "name": "player_enable_purchases",
+      "slug": "player-enable-purchases",
+      "docLink": "/language/actions/player-enable-purchases",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 39,
+        "omaha-delta": 39,
+        "release": 39,
+        "tu1": 39,
+        "mcc": 39
+      }
+    },
+    {
+      "name": "player_get_equipment",
+      "slug": "player-get-equipment",
+      "docLink": "/language/actions/player-get-equipment",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-delta": 85,
+        "release": 84,
+        "tu1": 84,
+        "mcc": 84
+      }
+    },
+    {
+      "name": "player_get_fireteam_index",
+      "slug": "player-get-fireteam-index",
+      "docLink": "/language/actions/player-get-fireteam-index",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 61,
+        "omaha-delta": 60,
+        "release": 62,
+        "tu1": 62,
+        "mcc": 62
+      }
+    },
+    {
+      "name": "player_get_killing_spree_count",
+      "slug": "player-get-killing-spree-count",
+      "docLink": "/language/actions/player-get-killing-spree-count",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 37,
+        "omaha-delta": 37,
+        "release": 37,
+        "tu1": 37,
+        "mcc": 37
+      }
+    },
+    {
+      "name": "player_get_place",
+      "slug": "player-get-place",
+      "docLink": "/language/actions/player-get-place",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 35,
+        "omaha-delta": 35,
+        "release": 35,
+        "tu1": 35,
+        "mcc": 35
+      }
+    },
+    {
+      "name": "player_get_target_object",
+      "slug": "player-get-target-object",
+      "docLink": "/language/actions/player-get-target-object",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-delta": 87,
+        "release": 86,
+        "tu1": 86,
+        "mcc": 86
+      }
+    },
+    {
+      "name": "player_get_vehicle",
+      "slug": "player-get-vehicle",
+      "docLink": "/language/actions/player-get-vehicle",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 40,
+        "omaha-delta": 40,
+        "release": 40,
+        "tu1": 40,
+        "mcc": 40
+      }
+    },
+    {
+      "name": "player_get_weapon",
+      "slug": "player-get-weapon",
+      "docLink": "/language/actions/player-get-weapon",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-delta": 84,
+        "release": 83,
+        "tu1": 83,
+        "mcc": 83
+      }
+    },
+    {
+      "name": "player_pick_up_weapon",
+      "slug": "player-pick-up-weapon",
+      "docLink": "/language/actions/player-pick-up-weapon",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-delta": 90,
+        "release": 89,
+        "tu1": 89,
+        "mcc": 89
+      }
+    },
+    {
+      "name": "player_set_coop_spawning",
+      "slug": "player-set-coop-spawning",
+      "docLink": "/language/actions/player-set-coop-spawning",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-delta": 91,
+        "release": 90,
+        "tu1": 90,
+        "mcc": 90
+      }
+    },
+    {
+      "name": "player_set_fireteam_index",
+      "slug": "player-set-fireteam-index",
+      "docLink": "/language/actions/player-set-fireteam-index",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 62,
+        "omaha-delta": 61,
+        "release": 63,
+        "tu1": 63,
+        "mcc": 63
+      }
+    },
+    {
+      "name": "player_set_fireteam_tier",
+      "slug": "player-set-fireteam-tier",
+      "docLink": "/language/actions/player-set-fireteam-tier",
+      "reach": "partial",
+      "builds": [
+        "omaha-alpha",
+        "omaha-delta"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 69,
+        "omaha-delta": 68
+      }
+    },
+    {
+      "name": "player_set_objective",
+      "slug": "player-set-objective",
+      "docLink": "/language/actions/player-set-objective",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 54,
+        "omaha-delta": 56,
+        "release": 56,
+        "tu1": 56,
+        "mcc": 56
+      }
+    },
+    {
+      "name": "player_set_objective_allegiance",
+      "slug": "player-set-objective-allegiance",
+      "docLink": "/language/actions/player-set-objective-allegiance",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "release": 57,
+        "tu1": 57,
+        "mcc": 57
+      }
+    },
+    {
+      "name": "player_set_objective_allegiance_icon",
+      "slug": "player-set-objective-allegiance-icon",
+      "docLink": "/language/actions/player-set-objective-allegiance-icon",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "release": 58,
+        "tu1": 58,
+        "mcc": 58
+      }
+    },
+    {
+      "name": "player_set_primary_respawn_object",
+      "slug": "player-set-primary-respawn-object",
+      "docLink": "/language/actions/player-set-primary-respawn-object",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 60,
+        "omaha-delta": 59,
+        "release": 61,
+        "tu1": 61,
+        "mcc": 61
+      }
+    },
+    {
+      "name": "player_set_requisition_palette",
+      "slug": "player-set-requisition-palette",
+      "docLink": "/language/actions/player-set-requisition-palette",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 68,
+        "omaha-delta": 67,
+        "release": 69,
+        "tu1": 69,
+        "mcc": 69
+      }
+    },
+    {
+      "name": "player_set_unit",
+      "slug": "player-set-unit",
+      "docLink": "/language/actions/player-set-unit",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-delta": 42,
+        "release": 42,
+        "tu1": 42,
+        "mcc": 42
+      }
+    },
+    {
+      "name": "player_set_vehicle",
+      "slug": "player-set-vehicle",
+      "docLink": "/language/actions/player-set-vehicle",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 41,
+        "omaha-delta": 41,
+        "release": 41,
+        "tu1": 41,
+        "mcc": 41
+      }
+    },
+    {
+      "name": "player_set_vehicle_spawning",
+      "slug": "player-set-vehicle-spawning",
+      "docLink": "/language/actions/player-set-vehicle-spawning",
+      "reach": "partial",
+      "builds": [
+        "mcc"
+      ],
+      "opcodesByBuild": {
+        "mcc": 103
+      }
+    },
+    {
+      "name": "print_variable",
+      "slug": "print-variable",
+      "docLink": "/language/actions/print-variable",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 18,
+        "omaha-delta": 18,
+        "release": 18,
+        "tu1": 18,
+        "mcc": 18
+      }
+    },
+    {
+      "name": "random",
+      "slug": "random",
+      "docLink": "/language/actions/random",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 25,
+        "omaha-delta": 25,
+        "release": 25,
+        "tu1": 25,
+        "mcc": 25
+      }
+    },
+    {
+      "name": "respawn_zone_enable",
+      "slug": "respawn-zone-enable",
+      "docLink": "/language/actions/respawn-zone-enable",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 84,
+        "omaha-delta": 83,
+        "release": 82,
+        "tu1": 82,
+        "mcc": 82
+      }
+    },
+    {
+      "name": "saved_film_insert_marker",
+      "slug": "saved-film-insert-marker",
+      "docLink": "/language/actions/saved-film-insert-marker",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 83,
+        "omaha-delta": 82,
+        "release": 81,
+        "tu1": 81,
+        "mcc": 81
+      }
+    },
+    {
+      "name": "set",
+      "slug": "set",
+      "docLink": "/language/actions/set",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 9,
+        "omaha-delta": 9,
+        "release": 9,
+        "tu1": 9,
+        "mcc": 9
+      }
+    },
+    {
+      "name": "set_boundary",
+      "slug": "set-boundary",
+      "docLink": "/language/actions/set-boundary",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 10,
+        "omaha-delta": 10,
+        "release": 10,
+        "tu1": 10,
+        "mcc": 10
+      }
+    },
+    {
+      "name": "set_fireteam_respawn_filter",
+      "slug": "set-fireteam-respawn-filter",
+      "docLink": "/language/actions/set-fireteam-respawn-filter",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 14,
+        "omaha-delta": 14,
+        "release": 14,
+        "tu1": 14,
+        "mcc": 14
+      }
+    },
+    {
+      "name": "set_loadout",
+      "slug": "set-loadout",
+      "docLink": "/language/actions/set-loadout",
+      "reach": "partial",
+      "builds": [
+        "omaha-alpha",
+        "omaha-delta"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 78,
+        "omaha-delta": 77
+      }
+    },
+    {
+      "name": "set_loadout_palette",
+      "slug": "set-loadout-palette",
+      "docLink": "/language/actions/set-loadout-palette",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 79,
+        "omaha-delta": 78,
+        "release": 77,
+        "tu1": 77,
+        "mcc": 77
+      }
+    },
+    {
+      "name": "set_pickup_filter",
+      "slug": "set-pickup-filter",
+      "docLink": "/language/actions/set-pickup-filter",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 12,
+        "omaha-delta": 12,
+        "release": 12,
+        "tu1": 12,
+        "mcc": 12
+      }
+    },
+    {
+      "name": "set_player_respawn_vehicle",
+      "slug": "set-player-respawn-vehicle",
+      "docLink": "/language/actions/set-player-respawn-vehicle",
+      "reach": "partial",
+      "builds": [
+        "mcc"
+      ],
+      "opcodesByBuild": {
+        "mcc": 104
+      }
+    },
+    {
+      "name": "set_progress_bar",
+      "slug": "set-progress-bar",
+      "docLink": "/language/actions/set-progress-bar",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 15,
+        "omaha-delta": 15,
+        "release": 15,
+        "tu1": 15,
+        "mcc": 15
+      }
+    },
+    {
+      "name": "set_respawn_filter",
+      "slug": "set-respawn-filter",
+      "docLink": "/language/actions/set-respawn-filter",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 13,
+        "omaha-delta": 13,
+        "release": 13,
+        "tu1": 13,
+        "mcc": 13
+      }
+    },
+    {
+      "name": "set_scenario_interpolator_state",
+      "slug": "set-scenario-interpolator-state",
+      "docLink": "/language/actions/set-scenario-interpolator-state",
+      "reach": "partial",
+      "builds": [
+        "mcc",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "release": 95,
+        "tu1": 95,
+        "mcc": 95
+      }
+    },
+    {
+      "name": "set_score",
+      "slug": "set-score",
+      "docLink": "/language/actions/set-score",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 1,
+        "omaha-delta": 1,
+        "release": 1,
+        "tu1": 1,
+        "mcc": 1
+      }
+    },
+    {
+      "name": "set_team_respawn_vehicle",
+      "slug": "set-team-respawn-vehicle",
+      "docLink": "/language/actions/set-team-respawn-vehicle",
+      "reach": "partial",
+      "builds": [
+        "mcc"
+      ],
+      "opcodesByBuild": {
+        "mcc": 105
+      }
+    },
+    {
+      "name": "submit_incident",
+      "slug": "submit-incident",
+      "docLink": "/language/actions/submit-incident",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 76,
+        "omaha-delta": 75,
+        "release": 75,
+        "tu1": 75,
+        "mcc": 75
+      }
+    },
+    {
+      "name": "submit_incident_with_custom_value",
+      "slug": "submit-incident-with-custom-value",
+      "docLink": "/language/actions/submit-incident-with-custom-value",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 77,
+        "omaha-delta": 76,
+        "release": 76,
+        "tu1": 76,
+        "mcc": 76
+      }
+    },
+    {
+      "name": "team_get_place",
+      "slug": "team-get-place",
+      "docLink": "/language/actions/team-get-place",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 36,
+        "omaha-delta": 36,
+        "release": 36,
+        "tu1": 36,
+        "mcc": 36
+      }
+    },
+    {
+      "name": "team_set_coop_spawning",
+      "slug": "team-set-coop-spawning",
+      "docLink": "/language/actions/team-set-coop-spawning",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 55,
+        "omaha-delta": 57,
+        "release": 59,
+        "tu1": 59,
+        "mcc": 59
+      }
+    },
+    {
+      "name": "team_set_primary_respawn_object",
+      "slug": "team-set-primary-respawn-object",
+      "docLink": "/language/actions/team-set-primary-respawn-object",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 59,
+        "omaha-delta": 58,
+        "release": 60,
+        "tu1": 60,
+        "mcc": 60
+      }
+    },
+    {
+      "name": "team_set_vehicle_spawning",
+      "slug": "team-set-vehicle-spawning",
+      "docLink": "/language/actions/team-set-vehicle-spawning",
+      "reach": "partial",
+      "builds": [
+        "mcc"
+      ],
+      "opcodesByBuild": {
+        "mcc": 102
+      }
+    },
+    {
+      "name": "timer_reset",
+      "slug": "timer-reset",
+      "docLink": "/language/actions/timer-reset",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 42,
+        "omaha-delta": 43,
+        "release": 43,
+        "tu1": 43,
+        "mcc": 43
+      }
+    },
+    {
+      "name": "timer_set_rate",
+      "slug": "timer-set-rate",
+      "docLink": "/language/actions/timer-set-rate",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 17,
+        "omaha-delta": 17,
+        "release": 17,
+        "tu1": 17,
+        "mcc": 17
+      }
+    },
+    {
+      "name": "weapon_set_pickup_priority",
+      "slug": "weapon-set-pickup-priority",
+      "docLink": "/language/actions/weapon-set-pickup-priority",
+      "reach": "yes",
+      "builds": [
+        "mcc",
+        "omaha-alpha",
+        "omaha-delta",
+        "release",
+        "tu1"
+      ],
+      "opcodesByBuild": {
+        "omaha-alpha": 43,
+        "omaha-delta": 44,
+        "release": 44,
+        "tu1": 44,
+        "mcc": 44
+      }
+    }
+  ]
+}

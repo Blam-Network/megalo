@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import data from "../language-versions.json";
+import actionData from "../language-actions.json";
 
 type Action = {
   name: string;
@@ -40,6 +41,16 @@ function sourceHref(sourcePath: string): string {
 function isMccOnly(name: string): boolean {
   return mccOnly.has(name);
 }
+
+const actionLinks = new Map(
+  (actionData as { actions: { name: string; docLink: string }[] }).actions.map(
+    (entry) => [entry.name, entry.docLink]
+  )
+);
+
+function actionDocLink(name: string): string | undefined {
+  return actionLinks.get(name);
+}
 </script>
 
 <template>
@@ -67,7 +78,10 @@ function isMccOnly(name: string): boolean {
           <tr v-for="action in versionData.actions" :key="action.name">
             <td class="col-opcode">{{ action.opcode }}</td>
             <td class="col-name">
-              <code>{{ action.name }}</code>
+              <a v-if="actionDocLink(action.name)" :href="actionDocLink(action.name)">
+                <code>{{ action.name }}</code>
+              </a>
+              <code v-else>{{ action.name }}</code>
             </td>
             <td class="col-notes">
               <span

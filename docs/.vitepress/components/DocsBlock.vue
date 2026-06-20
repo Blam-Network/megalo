@@ -45,7 +45,7 @@ const chipIcon = computed(() => CHIP_ICONS[props.type]);
 <style scoped>
 .docs-block {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   padding-right: 7.5rem;
 }
 
@@ -55,6 +55,7 @@ const chipIcon = computed(() => CHIP_ICONS[props.type]);
   right: 0.35rem;
   width: 6.5rem;
   height: auto;
+  margin-top: -12px;
   pointer-events: none;
   user-select: none;
 }

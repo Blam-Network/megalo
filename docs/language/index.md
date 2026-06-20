@@ -8,6 +8,8 @@ Since then, Halo Studios has released Bungie's **MegaloEdit.exe** with the Halo 
 
 This documentation is the result of an extensive study of Halo: Reach Megalo. It deliberately follows Bungie's own [Ubiquitous Language](https://martinfowler.com/bliki/UbiquitousLanguage.html) — naming things as Bungie would have named them, using the same vocabulary found in shipped scripts and the MegaloEdit tooling.
 
+I would like to give my thanks to those modders who worked tirelessly to understand Megalo and make cool gametypes with it in the last 16 years including [kornman](https://github.com/KornnerStudios), [DavidJCobb](https://github.com/DavidJCobb/ReachVariantEditor), [Pfoiffee](https://github.com/Pfoiffee), [Soptive](https://github.com/Sopitive) and countless others I have not had the pleasure of meeting. - Codie
+
 ## What is Megalo?
 
 **Megalo** is the scripting language Bungie built for Halo: Reach multiplayer rules. Authors edit human-readable `.txt` scripts with a Megalo-aware editor; Bungie shipped **MegaloEdit.exe** with Reach. We recommend **MegaCrow** as a free and open-source alternative.
