@@ -5,12 +5,12 @@
 
 | Version | Game | Supported Builds |
 |---------|------|------------------|
-| [107](/versions/107-mcc/) | <ReachGameIcon /> | (All MCC Versions) |
+| [107 (MCC)](/versions/107-mcc/) | <ReachGameIcon /> | (All MCC Versions) |
 | [107](/versions/107/) | <ReachGameIcon /> | `12065.11.08.24.1738.tu1actual` |
 | [106](/versions/106/) | <ReachGameIcon /> | `12065.11.08.24.1738.tu1actual` (read only)<br/>`11883.10.10.25.1227.dlc_1_ship`<br/>`11860.10.07.24.0147.omaha_release` |
-| [73](/versions/omaha-delta/) | <ReachGameIcon /> | `09730.10.04.09.1309.omaha_delta`<br/>`09664.10.04.06.2121.omaha_beta`<br/>`09449.10.03.25.1545.omaha_beta` |
-| [49](/versions/omaha-alpha/) | <ReachGameIcon /> | `08516.10.02.19.1607.omaha_alpha` |
+| [73](/versions/73/) | <ReachGameIcon /> | `09730.10.04.09.1309.omaha_delta`<br/>`09664.10.04.06.2121.omaha_beta`<br/>`09449.10.03.25.1545.omaha_beta` |
 | 69 | <ReachGameIcon /> | `08915.??.??.??.????.????` |
+| [49](/versions/49/) | <ReachGameIcon /> | `08516.10.02.19.1607.omaha_alpha` |
 | 41 | <ReachGameIcon /> | `07703.??.??.??.????.????` |
 | 32 | <ReachGameIcon /> | `07151.??.??.??.????.????` |
 
