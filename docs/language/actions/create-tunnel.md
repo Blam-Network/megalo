@@ -1,12 +1,10 @@
 # create_tunnel
 
-<!-- autogen:language-action -->
-
 <AvailabilityCard reach="partial" />
 
 ## Description
 
-TODO: Document
+Places an object between two entities and gives that object a **cylinder** shape. The radius comes from the radius operand; if that value is **0**, the engine uses **5** instead.
 
 ## Example
 

@@ -1,7 +1,5 @@
 # 107 (MCC)
 
-<!-- autogen:language-version -->
-
 Current Halo: The Master Chief Collection Reach megalo build. This is the default megalo version for @blamnetwork/megalo compile and decompile.
 
 | | |

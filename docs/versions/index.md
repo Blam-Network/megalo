@@ -1,7 +1,5 @@
 # Megalo Versions
 
-<!-- autogen:language-version -->
-
 Halo: Reach gametypes carry a megalo **encoding version**. The table below lists each version we track, the Halo builds that use it, and whether @blamnetwork/megalo supports it for compile and decompile. Follow a version link for supported builds, changes since the prior version, and the full `e_action_type` opcode table. Per-action documentation lives under [Actions](/language/actions/).
 
 | Version | Game | Supported Halo Builds | Supported by @blamnetwork/megalo |

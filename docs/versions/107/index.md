@@ -1,7 +1,5 @@
 # 107
 
-<!-- autogen:language-version -->
-
 Final Xbox 360 Reach Title Update megalo build. The TU1 megalo version is available in @blamnetwork/megalo but still routes through MCC codec wiring until TU1-specific tables are fully integrated.
 
 | | |

@@ -95,7 +95,7 @@
   "debugging_enable_tracing": "Enables or disables script tracing in the debugger.",
   "debug_force_player_view_count": "Debug action to force player view count.",
   "saved_film_insert_marker": "Inserts a marker into a saved film recording.",
-  "create_tunnel": "Creates a network tunnel object for special networking scenarios.",
+  "create_tunnel": "Places an object between two entities and gives it a cylinder shape. Radius comes from the radius operand, or 5 if that value is 0.",
   "game_grief_record_custom_penalty": "Records a custom grief report penalty value.",
   "begin": "Marks the start of a nested sub-trigger block (Reach MCC only).",
   "hs_function_call": "Calls a HaloScript function by index (Reach MCC only).",

@@ -1,7 +1,5 @@
 # 106
 
-<!-- autogen:language-version -->
-
 Original Xbox 360 Reach launch megalo build (encoding version 106). Action opcodes match Title Update 1; the custom variant layout omits AU1 settings added in TU1.
 
 | | |

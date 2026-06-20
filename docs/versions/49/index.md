@@ -1,7 +1,5 @@
 # 49
 
-<!-- autogen:language-version -->
-
 Earliest Reach megalo action table in @blamnetwork/blf — the Private Alpha (Omaha) build.
 
 | | |

@@ -1,7 +1,5 @@
 # 73
 
-<!-- autogen:language-version -->
-
 Public Beta (Omaha Delta) megalo build. Action tables are available in @blamnetwork/blf for historical comparison.
 
 | | |

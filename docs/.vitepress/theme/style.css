@@ -85,6 +85,9 @@
   --vp-custom-block-details-text: var(--vp-c-text-1);
   --vp-custom-block-details-bg: rgba(30, 58, 120, 0.32);
   --vp-custom-block-details-code-bg: rgba(0, 0, 0, 0.28);
+
+  /* Default VitePress sidebar is 272px; action names need a little more room */
+  --vp-sidebar-width: 300px;
 }
 
 .dark {

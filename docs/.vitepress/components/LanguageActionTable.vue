@@ -56,8 +56,8 @@ function actionDocLink(name: string): string | undefined {
 <template>
   <div class="language-action-table">
     <p v-if="!versionData" class="autogen-note">
-      Unknown version <code>{{ version }}</code> — run
-      <code>npm run docs:gen</code>.
+      Unknown version <code>{{ version }}</code> — check
+      <code>docs/.vitepress/language-versions.json</code>.
     </p>
 
     <template v-else>
