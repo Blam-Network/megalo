@@ -1,12 +1,13 @@
 # device_get_power
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Reads device power into an out-variable.
+
+<ActionParameters />
 
 ## Example
 

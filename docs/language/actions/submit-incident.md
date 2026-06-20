@@ -1,12 +1,13 @@
 # submit_incident
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Fires a game incident with player/team context (from `incidents.txt`).
+
+<ActionParameters />
 
 ## Example
 

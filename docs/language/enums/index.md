@@ -4,4 +4,5 @@ Megalo **actions** and **conditions** reference fixed engine enumerations. Each 
 
 | Enum | BLF type | Values | Used by |
 |------|----------|--------|---------|
-| [Sounds](/language/enums/sounds) | `e_megalo_sound` | 95 | `play_sound`, `hud_post_message` |
+| [Sounds](/language/enums/sounds) | `e_megalo_sound` | 240 | `play_sound`, `hud_post_message` |
+| [Math operations](/language/enums/math-operations) | `e_math_operation` | 13 | `set`, `set_score`, `object_adjust_*`, … |

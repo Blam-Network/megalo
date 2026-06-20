@@ -1,12 +1,13 @@
 # set
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
-Modifies a variable using a math operation (`set_to`, `add`, `subtract`, `multiply_by`, `divide_by`, `modulo`, or `=`). The target can be a custom variable, member variable, or built-in global.
+Modifies a variable using a [math operation](/language/enums/math-operations) (`set_to`, `add`, `subtract`, `multiply`, `divide`, `modulo`, or `=`). The target can be a custom variable, member variable, or built-in global.
+
+<ActionParameters />
 
 ## Example
 

@@ -1,12 +1,13 @@
 # boundary_set_visible
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Shows or hides a boundary volume.
+
+<ActionParameters />
 
 ## Example
 

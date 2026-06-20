@@ -1,12 +1,13 @@
 # device_get_position
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Reads device position into an out-variable.
+
+<ActionParameters />
 
 ## Example
 

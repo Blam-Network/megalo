@@ -1,12 +1,13 @@
 # break_into_debugger
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Breaks into the script debugger when tracing is enabled.
+
+<ActionParameters />
 
 ## Example
 

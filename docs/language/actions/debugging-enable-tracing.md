@@ -1,12 +1,13 @@
 # debugging_enable_tracing
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Enables or disables script tracing in the debugger.
+
+<ActionParameters />
 
 ## Example
 

@@ -1,12 +1,13 @@
 # navpoint_set_icon
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Sets the navpoint icon displayed above an object.
+
+<ActionParameters />
 
 ## Example
 

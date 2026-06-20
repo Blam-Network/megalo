@@ -1,12 +1,13 @@
 # object_get_health
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Reads an object's current health into an out-variable.
+
+<ActionParameters />
 
 ## Example
 

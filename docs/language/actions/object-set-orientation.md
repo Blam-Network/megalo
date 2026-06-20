@@ -1,12 +1,13 @@
 # object_set_orientation
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Sets an object's facing/orientation explicitly.
+
+<ActionParameters />
 
 ## Example
 

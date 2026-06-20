@@ -1,12 +1,13 @@
 # biped_give_weapon
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Gives a weapon to a biped/player.
+
+<ActionParameters />
 
 ## Example
 

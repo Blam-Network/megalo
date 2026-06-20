@@ -1,12 +1,13 @@
 # player_death_get_special_type
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Writes the special death type (melee, headshot, etc.) into an out-variable.
+
+<ActionParameters />
 
 ## Example
 

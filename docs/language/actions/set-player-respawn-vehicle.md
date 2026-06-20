@@ -1,12 +1,13 @@
 # set_player_respawn_vehicle
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Sets the respawn vehicle type for a player (Reach MCC only).
+
+<ActionParameters />
 
 ## Example
 

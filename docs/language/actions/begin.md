@@ -1,12 +1,13 @@
 # begin
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Marks the start of a nested sub-trigger block (Reach MCC only).
+
+<ActionParameters />
 
 ## Example
 

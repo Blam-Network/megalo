@@ -1,12 +1,13 @@
 # object_adjust_shield
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
-Modifies an object's current shields with a math operation.
+Modifies an object's current shields with a [math operation](/language/enums/math-operations).
+
+<ActionParameters />
 
 ## Example
 

@@ -1,12 +1,13 @@
 # player_death_get_killing_player
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Writes the killing player from a death event into an out-variable.
+
+<ActionParameters />
 
 ## Example
 

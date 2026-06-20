@@ -1,12 +1,13 @@
 # set_progress_bar
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Configures an object's progress bar display.
+
+<ActionParameters />
 
 ## Example
 

@@ -1,12 +1,13 @@
 # hud_widget_set_text
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Updates text on a named HUD widget.
+
+<ActionParameters />
 
 ## Example
 

@@ -24,7 +24,15 @@ npm run validate   # test, typecheck, docs build
 
 User guide: VitePress in `docs/` (same layout as [@blamnetwork/blf](https://blam-network.github.io/blf/)).
 
-Version pages, action pages, and sidebar metadata (`docs/.vitepress/language-versions.json`, `language-actions.json`, `megalo-highlight-vocabulary.json`) are maintained manually in the repo — there is no blf-driven doc generator.
+Version pages, action pages under `docs/language/actions/`, and sidebar metadata (`docs/.vitepress/language-versions.json`, `language-actions.json`, `megalo-highlight-vocabulary.json`, `action-context-grammar.json`) are **hand-authored** in the repo. No script generates or overwrites action markdown — edit those `.md` files directly.
+
+`npm run predocs` only bundles the syntax highlighter; it does not touch action pages.
+
+To refresh action operand names from HREK ManagedMegalo.dll:
+
+```bash
+python scripts/extract-action-context-grammar.py
+```
 
 CI deploys the VitePress site to GitHub Pages on pushes to `main`.
 

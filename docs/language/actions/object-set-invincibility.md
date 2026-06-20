@@ -1,12 +1,13 @@
 # object_set_invincibility
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Sets whether an object can take damage.
+
+<ActionParameters />
 
 ## Example
 

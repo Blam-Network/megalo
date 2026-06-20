@@ -1,12 +1,13 @@
 # player_get_weapon
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Reads a player's current weapon into an out-variable.
+
+<ActionParameters />
 
 ## Example
 

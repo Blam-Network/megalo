@@ -1,12 +1,13 @@
 # object_get_orientation
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Reads an object's orientation into an out-variable.
+
+<ActionParameters />
 
 ## Example
 

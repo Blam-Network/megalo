@@ -1,12 +1,13 @@
 # object_get_velocity
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Reads an object's velocity into an out-variable.
+
+<ActionParameters />
 
 ## Example
 

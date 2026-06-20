@@ -64,7 +64,7 @@ Work through these pages in order, or jump to a topic:
 4. [Variable model](/language/variable-model) — types, scopes, constants, built-ins
 5. [trigger](/language/elements/trigger) — kinds, action scope, execution, `for_each`
 6. [condition](/language/elements/trigger/condition) — comparisons, events, `and` / `or`, negation
-7. [action](/language/elements/trigger/action) — opcodes, `set`, math, action families
+7. [action](/language/elements/trigger/action) — opcodes, `set`, [math operations](/language/enums/math-operations), action families
 8. [References](/language/references) — player, team, object, timer operands
 9. [Example scripts](/language/examples) — annotated walkthroughs of minimal scripts
 10. [Object lists](/language/object-lists) — engine lookup tables for symbolic names

@@ -1,12 +1,13 @@
 # timer_reset
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Resets a timer to its initial value.
+
+<ActionParameters />
 
 ## Example
 

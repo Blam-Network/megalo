@@ -1,12 +1,13 @@
 # device_set_power
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Sets device power state.
+
+<ActionParameters />
 
 ## Example
 

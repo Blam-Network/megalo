@@ -1,12 +1,13 @@
 # navpoint_set_visible
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Controls navpoint visibility for a target audience (everyone, team, player, etc.).
+
+<ActionParameters />
 
 ## Example
 

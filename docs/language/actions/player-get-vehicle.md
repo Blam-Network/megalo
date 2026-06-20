@@ -1,12 +1,13 @@
 # player_get_vehicle
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Writes the vehicle a player occupies into an out-variable.
+
+<ActionParameters />
 
 ## Example
 

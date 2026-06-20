@@ -1,12 +1,13 @@
 # navpoint_set_priority
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Sets navpoint draw priority (`high`, `normal`, `low`, `blink`).
+
+<ActionParameters />
 
 ## Example
 

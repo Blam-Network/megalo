@@ -1,12 +1,13 @@
 # get_player_holding_object
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Writes the player holding an object into an out-variable.
+
+<ActionParameters />
 
 ## Example
 

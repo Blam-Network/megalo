@@ -1,12 +1,13 @@
 # object_attach
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Attaches one object to another with offset and constraint parameters.
+
+<ActionParameters />
 
 ## Example
 

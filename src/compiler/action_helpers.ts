@@ -9,6 +9,7 @@ import {
   e_navpoint_priority,
   e_weapon_pickup_priority,
   e_biped_give_weapon_mode,
+  e_scriptable_game_buttons,
   e_megalogamengine_hud_meter_input_type,
 } from "@blamnetwork/blf/haloreach_mcc/v_untracked_25_08_16_1352";
 
@@ -155,27 +156,23 @@ export function grenadeTypeEnum(name: string): e_grenade_type {
 }
 
 export function bipedGiveWeaponModeEnum(name: string): e_biped_give_weapon_mode {
-  if (name === "primary") {
-    return e_biped_give_weapon_mode.as_primary_weapon;
-  }
-  if (name === "force") {
-    return e_biped_give_weapon_mode.normally;
-  }
   return enumByName(
     e_biped_give_weapon_mode,
     name,
-    e_biped_give_weapon_mode.normally
+    e_biped_give_weapon_mode.primary
   );
 }
 
 export function bipedGiveWeaponModeName(mode: e_biped_give_weapon_mode): string {
-  if (mode === e_biped_give_weapon_mode.as_primary_weapon) {
-    return "primary";
-  }
-  if (mode === e_biped_give_weapon_mode.normally) {
-    return "force";
-  }
-  return enumValueName(e_biped_give_weapon_mode, mode) ?? "force";
+  return enumValueName(e_biped_give_weapon_mode, mode) ?? "primary";
+}
+
+export function scriptableGameButtonsEnum(name: string): e_scriptable_game_buttons {
+  return enumByName(e_scriptable_game_buttons, name, e_scriptable_game_buttons.jump);
+}
+
+export function scriptableGameButtonsName(button: e_scriptable_game_buttons): string {
+  return enumValueName(e_scriptable_game_buttons, button) ?? "jump";
 }
 
 export function parseBipedDropPrimaryOperand(expr: MegaloExpr): boolean {

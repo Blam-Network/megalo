@@ -1,12 +1,13 @@
 # set_loadout_palette
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Assigns a loadout palette tier to a player or team.
+
+<ActionParameters />
 
 ## Example
 

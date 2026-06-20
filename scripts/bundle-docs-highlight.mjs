@@ -7,10 +7,74 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
-const entry = path.join(root, "docs", ".vitepress", "megalo-code-html.ts");
-const outfile = path.join(root, "docs", ".vitepress", "megalo-highlight.bundle.mjs");
-const vocabularyStub = path.join(root, "docs", ".vitepress", "stubs", "vocabulary-stub.ts");
-const operatorsStub = path.join(root, "docs", ".vitepress", "stubs", "operators-stub.ts");
+const vitepressDir = path.join(root, "docs", ".vitepress");
+const entry = path.join(vitepressDir, "megalo-code-html.ts");
+const outfile = path.join(vitepressDir, "megalo-highlight.bundle.mjs");
+const vocabularyStub = path.join(vitepressDir, "stubs", "vocabulary-stub.ts");
+const operatorsStub = path.join(vitepressDir, "stubs", "operators-stub.ts");
+const vocabularyPath = path.join(vitepressDir, "megalo-highlight-vocabulary.json");
+const languageActionsPath = path.join(vitepressDir, "language-actions.json");
+
+const MEGALO_KEYWORDS = [
+  "action", "and", "begin", "category", "color", "condition", "constants",
+  "default", "description", "designator", "end", "engine_data", "exception",
+  "false", "game_options", "hud_widgets", "icon", "if", "include", "label",
+  "local", "map_object", "map_permissions", "model", "name", "networked",
+  "networked_high", "none", "number", "object", "option", "or", "override",
+  "player", "player_traits", "ranged_option", "statistics", "game_stats", "team",
+  "teams", "timer", "trigger", "true", "string_table", "variables",
+];
+
+const MEGALO_CONDITIONS = [
+  "if", "player_died", "team_is_active", "timer_expired", "team_disposition",
+  "object_is_type", "object_out_of_bounds", "object_in_area",
+  "player_is_fireteam_leader", "player_assisted_kill_of", "object_matches_filter",
+  "player_is_active", "equipment_is_active", "player_is_spartan", "player_is_elite",
+  "player_is_monitor", "game_is_forge",
+];
+
+const MEGALO_MATH_OPS = [
+  "+", "-", "*", "/", "=", "%", "&", "|", "^", "~", "<<", ">>",
+  "add", "subtract", "multiply", "divide", "set_to", "modulo",
+];
+
+const MEGALO_COMPARISON_OPS = [
+  "==", "!=", "<", ">", "<=", ">=",
+  "equal_to", "not_equal_to", "less_than", "greater_than",
+  "less_than_or_equal_to", "greater_than_or_equal_to",
+];
+
+const MEGALO_TRIGGER_KINDS = [
+  "general", "player", "team", "object", "initialization",
+  "local_initialization", "host_migration", "object_death", "local", "pregame",
+];
+
+function ensureHighlightVocabulary() {
+  if (fs.existsSync(vocabularyPath)) {
+    return;
+  }
+
+  if (!fs.existsSync(languageActionsPath)) {
+    throw new Error(
+      `Missing ${vocabularyPath} and ${languageActionsPath} — commit megalo-highlight-vocabulary.json or language-actions.json`
+    );
+  }
+
+  const { actions } = JSON.parse(fs.readFileSync(languageActionsPath, "utf8"));
+  const vocabulary = {
+    actions: actions.map((entry) => entry.name).sort(),
+    conditions: [...new Set(MEGALO_CONDITIONS)].sort(),
+    mathOps: MEGALO_MATH_OPS,
+    comparisonOps: MEGALO_COMPARISON_OPS,
+    triggerKinds: MEGALO_TRIGGER_KINDS,
+    sectionKeywords: [...new Set(MEGALO_KEYWORDS)].sort(),
+  };
+
+  fs.writeFileSync(vocabularyPath, `${JSON.stringify(vocabulary, null, 2)}\n`);
+  console.log(`Wrote ${vocabularyPath} from language-actions.json`);
+}
+
+ensureHighlightVocabulary();
 
 await esbuild.build({
   entryPoints: [entry],
@@ -31,7 +95,10 @@ await esbuild.build({
           path: operatorsStub,
         }));
         build.onResolve({ filter: /@blamnetwork\/blf/ }, () => ({
-          path: path.join(root, "docs", ".vitepress", "stubs", "blf-empty-stub.ts"),
+          path: path.join(vitepressDir, "stubs", "blf-empty-stub.ts"),
+        }));
+        build.onResolve({ filter: /megalo-highlight-vocabulary\.json$/ }, () => ({
+          path: vocabularyPath,
         }));
       },
     },

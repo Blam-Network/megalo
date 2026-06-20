@@ -1,12 +1,13 @@
 # timer_set_rate
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Sets a timer's tick rate. `0` pauses, `-1` counts down, `1` is normal speed.
+
+<ActionParameters />
 
 ## Example
 

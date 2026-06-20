@@ -37,11 +37,6 @@ Compared to [107](/versions/107/).
 
 ### Language changes
 
-Reach MCC also adds megalo language features beyond new action opcodes — bit-shift assignment operators, temporary explicit references, survival/firefight flags, and more. See [Megalo MCC changes](https://blam-network.github.io/blf/guide/megalo-mcc-changes) in the blf docs.
+Reach MCC also adds megalo language features beyond new action opcodes — [bit-shift math operators](/language/enums/math-operations), temporary explicit references, survival/firefight flags, and more. See [Megalo MCC changes](https://blam-network.github.io/blf/guide/megalo-mcc-changes) in the blf docs.
 
-
-## Action opcodes
-
-Action names match `e_action_type` in [@blamnetwork/blf](https://github.com/Blam-Network/blf/blob/main/blf-ts/src/blam/haloreach_mcc/v_untracked_25_08_16_1352/game/megalogamengine/megalogamengine_actions.ts). Per-action documentation lives under [Actions](/language/actions/).
-
-<LanguageActionTable version="mcc" />
+Per-action documentation lives under [Actions](/language/actions/).

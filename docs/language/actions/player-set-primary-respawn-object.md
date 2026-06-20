@@ -1,12 +1,13 @@
 # player_set_primary_respawn_object
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Sets a player's primary respawn object.
+
+<ActionParameters />
 
 ## Example
 

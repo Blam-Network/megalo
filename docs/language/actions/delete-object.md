@@ -1,12 +1,13 @@
 # delete_object
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Removes an object reference from the map.
+
+<ActionParameters />
 
 ## Example
 

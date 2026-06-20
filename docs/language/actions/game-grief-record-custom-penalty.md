@@ -1,12 +1,13 @@
 # game_grief_record_custom_penalty
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Records a custom grief report penalty value.
+
+<ActionParameters />
 
 ## Example
 

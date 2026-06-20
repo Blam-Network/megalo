@@ -1,12 +1,13 @@
 # for_each
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Iterates over players, teams, or objects and runs nested trigger logic.
+
+<ActionParameters />
 
 ## Example
 

@@ -1,12 +1,13 @@
 # apply_player_traits
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Applies a named `player_traits` block to a player.
+
+<ActionParameters />
 
 ## Example
 

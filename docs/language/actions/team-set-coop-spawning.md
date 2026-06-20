@@ -1,12 +1,13 @@
 # team_set_coop_spawning
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Enables or disables cooperative spawning for a team.
+
+<ActionParameters />
 
 ## Example
 

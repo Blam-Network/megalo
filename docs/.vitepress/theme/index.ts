@@ -1,8 +1,8 @@
 import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
+import ActionParameters from "../components/ActionParameters.vue";
 import AvailabilityCard from "../components/AvailabilityCard.vue";
 import DocsBlock from "../components/DocsBlock.vue";
-import LanguageActionTable from "../components/LanguageActionTable.vue";
 import ReachGameIcon from "../components/ReachGameIcon.vue";
 import Layout from "./Layout.vue";
 import "./fonts.css";
@@ -12,9 +12,9 @@ export default {
   extends: DefaultTheme,
   Layout,
   enhanceApp({ app }) {
+    app.component("ActionParameters", ActionParameters);
     app.component("AvailabilityCard", AvailabilityCard);
     app.component("DocsBlock", DocsBlock);
-    app.component("LanguageActionTable", LanguageActionTable);
     app.component("ReachGameIcon", ReachGameIcon);
   },
 } satisfies Theme;

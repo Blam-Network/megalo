@@ -1,12 +1,13 @@
 # hud_widget_set_icon
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Sets the icon on a HUD widget.
+
+<ActionParameters />
 
 ## Example
 

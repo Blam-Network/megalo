@@ -1,12 +1,13 @@
 # set_fireteam_respawn_filter
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Restricts fireteam respawn permissions on an object.
+
+<ActionParameters />
 
 ## Example
 

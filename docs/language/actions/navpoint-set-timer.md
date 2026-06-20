@@ -1,12 +1,13 @@
 # navpoint_set_timer
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Links a navpoint to a timer for countdown display.
+
+<ActionParameters />
 
 ## Example
 

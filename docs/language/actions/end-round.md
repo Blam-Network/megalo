@@ -1,12 +1,13 @@
 # end_round
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Ends the current round immediately.
+
+<ActionParameters />
 
 ## Example
 

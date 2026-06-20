@@ -1,12 +1,13 @@
 # hud_widget_set_value
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Updates a numeric value displayed on a HUD widget.
+
+<ActionParameters />
 
 ## Example
 

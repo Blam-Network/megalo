@@ -1,12 +1,13 @@
 # device_set_position
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Sets a device's animation position (0–100).
+
+<ActionParameters />
 
 ## Example
 

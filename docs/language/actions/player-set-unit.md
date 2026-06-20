@@ -1,12 +1,13 @@
 # player_set_unit
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Megalo action `player_set_unit` with operands: player, object.
+
+<ActionParameters />
 
 ## Example
 

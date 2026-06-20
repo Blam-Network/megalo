@@ -44,6 +44,8 @@ type SectionKind =
   | "game_option"
   | "player_traits"
   | "map_object"
+  | "teams"
+  | "team"
   | "trigger"
   | "engine_data"
   | "generic";
@@ -334,6 +336,11 @@ function classifyRootHeader(
     stack.push("engine_data");
     return;
   }
+  if (word === "teams") {
+    pushSpan(spans, first.token, first.length, MegaloSyntaxItemType.Keyword);
+    stack.push("teams");
+    return;
+  }
   if (word === "trigger") {
     classifyTriggerHeader(line, stack, spans);
     return;
@@ -352,6 +359,8 @@ function classifyTriggerLine(
   let sawAction = false;
   let sawCondition = false;
   let sawIf = false;
+  let sawTemporary = false;
+  let temporaryTypeAssigned = false;
   let opcodeAssigned = false;
 
   for (const entry of line) {
@@ -374,6 +383,25 @@ function classifyTriggerLine(
 
     const word = lower(token.text);
     if (token.kind === TokenKind.Keyword || token.kind === TokenKind.Identifier) {
+      if (word === "temporary") {
+        pushSpan(spans, token, length, MegaloSyntaxItemType.Keyword);
+        sawTemporary = true;
+        temporaryTypeAssigned = false;
+        sawAction = false;
+        sawCondition = false;
+        sawIf = false;
+        opcodeAssigned = false;
+        continue;
+      }
+      if (
+        sawTemporary &&
+        !temporaryTypeAssigned &&
+        VARIABLE_TYPE_SET.has(word)
+      ) {
+        pushSpan(spans, token, length, MegaloSyntaxItemType.VariableType);
+        temporaryTypeAssigned = true;
+        continue;
+      }
       if (word === "action") {
         pushSpan(spans, token, length, MegaloSyntaxItemType.Keyword);
         sawAction = true;
@@ -474,6 +502,25 @@ function classifyGameOptionsLine(
 
   if (firstWord === "player_traits") {
     pushSpan(spans, first.token, first.length, MegaloSyntaxItemType.Keyword);
+    for (const entry of line) {
+      if (entry === first) {
+        continue;
+      }
+      const { token, length } = entry;
+      if (
+        token.kind === TokenKind.Comment ||
+        token.kind === TokenKind.Newline
+      ) {
+        continue;
+      }
+      if (
+        token.kind === TokenKind.Identifier ||
+        token.kind === TokenKind.Keyword
+      ) {
+        pushSpan(spans, token, length, MegaloSyntaxItemType.GameOption);
+        break;
+      }
+    }
     stack.push("player_traits");
     return;
   }
@@ -653,6 +700,8 @@ function classifyConstantsLine(line: TokenSpan[], spans: SourceTokenSpan[]): voi
 }
 
 function classifyVariablesLine(line: TokenSpan[], spans: SourceTokenSpan[]): void {
+  let networkStateAssigned = false;
+
   for (const entry of line) {
     const { token, length } = entry;
     if (token.kind === TokenKind.Comment) {
@@ -665,6 +714,16 @@ function classifyVariablesLine(line: TokenSpan[], spans: SourceTokenSpan[]): voi
     const word = lower(token.text);
     if (token.kind === TokenKind.Number) {
       pushSpan(spans, token, length, MegaloSyntaxItemType.Number);
+      continue;
+    }
+    if (
+      !networkStateAssigned &&
+      (word === "local" ||
+        word === "networked" ||
+        word === "networked_high")
+    ) {
+      pushSpan(spans, token, length, MegaloSyntaxItemType.Keyword);
+      networkStateAssigned = true;
       continue;
     }
     if (VARIABLE_TYPE_SET.has(word)) {
@@ -698,7 +757,7 @@ function classifyMapObjectLine(line: TokenSpan[], spans: SourceTokenSpan[]): voi
       pushSpan(spans, token, length, MegaloSyntaxItemType.String);
       continue;
     }
-    if (word === "end" || KEYWORD_SET.has(word)) {
+    if (word === "end") {
       pushSpan(spans, token, length, MegaloSyntaxItemType.Keyword);
       continue;
     }
@@ -706,8 +765,26 @@ function classifyMapObjectLine(line: TokenSpan[], spans: SourceTokenSpan[]): voi
       pushSpan(spans, token, length, MegaloSyntaxItemType.MapObjectProperty);
       continue;
     }
+    if (KEYWORD_SET.has(word)) {
+      pushSpan(spans, token, length, MegaloSyntaxItemType.Keyword);
+      continue;
+    }
     pushSpan(spans, token, length, MegaloSyntaxItemType.Identifier);
   }
+}
+
+function classifyTeamsLine(
+  line: TokenSpan[],
+  stack: SectionKind[],
+  spans: SourceTokenSpan[]
+): void {
+  const first = firstMeaningful(line);
+  if (first && lower(first.token.text) === "team") {
+    pushSpan(spans, first.token, first.length, MegaloSyntaxItemType.Keyword);
+    stack.push("team");
+    return;
+  }
+  classifyGenericLine(line, spans);
 }
 
 function classifyEngineDataLine(line: TokenSpan[], spans: SourceTokenSpan[]): void {
@@ -841,6 +918,12 @@ function classifyLine(
       return false;
     case "map_object":
       classifyMapObjectLine(line, spans);
+      return false;
+    case "teams":
+      classifyTeamsLine(line, stack, spans);
+      return false;
+    case "team":
+      classifyGenericLine(line, spans);
       return false;
     case "engine_data":
       classifyEngineDataLine(line, spans);

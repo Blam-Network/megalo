@@ -1,12 +1,13 @@
 # navpoint_set_visible_range
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Sets the distance at which a navpoint becomes visible.
+
+<ActionParameters />
 
 ## Example
 

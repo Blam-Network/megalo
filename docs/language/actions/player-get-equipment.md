@@ -1,12 +1,13 @@
 # player_get_equipment
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Reads a player's equipment into an out-variable.
+
+<ActionParameters />
 
 ## Example
 

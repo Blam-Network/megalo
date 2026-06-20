@@ -1,0 +1,430 @@
+{
+  "source": "ManagedMegalo.dll (HREK)",
+  "dialect": "107-mcc",
+  "actions": {
+    "set_score": {
+      "grammar": "<math_operation> <value> <team_or_player_target",
+      "empty": false
+    },
+    "create_object": {
+      "grammar": "<object_type> at <place_at_object> [set <object_reference_out>] [label <filter name>] [never_garbage] [suppress_effect] [absolute_orientation] [offset <x> <y> <z> (feet)] [variant <name>]",
+      "empty": false
+    },
+    "delete_object": {
+      "grammar": "<object>",
+      "empty": false
+    },
+    "navpoint_set_visible": {
+      "grammar": "<object> {no_one|everyone|allies|enemies|player <player_reference> <boolean>}",
+      "empty": false
+    },
+    "navpoint_set_icon": {
+      "grammar": "<object> <icon> <number (only if icon==num)>",
+      "empty": false
+    },
+    "navpoint_set_priority": {
+      "grammar": "<object> {low|normal|high|blink}",
+      "empty": false
+    },
+    "navpoint_set_timer": {
+      "grammar": "<object> <timer_name>",
+      "empty": false
+    },
+    "navpoint_set_visible_range": {
+      "grammar": "<object> <min (feet)> <max (feet)>",
+      "empty": false
+    },
+    "set": {
+      "grammar": "<var_a> <math_operation> <var_b>",
+      "empty": false
+    },
+    "set_boundary": {
+      "grammar": "<object> {none|sphere|cylinder|box} [width/radius] [length (box)] [neg_height] [pos_height] (feet)",
+      "empty": false
+    },
+    "apply_player_traits": {
+      "grammar": "<player> <player_traits_name>",
+      "empty": false
+    },
+    "set_pickup_filter": {
+      "grammar": "<object> {no_one|everyone|allies|enemies|player <player_reference> <boolean>}",
+      "empty": false
+    },
+    "set_respawn_filter": {
+      "grammar": "<object> {no_one|everyone|allies|enemies|player <player_reference> <boolean>}",
+      "empty": false
+    },
+    "set_fireteam_respawn_filter": {
+      "grammar": "<object> {none|all|0-3",
+      "empty": false
+    },
+    "set_progress_bar": {
+      "grammar": "<object> {no_one|everyone|allies|enemies|player <player_reference> <boolean>} <timer_name>",
+      "empty": false
+    },
+    "hud_post_message": {
+      "grammar": "<team_or_player_target> <sound> <dynamic_string>",
+      "empty": false
+    },
+    "timer_set_rate": {
+      "grammar": "<timer> <rate>",
+      "empty": false
+    },
+    "print_variable": {
+      "grammar": "<dynamic_string>",
+      "empty": false
+    },
+    "get_player_holding_object": {
+      "grammar": "<object> <player_out>",
+      "empty": false
+    },
+    "for_each": {
+      "grammar": "<trigger_type>",
+      "empty": false
+    },
+    "end_round": {
+      "grammar": "",
+      "empty": true
+    },
+    "boundary_set_visible": {
+      "grammar": "<object> <boolean>",
+      "empty": false
+    },
+    "object_destroy": {
+      "grammar": "<object> [no_statistics]",
+      "empty": false
+    },
+    "object_set_invincibility": {
+      "grammar": "<object> <boolean>",
+      "empty": false
+    },
+    "random": {
+      "grammar": "<value_count> <number_out (0-count-1)>",
+      "empty": false
+    },
+    "break_into_debugger": {
+      "grammar": "",
+      "empty": true
+    },
+    "object_get_orientation": {
+      "grammar": "<object> <orientation_out (1-6)>",
+      "empty": false
+    },
+    "object_get_velocity": {
+      "grammar": "<object> <number_out (ft/s)>",
+      "empty": false
+    },
+    "player_death_get_killing_player": {
+      "grammar": "<dead_player> <killing_player>",
+      "empty": false
+    },
+    "player_death_get_damage_type": {
+      "grammar": "<dead_player> <number_out (damage type)>",
+      "empty": false
+    },
+    "player_death_get_special_type": {
+      "grammar": "<dead_player> <number_out (special type)>",
+      "empty": false
+    },
+    "debugging_enable_tracing": {
+      "grammar": "<literal_boolean>",
+      "empty": false
+    },
+    "object_attach": {
+      "grammar": "<child_object> <parent_object> <offset_x> <offset_y> <offset_z> (feet) [absolute_orientation]",
+      "empty": false
+    },
+    "object_detach": {
+      "grammar": "<child_object>",
+      "empty": false
+    },
+    "player_get_place": {
+      "grammar": "<player> <number_out (place)>",
+      "empty": false
+    },
+    "team_get_place": {
+      "grammar": "<team> <number_out (place)>",
+      "empty": false
+    },
+    "player_get_killing_spree_count": {
+      "grammar": "<player> <number_out>",
+      "empty": false
+    },
+    "player_adjust_money": {
+      "grammar": "<player> <math_operation> <number>",
+      "empty": false
+    },
+    "player_enable_purchases": {
+      "grammar": "<player> {alive|dead|both} <boolean>",
+      "empty": false
+    },
+    "player_get_vehicle": {
+      "grammar": "<player> <vehicle_out>",
+      "empty": false
+    },
+    "player_set_vehicle": {
+      "grammar": "<player> <vehicle>",
+      "empty": false
+    },
+    "player_set_unit": {
+      "grammar": "<player> <unit>",
+      "empty": false
+    },
+    "timer_reset": {
+      "grammar": "<timer>",
+      "empty": false
+    },
+    "weapon_set_pickup_priority": {
+      "grammar": "<object> {normal|special|auto}",
+      "empty": false
+    },
+    "object_bounce": {
+      "grammar": "<object>",
+      "empty": false
+    },
+    "hud_widget_set_text": {
+      "grammar": "<hud_widget_name> <dynamic_string>",
+      "empty": false
+    },
+    "hud_widget_set_value": {
+      "grammar": "<hud_widget_name> <dynamic_string>",
+      "empty": false
+    },
+    "hud_widget_set_meter": {
+      "grammar": "<hud_widget_name> {off|<number> <number>|<timer>}",
+      "empty": false
+    },
+    "hud_widget_set_icon": {
+      "grammar": "<hud_widget_name> <icon name>",
+      "empty": false
+    },
+    "hud_widget_set_visibility": {
+      "grammar": "<hud_widget_name> <player> <literal_boolean>",
+      "empty": false
+    },
+    "play_sound": {
+      "grammar": "<team_or_player_target> [immediate] <sound>",
+      "empty": false
+    },
+    "object_set_scale": {
+      "grammar": "<object> <number (percent)>",
+      "empty": false
+    },
+    "navpoint_set_text": {
+      "grammar": "<object> <dynamic_string>",
+      "empty": false
+    },
+    "object_get_shield": {
+      "grammar": "<object> <vitality_out (percent)>",
+      "empty": false
+    },
+    "object_get_health": {
+      "grammar": "<object> <vitality_out (percent)>",
+      "empty": false
+    },
+    "player_set_objective": {
+      "grammar": "<player> <dynamic_string>",
+      "empty": false
+    },
+    "player_set_objective_allegiance": {
+      "grammar": "<player> <dynamic_string> <engine_icon_index",
+      "empty": false
+    },
+    "player_set_objective_allegiance_icon": {
+      "grammar": "<player> <dynamic_string> <engine_icon_index",
+      "empty": false
+    },
+    "team_set_coop_spawning": {
+      "grammar": "<team> <literal_boolean>",
+      "empty": false
+    },
+    "team_set_primary_respawn_object": {
+      "grammar": "<team> <object>",
+      "empty": false
+    },
+    "player_set_primary_respawn_object": {
+      "grammar": "<player> <object>",
+      "empty": false
+    },
+    "player_get_fireteam_index": {
+      "grammar": "<player> <number_out>",
+      "empty": false
+    },
+    "player_set_fireteam_index": {
+      "grammar": "<player> <number>",
+      "empty": false
+    },
+    "object_adjust_shield": {
+      "grammar": "<object> <math_operation> <number>",
+      "empty": false
+    },
+    "object_adjust_health": {
+      "grammar": "<object> <math_operation> <number>",
+      "empty": false
+    },
+    "object_get_distance": {
+      "grammar": "<object_a> <object_b> <distance_out (feet)>",
+      "empty": false
+    },
+    "object_adjust_maximum_shield": {
+      "grammar": "<object> <math_operation> <number>",
+      "empty": false
+    },
+    "object_adjust_maximum_health": {
+      "grammar": "<object> <math_operation> <number>",
+      "empty": false
+    },
+    "player_set_requisition_palette": {
+      "grammar": "<player> <req_palette_name>",
+      "empty": false
+    },
+    "device_set_power": {
+      "grammar": "<object> <number (percent)>",
+      "empty": false
+    },
+    "device_get_power": {
+      "grammar": "<object> <number_out (percent)>",
+      "empty": false
+    },
+    "device_set_position": {
+      "grammar": "<object> <number (percent)>",
+      "empty": false
+    },
+    "device_get_position": {
+      "grammar": "<object> <number_out (percent)>",
+      "empty": false
+    },
+    "adjust_grenades": {
+      "grammar": "<player> {frag|plasma} <math_operation> <number>",
+      "empty": false
+    },
+    "submit_incident": {
+      "grammar": "<incident_name> <cause_team_or_player> <effect_team_or_player>",
+      "empty": false
+    },
+    "submit_incident_with_custom_value": {
+      "grammar": "<incident_name> <cause_team_or_player> <effect_team_or_player> <custom_value_such_as_territory_index>",
+      "empty": false
+    },
+    "set_loadout_palette": {
+      "grammar": "<team_or_player> <loadout>",
+      "empty": false
+    },
+    "device_set_position_track": {
+      "grammar": "<object> <animation name> <interpolation time>",
+      "empty": false
+    },
+    "device_animate_position": {
+      "grammar": "<object> <animation_target_fraction> <animation_duration_seconds> <acceleration_seconds> <deceleration_seconds>",
+      "empty": false
+    },
+    "device_set_position_immediate": {
+      "grammar": "<object> <number (percent)>",
+      "empty": false
+    },
+    "saved_film_insert_marker": {
+      "grammar": "<offset (s)> <label>",
+      "empty": false
+    },
+    "respawn_zone_enable": {
+      "grammar": "<object> <boolean>",
+      "empty": false
+    },
+    "player_get_weapon": {
+      "grammar": "<player> {primary|secondary} <weapon_out>",
+      "empty": false
+    },
+    "player_get_equipment": {
+      "grammar": "<player> <equipment_out>",
+      "empty": false
+    },
+    "object_set_never_garbage": {
+      "grammar": "<object> <boolean>",
+      "empty": false
+    },
+    "player_get_target_object": {
+      "grammar": "<player> <object_out>",
+      "empty": false
+    },
+    "create_tunnel": {
+      "grammar": "<object_a> <object_b> <object_type> <radius> <object_reference_out>",
+      "empty": false
+    },
+    "debug_force_player_view_count": {
+      "grammar": "<splitscreen_count>",
+      "empty": false
+    },
+    "player_pick_up_weapon": {
+      "grammar": "<player> <weapon object>",
+      "empty": false
+    },
+    "player_set_coop_spawning": {
+      "grammar": "<player> <literal_boolean>",
+      "empty": false
+    },
+    "object_set_orientation": {
+      "grammar": "<object> <source> [absolute_orientation]",
+      "empty": false
+    },
+    "object_face_object": {
+      "grammar": "<object> <target> [offset <x> <y> <z> (feet)]",
+      "empty": false
+    },
+    "biped_give_weapon": {
+      "grammar": "<biped> <weapon> {primary|secondary|force}",
+      "empty": false
+    },
+    "biped_drop_weapon": {
+      "grammar": "<biped> {primary|secondary} [delete_on_drop]",
+      "empty": false
+    },
+    "set_scenario_interpolator_state": {
+      "grammar": "<interpolator index> <boolean active>",
+      "empty": false
+    },
+    "get_random_object": {
+      "grammar": "<filter name> <ignore object> <object out>",
+      "empty": false
+    },
+    "game_grief_record_custom_penalty": {
+      "grammar": "<player> <penalty amount>",
+      "empty": false
+    },
+    "boundary_set_player_color": {
+      "grammar": "<object> <player variable name> (must be member of object)",
+      "empty": false
+    },
+    "begin": {
+      "grammar": "",
+      "empty": true
+    },
+    "hs_function_call": {
+      "grammar": "<function name>",
+      "empty": false
+    },
+    "get_button_time": {
+      "grammar": "<player> <button> <milliseconds_out>",
+      "empty": false
+    },
+    "team_set_vehicle_spawning": {
+      "grammar": "<team> <literal_boolean>",
+      "empty": false
+    },
+    "player_set_vehicle_spawning": {
+      "grammar": "<player> <literal_boolean>",
+      "empty": false
+    },
+    "set_player_respawn_vehicle": {
+      "grammar": "<vehicle> <player>",
+      "empty": false
+    },
+    "set_team_respawn_vehicle": {
+      "grammar": "<vehicle> <team>",
+      "empty": false
+    },
+    "hide_object": {
+      "grammar": "<object> <should hide>",
+      "empty": false
+    }
+  }
+}

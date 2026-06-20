@@ -1,12 +1,13 @@
 # respawn_zone_enable
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Enables or disables a respawn zone object.
+
+<ActionParameters />
 
 ## Example
 

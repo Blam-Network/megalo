@@ -1,12 +1,13 @@
 # hs_function_call
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Calls a HaloScript function by index (Reach MCC only).
+
+<ActionParameters />
 
 ## Example
 

@@ -18,11 +18,11 @@ const program = tu1.decompileGameVariant(variant);
 const recompiled = tu1.compileGameVariant(program, variant);
 ```
 
-`mccDialect` and `tu1Dialect` are the same handlers exposed as named exports. Per-version opcode tables are in [Megalo Versions](/versions/); per-opcode reference pages are under [Actions](/language/actions/).
+`mccDialect` and `tu1Dialect` are the same handlers exposed as named exports. Version pages are in [Megalo Versions](/versions/); per-opcode reference pages are under [Actions](/language/actions/).
 
 ## MCC vs TU1 differences
 
-MCC adds megalo features that do not exist on Xbox 360 — extra math operators (`<<=`, `>>=`), temporary explicit references, survival/firefight flags, and additional action types. Scripts that use MCC-only features cannot be compiled for TU1 without changes.
+MCC adds megalo features that do not exist on Xbox 360 — [bit-shift math operators](/language/enums/math-operations), temporary explicit references, survival/firefight flags, and additional action types. Scripts that use MCC-only features cannot be compiled for TU1 without changes.
 
 For BLF-level conversion between builds, use [`convert_reach_gametype`](https://blam-network.github.io/blf/guide/converting-reach-gametypes) from `@blamnetwork/blf/helpers`.
 

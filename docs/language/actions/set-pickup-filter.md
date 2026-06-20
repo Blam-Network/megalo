@@ -1,12 +1,13 @@
 # set_pickup_filter
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Restricts who can pick up an object (`all`, `allies`, `enemies`, `no_one`).
+
+<ActionParameters />
 
 ## Example
 

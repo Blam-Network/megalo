@@ -1,12 +1,13 @@
 # get_random_object
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Selects a random object matching criteria and writes it to an out-variable.
+
+<ActionParameters />
 
 ## Example
 

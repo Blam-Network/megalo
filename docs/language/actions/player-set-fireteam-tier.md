@@ -1,12 +1,13 @@
 # player_set_fireteam_tier
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Megalo action `player_set_fireteam_tier`.
+
+<ActionParameters />
 
 ## Example
 

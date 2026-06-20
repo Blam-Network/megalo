@@ -1,12 +1,13 @@
 # player_get_killing_spree_count
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Reads a player's killstreak count into an out-variable.
+
+<ActionParameters />
 
 ## Example
 

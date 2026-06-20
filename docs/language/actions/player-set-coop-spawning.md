@@ -1,12 +1,13 @@
 # player_set_coop_spawning
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Enables or disables cooperative spawning for a player.
+
+<ActionParameters />
 
 ## Example
 

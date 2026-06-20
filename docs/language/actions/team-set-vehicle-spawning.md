@@ -1,12 +1,13 @@
 # team_set_vehicle_spawning
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Enables or disables vehicle spawning for a team (Reach MCC only).
+
+<ActionParameters />
 
 ## Example
 

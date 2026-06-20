@@ -1,12 +1,13 @@
 # player_enable_purchases
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Enables or disables requisition purchases by category and alive/dead state.
+
+<ActionParameters />
 
 ## Example
 

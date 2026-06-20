@@ -26,8 +26,4 @@ Compared to [106](/versions/106/).
 
 No action types were added or removed between these builds.
 
-## Action opcodes
-
-Action names match `e_action_type` in [@blamnetwork/blf](https://github.com/Blam-Network/blf/blob/main/blf-ts/src/blam/haloreach/v12065_11_08_24_1738_tu1actual/game/megalogamengine/megalogamengine_actions.ts). Per-action documentation lives under [Actions](/language/actions/).
-
-<LanguageActionTable version="tu1" />
+Per-action documentation lives under [Actions](/language/actions/).

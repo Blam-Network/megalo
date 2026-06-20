@@ -68,4 +68,5 @@ export const MEGALO_KEYWORDS = new Set([
   "true",
   "string_table",
   "variables",
+  "temporary",
 ]);

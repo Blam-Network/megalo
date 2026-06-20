@@ -1,12 +1,13 @@
 # object_face_object
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Rotates an object to face another object.
+
+<ActionParameters />
 
 ## Example
 

@@ -1,12 +1,13 @@
 # player_set_objective_allegiance
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Sets objective allegiance (friendly/enemy/neutral styling).
+
+<ActionParameters />
 
 ## Example
 

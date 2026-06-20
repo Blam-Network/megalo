@@ -1,12 +1,13 @@
 # player_death_get_damage_type
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Writes the damage type from a death event into an out-variable.
+
+<ActionParameters />
 
 ## Example
 

@@ -85,6 +85,7 @@ export {
   compileMgloFromMegaloProgram,
   compileMgloFromMegaloSource,
   compileGametypeForSave,
+  autosaveQueueFileName,
   mergeEditedProgram,
 } from "./gametype";
 export {

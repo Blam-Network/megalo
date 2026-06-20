@@ -572,6 +572,7 @@ html.dark body {
 
 .vp-doc table:has(.version-index-link) th:first-child,
 .vp-doc table:has(.version-index-link) td:first-child,
+.vp-doc table:has(.version-game-label) td:nth-child(2),
 .vp-doc table:has(.version-index-link) td:nth-child(2) {
   white-space: nowrap;
   width: 1%;
@@ -597,6 +598,22 @@ html.dark body {
   height: 1rem;
   margin: 0;
   vertical-align: middle;
+}
+
+.VPDocFooter .pager-link .title .version-sidebar-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.VPDocFooter .pager-link .title .version-reach-icon {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  vertical-align: middle;
+  object-fit: contain;
+  border-radius: 2px;
 }
 
 /* Megalo syntax highlighting — MegaloEdit roles, tuned for dark code blocks.

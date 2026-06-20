@@ -1,12 +1,13 @@
 # hud_post_message
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Posts a HUD message to a player, team, or everyone. The sound operand selects an [e_megalo_sound](/language/enums/sounds) token or `none`.
+
+<ActionParameters />
 
 ## Example
 

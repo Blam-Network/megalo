@@ -151,6 +151,7 @@ import {
   hudMeterInputType,
   navpointIconEnum,
   navpointPriorityEnum,
+  scriptableGameButtonsEnum,
   parseBipedDropPrimaryOperand,
   boundaryPlayerColorIndex,
   parseDeleteOnDropOperand,
@@ -1093,10 +1094,7 @@ export function compileAction(
     case "get_button_time": {
       const params = new s_action_get_button_time_parameters();
       params.m_player = encodePlayerReference(ctx, at(0));
-      params.m_buttons =
-        action.operands[1]?.kind === "number"
-          ? action.operands[1].value
-          : Number(exprIdentifier(at(1))) || 0;
+      params.m_buttons = scriptableGameButtonsEnum(exprIdentifier(at(1)));
       params.m_variable = encodeCustomVariable(ctx, at(2));
       result.m_get_button_time_parameters = params;
       break;

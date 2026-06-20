@@ -1,12 +1,13 @@
 # player_set_requisition_palette
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Assigns a requisition palette to a player.
+
+<ActionParameters />
 
 ## Example
 

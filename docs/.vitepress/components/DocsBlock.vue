@@ -37,7 +37,9 @@ const chipIcon = computed(() => CHIP_ICONS[props.type]);
     />
     <div class="docs-block__body">
       <p v-if="title" class="custom-block-title">{{ title }}</p>
-      <slot />
+      <div class="docs-block__content">
+        <slot />
+      </div>
     </div>
   </div>
 </template>
@@ -63,6 +65,24 @@ const chipIcon = computed(() => CHIP_ICONS[props.type]);
 .docs-block__body {
   position: relative;
   z-index: 1;
+}
+
+.docs-block__content :deep(p:first-child) {
+  margin-top: 0;
+}
+
+.docs-block__content :deep(p:last-child) {
+  margin-bottom: 0;
+}
+
+.docs-block__content :deep(ul:first-child),
+.docs-block__content :deep(ol:first-child) {
+  margin-top: 0;
+}
+
+.docs-block__content :deep(ul:last-child),
+.docs-block__content :deep(ol:last-child) {
+  margin-bottom: 0;
 }
 
 @media (max-width: 640px) {

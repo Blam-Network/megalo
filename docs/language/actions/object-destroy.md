@@ -1,12 +1,13 @@
 # object_destroy
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Destroys an object immediately (distinct from `delete_object` in engine handling).
+
+<ActionParameters />
 
 ## Example
 

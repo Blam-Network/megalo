@@ -33,15 +33,7 @@ action set <target> <operation> <value>
 
 ### Math operations
 
-| Operation | Description |
-|-----------|-------------|
-| `set_to` | Assign (replace) |
-| `add` | Add to current value |
-| `subtract` | Subtract from current value |
-| `multiply_by` | Multiply current value |
-| `divide_by` | Divide current value |
-| `modulo` | Remainder |
-| `=` | Shorthand for `set_to` (also accepts `==`) |
+See [Math operations](/language/enums/math-operations) for the full operator list, symbols, and build availability.
 
 ```megalo
 action set my_counter set_to 0
@@ -91,7 +83,7 @@ action set_score add 1 team attackers
 action set_score set_to 3 team defenders
 ```
 
-`set_score` takes an operation, a value, and a target (`player` or `team` reference).
+`set_score` takes a [math operation](/language/enums/math-operations), a value, and a target (`player` or `team` reference).
 
 ## Object actions
 
@@ -306,7 +298,7 @@ Set `show_in_scoreboard 1` in `player_rating` (or override it in a derived scrip
 
 ## Version-specific actions
 
-The exact set of action opcodes available depends on the Reach build. See [Actions](/language/actions/) for per-opcode documentation and [Megalo Versions](/versions/) for per-build opcode tables. This page describes how actions are written in source.
+The exact set of action opcodes available depends on the Reach build. See [Actions](/language/actions/) for per-opcode documentation and [Megalo Versions](/versions/) for build availability and changes. This page describes how actions are written in source.
 
 ## See also
 

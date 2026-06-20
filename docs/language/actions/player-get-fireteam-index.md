@@ -1,12 +1,13 @@
 # player_get_fireteam_index
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Reads or writes a player's fireteam index.
+
+<ActionParameters />
 
 ## Example
 

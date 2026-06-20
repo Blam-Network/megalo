@@ -60,8 +60,14 @@ export const MEGALO_HIGHLIGHT_RESERVED_KEYWORDS: string[] = [
   "proximity_warning",
 ].sort();
 
-/** Variable type keywords (`number`, `timer`) — gold in variables/constants blocks. */
-export const MEGALO_VARIABLE_TYPES: string[] = ["number", "timer"];
+/** Variable type keywords in declarations — orange in variables/constants/temporary lines. */
+export const MEGALO_VARIABLE_TYPES: string[] = [
+  "number",
+  "timer",
+  "object",
+  "player",
+  "team",
+];
 
 /** Variable scope keywords in `variables <scope>` headers — default foreground. */
 export const MEGALO_VARIABLE_SCOPES: string[] = [
@@ -71,11 +77,13 @@ export const MEGALO_VARIABLE_SCOPES: string[] = [
   "team",
 ];
 
-/** Property names inside `map_object` filter blocks — cyan in the legacy editor. */
+/** Property names inside `map_object` blocks — cyan in the legacy editor. */
 export const MEGALO_MAP_OBJECT_FILTER_PROPERTIES: string[] = [
   "type",
   "label",
   "min",
+  "team",
+  "user_data",
 ];
 
 /** Built-in game option identifiers used with `override`. */

@@ -1,12 +1,13 @@
 # device_animate_position
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Animates a device between positions over time.
+
+<ActionParameters />
 
 ## Example
 

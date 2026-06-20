@@ -1,12 +1,13 @@
 # weapon_set_pickup_priority
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Sets weapon pickup priority for an object.
+
+<ActionParameters />
 
 ## Example
 

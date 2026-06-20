@@ -1,12 +1,13 @@
 # object_detach
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Detaches a child object from its parent.
+
+<ActionParameters />
 
 ## Example
 

@@ -1,12 +1,13 @@
 # player_set_fireteam_index
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Assigns a player to a fireteam index.
+
+<ActionParameters />
 
 ## Example
 

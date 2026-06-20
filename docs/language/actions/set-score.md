@@ -1,12 +1,13 @@
 # set_score
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
-Modifies a player or team score using a math operation and a numeric value or variable reference.
+Modifies a player or team score using a [math operation](/language/enums/math-operations) and a numeric value or variable reference.
+
+<ActionParameters />
 
 ## Example
 

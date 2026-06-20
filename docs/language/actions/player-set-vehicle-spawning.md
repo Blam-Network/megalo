@@ -1,12 +1,13 @@
 # player_set_vehicle_spawning
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Enables or disables vehicle spawning for a player (Reach MCC only).
+
+<ActionParameters />
 
 ## Example
 

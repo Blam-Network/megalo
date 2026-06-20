@@ -44,12 +44,12 @@ import {
 import { megaloHudWidgetPositionName } from "../lookups";
 
 const EXECUTION_MODE_NAMES: Partial<Record<e_trigger_execution_mode, string>> = {
-  [e_trigger_execution_mode.normal]: "general",
-  [e_trigger_execution_mode.for_each_player]: "player",
-  [e_trigger_execution_mode.for_each_player_randomly]: "player",
-  [e_trigger_execution_mode.for_each_team]: "team",
-  [e_trigger_execution_mode.for_each_object]: "object",
-  [e_trigger_execution_mode.for_each_object_with_label]: "object",
+  [e_trigger_execution_mode.general]: "general",
+  [e_trigger_execution_mode.player]: "player",
+  [e_trigger_execution_mode.random_player]: "random_player",
+  [e_trigger_execution_mode.team]: "team",
+  [e_trigger_execution_mode.object]: "object",
+  [e_trigger_execution_mode.object_with_label]: "object",
 };
 
 function sanitizeToken(value: string): string {
@@ -66,7 +66,7 @@ function nestedForEachTarget(
 ): string {
   if (
     trigger.m_execution_mode ===
-    e_trigger_execution_mode.for_each_object_with_label
+    e_trigger_execution_mode.object_with_label
   ) {
     return ctx.mapObjectName(trigger.m_object_filter_index);
   }
@@ -75,13 +75,13 @@ function nestedForEachTarget(
 
 function triggerKind(trigger: c_trigger): string {
   switch (trigger.m_trigger_type) {
-    case e_trigger_type.on_init:
+    case e_trigger_type.initialization:
       return "initialization";
-    case e_trigger_type.on_local_init:
+    case e_trigger_type.local_initialization:
       return "local_initialization";
-    case e_trigger_type.on_host_migration:
+    case e_trigger_type.host_migration:
       return "host_migration";
-    case e_trigger_type.on_object_death:
+    case e_trigger_type.object_death:
       return "object_death";
     case e_trigger_type.local:
       return "local";
@@ -167,7 +167,7 @@ function isEntryTrigger(
 ): boolean {
   if (
     trigger.m_trigger_type === e_trigger_type.pregame ||
-    trigger.m_trigger_type === e_trigger_type.on_init
+    trigger.m_trigger_type === e_trigger_type.initialization
   ) {
     return true;
   }
@@ -219,7 +219,7 @@ export function decompileCustomVariant(
       let objectFilter: string | undefined;
       if (
         trigger.m_execution_mode ===
-          e_trigger_execution_mode.for_each_object_with_label &&
+          e_trigger_execution_mode.object_with_label &&
         trigger.m_object_filter_index >= 0
       ) {
         objectFilter = mapObjectSymbolName(

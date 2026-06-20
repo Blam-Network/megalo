@@ -1,12 +1,13 @@
 # navpoint_set_text
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Sets navpoint label text from a string table entry or literal.
+
+<ActionParameters />
 
 ## Example
 

@@ -1,12 +1,13 @@
 # player_get_place
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Writes a player's scoreboard rank into an out-variable.
+
+<ActionParameters />
 
 ## Example
 

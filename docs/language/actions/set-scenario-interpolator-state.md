@@ -1,12 +1,13 @@
 # set_scenario_interpolator_state
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Sets a scenario interpolator state index.
+
+<ActionParameters />
 
 ## Example
 

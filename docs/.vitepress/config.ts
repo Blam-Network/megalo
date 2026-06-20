@@ -85,6 +85,7 @@ function actionsSidebar(): DefaultTheme.SidebarItem[] {
 function enumsSidebar(): DefaultTheme.SidebarItem[] {
   return [
     { text: "Overview", link: "/language/enums/" },
+    { text: "Math operations", link: "/language/enums/math-operations" },
     { text: "Sounds", link: "/language/enums/sounds" },
   ];
 }

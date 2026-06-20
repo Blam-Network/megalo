@@ -1,12 +1,13 @@
 # hud_widget_set_visibility
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Shows or hides a HUD widget for a player reference.
+
+<ActionParameters />
 
 ## Example
 

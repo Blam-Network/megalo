@@ -1,12 +1,13 @@
 # player_pick_up_weapon
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Forces a player to pick up a weapon object.
+
+<ActionParameters />
 
 ## Example
 

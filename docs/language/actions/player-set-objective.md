@@ -1,12 +1,13 @@
 # player_set_objective
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Sets objective text shown to a player.
+
+<ActionParameters />
 
 ## Example
 

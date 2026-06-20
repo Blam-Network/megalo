@@ -1,12 +1,13 @@
 # object_get_shield
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Reads an object's current shields into an out-variable.
+
+<ActionParameters />
 
 ## Example
 

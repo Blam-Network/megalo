@@ -49,13 +49,17 @@ export const MATH_OP_SPLIT_TOKENS: string[] = [
   ...MEGALO_MATH_OP_SYMBOLS,
   "add",
   "subtract",
-  "multiply_by",
-  "divide_by",
-  "set_to",
-  "modulo_by",
   "multiply",
   "divide",
+  "set_to",
   "modulo",
+  "and",
+  "or",
+  "xor",
+  "not",
+  "lshift",
+  "rshift",
+  "abs",
 ];
 
 export function comparisonToSymbol(): string {

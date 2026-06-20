@@ -1,12 +1,13 @@
 # debug_force_player_view_count
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Debug action to force player view count.
+
+<ActionParameters />
 
 ## Example
 

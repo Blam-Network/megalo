@@ -1,12 +1,13 @@
 # player_adjust_money
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
-Modifies a player's requisition money with a math operation.
+Modifies a player's requisition money with a [math operation](/language/enums/math-operations).
+
+<ActionParameters />
 
 ## Example
 

@@ -1,12 +1,13 @@
 # object_set_never_garbage
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Prevents the engine from garbage-collecting an object.
+
+<ActionParameters />
 
 ## Example
 

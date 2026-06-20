@@ -6,6 +6,7 @@ import {
   write_blffile,
 } from "@blamnetwork/blf";
 import { s_blf_chunk_end_of_file, s_blf_chunk_start_of_file } from "@blamnetwork/blf/halo3/v12070_08_09_05_2031_halo3_ship";
+import { s_blf_chunk_content_header } from "@blamnetwork/blf/haloreach/v12065_11_08_24_1738_tu1actual";
 import {
   s_blf_chunk_game_variant,
   s_blf_chunk_packed_game_variant,
@@ -435,7 +436,120 @@ export function patchGvarInBlf(
   return output;
 }
 
-export type GametypeSaveFormat = "mglo" | "gvar" | "mpvr";
+export type GametypeSaveFormat = "mglo" | "gvar" | "mpvr" | "asq";
+
+const AUTOSAVE_QUEUE_FILE_SIZE = 0x6000;
+
+/** Reach autosave queue filenames: `asq<time64_t uppercase hex>.game`. */
+export function autosaveQueueFileName(date: Date = new Date()): string {
+  const time64 = BigInt(Math.floor(date.getTime() / 1000));
+  return `asq${time64.toString(16).toUpperCase()}.game`;
+}
+
+function readContentHeader(
+  blfBytes: Uint8Array
+): s_blf_chunk_content_header | undefined {
+  const chdr = new s_blf_chunk_content_header();
+  if (!search_for_chunk(blfBytes, chdr, ENDIAN)) {
+    return undefined;
+  }
+  return chdr;
+}
+
+function isAutosaveQueueBlf(blfBytes: Uint8Array): boolean {
+  return (
+    blfBytes.length === AUTOSAVE_QUEUE_FILE_SIZE &&
+    readContentHeader(blfBytes) !== undefined &&
+    readGametypeChunk(blfBytes, "mpvr") !== undefined
+  );
+}
+
+function padAutosaveQueueFile(blf: Uint8Array): Uint8Array {
+  if (blf.length > AUTOSAVE_QUEUE_FILE_SIZE) {
+    throw new Error(
+      `Autosave queue BLF exceeds ${AUTOSAVE_QUEUE_FILE_SIZE} bytes`
+    );
+  }
+  const padded = new Uint8Array(AUTOSAVE_QUEUE_FILE_SIZE);
+  padded.set(blf);
+  return padded;
+}
+
+function unpaddedBlfLength(blfBytes: Uint8Array): number {
+  let end = blfBytes.length;
+  while (end > 0 && blfBytes[end - 1] === 0) {
+    end--;
+  }
+  return end;
+}
+
+function buildContentHeaderChunk(
+  program: MegaloProgram,
+  variant: c_game_variant,
+  sizeInBytes: number
+): s_blf_chunk_content_header {
+  const chdr = new s_blf_chunk_content_header();
+  const resolved = resolveProgramForCompile(program);
+  chdr.build_number =
+    resolved.buildNumber > 0 ? resolved.buildNumber : MCC_DEFAULT_BUILD_NUMBER;
+  chdr.build_sequence_number = 0;
+  chdr.metadata = variant.get_metadata();
+  chdr.metadata.general.size_in_bytes = sizeInBytes;
+  chdr.metadata.general.map_id = -1;
+  return chdr;
+}
+
+function writeAutosaveQueueBlfFromProgram(program: MegaloProgram): Uint8Array {
+  const resolved = resolveProgramForCompile(program);
+  const variant = mccDialect.compileGameVariant(resolved);
+  const mpvr = new s_blf_chunk_game_variant();
+  mpvr.game_variant = variant;
+
+  const writeBlf = (sizeInBytes: number) =>
+    write_blffile(ENDIAN, [
+      s_blf_chunk_start_of_file.create(engineDataName(resolved)),
+      buildContentHeaderChunk(resolved, variant, sizeInBytes),
+      mpvr,
+      new s_blf_chunk_end_of_file(),
+    ]);
+
+  let blf = writeBlf(0);
+  blf = writeBlf(unpaddedBlfLength(blf));
+  return padAutosaveQueueFile(blf);
+}
+
+function patchAutosaveQueueBlf(
+  originalBlf: Uint8Array,
+  program: MegaloProgram
+): Uint8Array {
+  const patchedMpvr = patchGvarInBlf(originalBlf, program, "mpvr");
+  const mpvr = readGametypeChunk(patchedMpvr, "mpvr");
+  if (!mpvr) {
+    throw new Error("mpvr chunk not found in autosave queue BLF");
+  }
+
+  const unpaddedLength = unpaddedBlfLength(patchedMpvr);
+  const chdr = buildContentHeaderChunk(
+    program,
+    mpvr.game_variant,
+    unpaddedLength
+  );
+  const chdrBody = chdr.write_body(ENDIAN);
+  const meta = getBlfChunkMeta(chdr);
+  const range = findChunkBodyRange(
+    patchedMpvr,
+    meta.signature,
+    meta.major,
+    meta.minor
+  );
+  if (!range || chdrBody.length !== range.bodyEnd - range.bodyStart) {
+    throw new Error("Could not patch chdr chunk in autosave queue BLF");
+  }
+
+  const output = new Uint8Array(patchedMpvr.subarray(0, unpaddedLength));
+  output.set(chdrBody, range.bodyStart);
+  return padAutosaveQueueFile(output);
+}
 
 function writeGametypeBlfFromProgram(
   program: MegaloProgram,
@@ -486,6 +600,17 @@ export function compileGametypeForSave(
     originalBlf && baseProgram
       ? mergeEditedProgram(parsed.program, baseProgram)
       : resolveProgramForCompile(parsed.program);
+
+  if (format === "asq") {
+    try {
+      if (originalBlf && isAutosaveQueueBlf(originalBlf)) {
+        return patchAutosaveQueueBlf(originalBlf, program);
+      }
+      return writeAutosaveQueueBlfFromProgram(program);
+    } catch (error) {
+      throw enrichCompileErrorLocation(error, source, program.flatActions, program);
+    }
+  }
 
   const kind = format;
   try {

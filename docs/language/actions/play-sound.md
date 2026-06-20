@@ -1,12 +1,13 @@
 # play_sound
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Plays a sound for a player, team, or everyone. Sound tokens are listed in [Sounds](/language/enums/sounds).
+
+<ActionParameters />
 
 ## Example
 

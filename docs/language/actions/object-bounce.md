@@ -1,12 +1,13 @@
 # object_bounce
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Applies an upward impulse to an object.
+
+<ActionParameters />
 
 ## Example
 

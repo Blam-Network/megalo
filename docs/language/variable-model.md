@@ -228,5 +228,5 @@ action set current_player.body = my_body
 
 - [Elements — variables](/language/elements/variables) and [constants](/language/elements/constants)
 - [References](/language/references) — how variables appear as operands
-- [action](/language/elements/trigger/action) — the `set` action and math operations
+- [action](/language/elements/trigger/action) — the `set` action and [Math operations](/language/enums/math-operations)
 - [trigger](/language/elements/trigger) — `temporary` variables inside triggers

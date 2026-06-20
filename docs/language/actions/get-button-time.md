@@ -1,12 +1,13 @@
 # get_button_time
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Reads how long a scriptable button was held into an out-variable (Reach MCC only).
+
+<ActionParameters />
 
 ## Example
 

@@ -1,12 +1,13 @@
 # hud_widget_set_meter
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Configures meter parameters on a HUD widget.
+
+<ActionParameters />
 
 ## Example
 

@@ -1,12 +1,13 @@
 # device_set_position_immediate
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Snaps a device to a position without animation.
+
+<ActionParameters />
 
 ## Example
 

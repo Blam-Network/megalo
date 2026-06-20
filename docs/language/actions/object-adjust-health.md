@@ -1,12 +1,13 @@
 # object_adjust_health
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
-Modifies an object's current health with a math operation.
+Modifies an object's current health with a [math operation](/language/enums/math-operations).
+
+<ActionParameters />
 
 ## Example
 

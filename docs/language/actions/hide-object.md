@@ -1,12 +1,13 @@
 # hide_object
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Hides or shows an object for players (Reach MCC only).
+
+<ActionParameters />
 
 ## Example
 

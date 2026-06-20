@@ -1,12 +1,13 @@
 # team_set_primary_respawn_object
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Sets a team's primary respawn object.
+
+<ActionParameters />
 
 ## Example
 

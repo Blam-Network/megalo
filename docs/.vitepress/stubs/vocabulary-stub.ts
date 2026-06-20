@@ -1,4 +1,4 @@
-import highlightVocabulary from "../megalo-highlight-vocabulary.json" with { type: "json" };
+import highlightVocabulary from "../megalo-highlight-vocabulary.json";
 
 export const MEGALO_ACTIONS: string[] = highlightVocabulary.actions;
 export const MEGALO_CONDITIONS: string[] = highlightVocabulary.conditions;

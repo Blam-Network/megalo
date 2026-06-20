@@ -1,12 +1,13 @@
 # give_weapon
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Megalo action `give_weapon`.
+
+<ActionParameters />
 
 ## Example
 

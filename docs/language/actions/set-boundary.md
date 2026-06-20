@@ -1,12 +1,13 @@
 # set_boundary
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Configures boundary shape parameters on an object.
+
+<ActionParameters />
 
 ## Example
 

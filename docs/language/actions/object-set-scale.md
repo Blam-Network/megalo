@@ -1,12 +1,13 @@
 # object_set_scale
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Scales an object by a multiplier.
+
+<ActionParameters />
 
 ## Example
 

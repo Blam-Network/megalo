@@ -1,12 +1,13 @@
 # player_get_target_object
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Reads a player's current target object into an out-variable.
+
+<ActionParameters />
 
 ## Example
 

@@ -1,12 +1,13 @@
 # player_set_objective_allegiance_icon
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Sets the objective allegiance icon.
+
+<ActionParameters />
 
 ## Example
 

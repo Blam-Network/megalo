@@ -1,12 +1,13 @@
 # boundary_set_player_color
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Sets boundary tint color for a player.
+
+<ActionParameters />
 
 ## Example
 

@@ -1,12 +1,13 @@
 # set_loadout
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Megalo action `set_loadout`.
+
+<ActionParameters />
 
 ## Example
 

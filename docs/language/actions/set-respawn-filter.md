@@ -1,12 +1,13 @@
 # set_respawn_filter
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Restricts who can respawn at an object.
+
+<ActionParameters />
 
 ## Example
 

@@ -1,12 +1,13 @@
 # saved_film_insert_marker
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Inserts a marker into a saved film recording.
+
+<ActionParameters />
 
 ## Example
 

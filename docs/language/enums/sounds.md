@@ -1,108 +1,255 @@
 # Sounds
 
-Symbolic sound tokens for `play_sound` and the optional sound operand on `hud_post_message`. Values match `e_megalo_sound` in @blamnetwork/blf (Reach MCC). Older Reach builds store the same 7-bit index as a raw integer.
+Symbolic sound tokens for `play_sound` and the optional sound operand on `hud_post_message`. The Reach MCC set matches `e_megalo_sound` in @blamnetwork/blf. Additional tokens from `dom_base1` through `escape_title` were added in Halo 4. Older Reach builds store sound operands as a raw 7-bit index in declaration order.
 
 Used by [`play_sound`](/language/actions/play-sound) and [`hud_post_message`](/language/actions/hud-post-message).
 
-| Index | Name |
-|-------|------|
-| 0 | `slayer` |
-| 1 | `ctf` |
-| 2 | `flag_captured` |
-| 3 | `flag_dropped` |
-| 4 | `flag_recovered` |
-| 5 | `flag_reset` |
-| 6 | `flag_stolen` |
-| 7 | `flag_taken` |
-| 8 | `vip` |
-| 9 | `new_vip` |
-| 10 | `vip_killed` |
-| 11 | `juggernaut` |
-| 12 | `new_juggernaut` |
-| 13 | `territories` |
-| 14 | `territory_captured` |
-| 15 | `territory_lost` |
-| 16 | `assault` |
-| 17 | `bomb_armed` |
-| 18 | `bomb_detonated` |
-| 19 | `bomb_disarmed` |
-| 20 | `bomb_dropped` |
-| 21 | `bomb_reset` |
-| 22 | `bomb_returned` |
-| 23 | `bomb_taken` |
-| 24 | `infection` |
-| 25 | `infected` |
-| 26 | `last_man_standing` |
-| 27 | `new_zombie` |
-| 28 | `oddball` |
-| 29 | `ball_spawned` |
-| 30 | `ball_taken` |
-| 31 | `ball_dropped` |
-| 32 | `ball_reset` |
-| 33 | `king` |
-| 34 | `hill_controlled` |
-| 35 | `hill_contested` |
-| 36 | `hill_moved` |
-| 37 | `headhunter` |
-| 38 | `stockpile` |
-| 39 | `race` |
-| 40 | `defense` |
-| 41 | `offense` |
-| 42 | `destination_moved` |
-| 43 | `generator_armed` |
-| 44 | `core_armed` |
-| 45 | `generator_disarmed` |
-| 46 | `core_disarmed` |
-| 47 | `sudden_death` |
-| 48 | `game_over` |
-| 49 | `bone_cv_defeat` |
-| 50 | `bone_cv_ph1_defeat` |
-| 51 | `bone_cv_ph1_intro` |
-| 52 | `bone_cv_ph1_victory` |
-| 53 | `bone_cv_ph2_defeat` |
-| 54 | `bone_cv_ph2_victory` |
-| 55 | `bone_cv_ph3_victory` |
-| 56 | `bone_cv_victory` |
-| 57 | `bone_sp_defeat` |
-| 58 | `bone_sp_ph1_intro` |
-| 59 | `bone_sp_ph1_victory` |
-| 60 | `bone_sp_ph2_intro` |
-| 61 | `bone_sp_ph2_victory` |
-| 62 | `bone_sp_ph3_intro` |
-| 63 | `bone_sp_ph3_victory` |
-| 64 | `isle_cv_defeat` |
-| 65 | `isle_cv_ph1_defeat` |
-| 66 | `isle_cv_ph1_intro` |
-| 67 | `isle_cv_ph2_intro` |
-| 68 | `isle_cv_ph2_victory` |
-| 69 | `isle_cv_ph3_intro` |
-| 70 | `isle_cv_ph3_victory` |
-| 71 | `isle_sp_defeat` |
-| 72 | `isle_sp_ph1_defeat` |
-| 73 | `isle_sp_ph1_extra` |
-| 74 | `isle_sp_ph1_intro` |
-| 75 | `isle_sp_ph1_victory` |
-| 76 | `isle_sp_ph2_defeat` |
-| 77 | `isle_sp_ph2_victory` |
-| 78 | `isle_sp_ph3_victory` |
-| 79 | `isle_sp_victory` |
-| 80 | `bone_sp_ph3_defeat` |
-| 81 | `isle_cv_ph3_defeat` |
-| 82 | `covy_big_win` |
-| 83 | `covy_win1` |
-| 84 | `covy_win2` |
-| 85 | `invasion_beginning` |
-| 86 | `unsc_big_win` |
-| 87 | `unsc_win1` |
-| 88 | `unsc_win2` |
-| 89 | `power_down` |
-| 90 | `reinforcements` |
-| 91 | `respawn_tick` |
-| 92 | `alpha_under_attack` |
-| 93 | `bravo_under_attack` |
-| 94 | `charlie_under_attack` |
+| Name |
+|------|
+| `slayer` |
+| `ctf` |
+| `flag_captured` |
+| `flag_dropped` |
+| `flag_recovered` |
+| `flag_reset` |
+| `flag_stolen` |
+| `flag_taken` |
+| `vip` |
+| `new_vip` |
+| `vip_killed` |
+| `juggernaut` |
+| `new_juggernaut` |
+| `territories` |
+| `territory_captured` |
+| `territory_lost` |
+| `assault` |
+| `bomb_armed` |
+| `bomb_detonated` |
+| `bomb_disarmed` |
+| `bomb_dropped` |
+| `bomb_reset` |
+| `bomb_returned` |
+| `bomb_taken` |
+| `infection` |
+| `infected` |
+| `last_man_standing` |
+| `new_zombie` |
+| `oddball` |
+| `ball_spawned` |
+| `ball_taken` |
+| `ball_dropped` |
+| `ball_reset` |
+| `king` |
+| `hill_controlled` |
+| `hill_contested` |
+| `hill_moved` |
+| `headhunter` |
+| `stockpile` |
+| `race` |
+| `defense` |
+| `offense` |
+| `destination_moved` |
+| `generator_armed` |
+| `core_armed` |
+| `generator_disarmed` |
+| `core_disarmed` |
+| `sudden_death` |
+| `game_over` |
+| `bone_cv_defeat` |
+| `bone_cv_ph1_defeat` |
+| `bone_cv_ph1_intro` |
+| `bone_cv_ph1_victory` |
+| `bone_cv_ph2_defeat` |
+| `bone_cv_ph2_victory` |
+| `bone_cv_ph3_victory` |
+| `bone_cv_victory` |
+| `bone_sp_defeat` |
+| `bone_sp_ph1_intro` |
+| `bone_sp_ph1_victory` |
+| `bone_sp_ph2_intro` |
+| `bone_sp_ph2_victory` |
+| `bone_sp_ph3_intro` |
+| `bone_sp_ph3_victory` |
+| `isle_cv_defeat` |
+| `isle_cv_ph1_defeat` |
+| `isle_cv_ph1_intro` |
+| `isle_cv_ph2_intro` |
+| `isle_cv_ph2_victory` |
+| `isle_cv_ph3_intro` |
+| `isle_cv_ph3_victory` |
+| `isle_sp_defeat` |
+| `isle_sp_ph1_defeat` |
+| `isle_sp_ph1_extra` |
+| `isle_sp_ph1_intro` |
+| `isle_sp_ph1_victory` |
+| `isle_sp_ph2_defeat` |
+| `isle_sp_ph2_victory` |
+| `isle_sp_ph3_victory` |
+| `isle_sp_victory` |
+| `bone_sp_ph3_defeat` |
+| `isle_cv_ph3_defeat` |
+| `covy_big_win` |
+| `covy_win1` |
+| `covy_win2` |
+| `invasion_beginning` |
+| `unsc_big_win` |
+| `unsc_win1` |
+| `unsc_win2` |
+| `power_down` |
+| `reinforcements` |
+| `respawn_tick` |
+| `alpha_under_attack` |
+| `bravo_under_attack` |
+| `charlie_under_attack` |
+<!-- | `dom_base1` |
+| `dom_base2` |
+| `dom_base3` |
+| `dom_base4` |
+| `dom_base5` |
+| `dom_base_contested` |
+| `dom_base_captured` |
+| `dom_base_gendown` |
+| `dom_score_tick` |
+| `regicide_intro` |
+| `king_crowned_regicide` |
+| `king_crowned_regicide2` |
+| `king_crowned_frompoints` |
+| `king_crowned_frompoints2` |
+| `king_killed` |
+| `king_killed2` |
+| `king_max_bonus` |
+| `king_spree` |
+| `king_tacular` |
+| `king_reignofterror` |
+| `king_slayer` |
+| `king_execution` |
+| `king_itsyou` |
+| `dom_offline_base` |
+| `dom_offline_base1` |
+| `dom_offline_base2` |
+| `dom_offline_base3` |
+| `dom_offline_base4` |
+| `dom_offline_base5` |
+| `dom_online_base` |
+| `dom_online_base1` |
+| `dom_online_base2` |
+| `dom_online_base3` |
+| `dom_online_base4` |
+| `dom_online_base5` |
+| `dom_cap_enemy_base` |
+| `dom_cap_enemy_base1` |
+| `dom_cap_enemy_base2` |
+| `dom_cap_enemy_base3` |
+| `dom_cap_enemy_base4` |
+| `dom_cap_enemy_base5` |
+| `dom_cap_start_enemy_base` |
+| `dom_cap_start_enemy_base1` |
+| `dom_cap_start_enemy_base2` |
+| `dom_cap_start_enemy_base3` |
+| `dom_cap_start_enemy_base4` |
+| `dom_cap_start_enemy_base5` |
+| `dom_cap_team_base` |
+| `dom_cap_team_base1` |
+| `dom_cap_team_base2` |
+| `dom_cap_team_base3` |
+| `dom_cap_team_base4` |
+| `dom_cap_team_base5` |
+| `dom_cap_stop_team_base` |
+| `dom_cap_stop_team_base1` |
+| `dom_cap_stop_team_base2` |
+| `dom_cap_stop_team_base3` |
+| `dom_cap_stop_team_base4` |
+| `dom_cap_stop_team_base5` |
+| `dom_laststand_capped_all` |
+| `dom_laststand_capped_none` |
+| `dom_laststand_must_cap` |
+| `dom_title` |
+| `dom_title_kingdom` |
+| `dom_title_tyranny` |
+| `dom_obective` |
+| `dom_obective_kingdom` |
+| `dom_obective_tyranny` |
+| `dom_team_castle_locked` |
+| `dom_team_castle_unlocked` |
+| `dom_enemy_castle_locked` |
+| `dom_enemy_castle_unlocked` |
+| `dom_team_upgrade2_base1` |
+| `dom_team_upgrade3_base1` |
+| `dom_team_upgrade2_base2` |
+| `dom_team_upgrade3_base2` |
+| `dom_team_upgrade2_base3` |
+| `dom_team_upgrade3_base3` |
+| `dom_team_upgrade2_base4` |
+| `dom_team_upgrade3_base4` |
+| `dom_team_upgrade2_base5` |
+| `dom_team_upgrade3_base5` |
+| `dom_activate_cap_sfx` |
+| `dom_deactivate_cap_sfx` |
+| `dom_vehicle_terminal_use_sfx` |
+| `dom_lost_base` |
+| `ca_dom_base_upgrade` |
+| `ca_dom_base_boot` |
+| `ca_dom_base_power_offline` |
+| `ca_dom_base_power_restored` |
+| `ca_dom_generator_power_offline` |
+| `ca_dom_generator_power_restored` |
+| `ca_dom_base_ambient_start` |
+| `ca_dom_base_ambient_stop` |
+| `ca_dom_shield_power_up` |
+| `ca_dom_shield_power_down` |
+| `ca_dom_base_terminal_use_start` |
+| `ca_dom_base_terminal_use_stop` |
+| `ca_dom_vehicle_terminal_use_start` |
+| `ca_dom_vehicle_terminal_use_stop` |
+| `ca_dom_generator_terminal_use_start` |
+| `ca_dom_generator_terminal_use_stop` |
+| `ca_dom_generic_stop` |
+| `ca_dom_generic_start` |
+| `blam_bomb_disarmed` |
+| `blam_bomb_disarmed_site1` |
+| `blam_bomb_disarmed_site2` |
+| `blam_bomb_disarmed_site3` |
+| `blam_bomb_disarmed_site4` |
+| `blam_bomb_disarmed_site5` |
+| `blam_bomb_planted` |
+| `blam_bomb_planted_site1` |
+| `blam_bomb_planted_site2` |
+| `blam_bomb_planted_site3` |
+| `blam_bomb_planted_site4` |
+| `blam_bomb_planted_site5` |
+| `blam_bomb_site_available` |
+| `blam_bomb_site_moved` |
+| `blam_objective_attack` |
+| `blam_objective_defend` |
+| `blam_title` |
+| `blam_title_symmetric` |
+| `blam_title_grifball` |
+| `blam_title_oneshot` |
+| `blam_title_scorchedearth` |
+| `blam_bomb_destroyed_site1` |
+| `blam_bomb_destroyed_site2` |
+| `blam_bomb_destroyed_site3` |
+| `blam_bomb_destroyed_site4` |
+| `blam_bomb_destroyed_site5` |
+| `blam_bomb_arming_sfx` |
+| `blam_bomb_disarming_sfx` |
+| `blam_bomb_explosion_sfx` |
+| `escape_objective_attacker` |
+| `escape_objective_defender` |
+| `escape_objective_attacker_switches` |
+| `escape_objective_defender_switches` |
+| `escape_portal_moved` |
+| `escape_portal_off` |
+| `escape_portal_on` |
+| `escape_portal_open` |
+| `escape_switch_activated` |
+| `escape_switch_portal_on` |
+| `escape_switch_portal_off` |
+| `escape_title` | -->
 
 ## Notes
+
+Tokens from `dom_base1` onward are only available on Halo 4 builds.
 
 Use `none` as the sound operand on `hud_post_message` when the message should not play an accompanying sound. `play_sound` accepts an optional `immediate` prefix before the target.
 

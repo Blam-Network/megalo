@@ -1,12 +1,13 @@
 # create_object
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Spawns an object of the given type at a reference object, with optional filter, flags, and offset.
+
+<ActionParameters />
 
 ## Example
 

@@ -44,9 +44,4 @@ Compared to [49](/versions/49/).
 - `object_set_minimap_priority` (opcode 57)
 - `object_set_minimap_icon` (opcode 58)
 
-
-## Action opcodes
-
-Action names match `e_action_type` in [@blamnetwork/blf](https://github.com/Blam-Network/blf/blob/main/blf-ts/src/blam/haloreach/v09730_10_04_09_1309_omaha_delta/game/megalogamengine/megalogamengine_actions.ts). Per-action documentation lives under [Actions](/language/actions/).
-
-<LanguageActionTable version="omaha-delta" />
+Per-action documentation lives under [Actions](/language/actions/).

@@ -1,12 +1,13 @@
 # object_get_distance
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Writes the distance between two objects into an out-variable.
+
+<ActionParameters />
 
 ## Example
 

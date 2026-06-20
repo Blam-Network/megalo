@@ -1,12 +1,13 @@
 # adjust_grenades
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
-Modifies a player's grenade count by type.
+Modifies a player's grenade count by type using a [math operation](/language/enums/math-operations).
+
+<ActionParameters />
 
 ## Example
 

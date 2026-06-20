@@ -1,12 +1,13 @@
 # biped_drop_weapon
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Drops a weapon from a biped/player.
+
+<ActionParameters />
 
 ## Example
 

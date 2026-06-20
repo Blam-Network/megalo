@@ -1,12 +1,13 @@
 # device_set_position_track
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Assigns an animation track name to a device.
+
+<ActionParameters />
 
 ## Example
 

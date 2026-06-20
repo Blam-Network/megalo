@@ -1,12 +1,13 @@
 # object_adjust_maximum_shield
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
-Modifies an object's maximum shields with a math operation.
+Modifies an object's maximum shields with a [math operation](/language/enums/math-operations).
+
+<ActionParameters />
 
 ## Example
 

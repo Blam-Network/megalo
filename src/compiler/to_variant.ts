@@ -361,17 +361,18 @@ function rebuildStringTable(strings: StringTable): c_string_table {
 }
 
 const EXECUTION_MODE_VALUES: Record<string, e_trigger_execution_mode> = {
-  general: e_trigger_execution_mode.normal,
-  player: e_trigger_execution_mode.for_each_player,
-  team: e_trigger_execution_mode.for_each_team,
-  object: e_trigger_execution_mode.for_each_object,
+  general: e_trigger_execution_mode.general,
+  player: e_trigger_execution_mode.player,
+  random_player: e_trigger_execution_mode.random_player,
+  team: e_trigger_execution_mode.team,
+  object: e_trigger_execution_mode.object,
 };
 
 const TRIGGER_TYPE_VALUES: Record<string, e_trigger_type> = {
-  initialization: e_trigger_type.on_init,
-  local_initialization: e_trigger_type.on_local_init,
-  host_migration: e_trigger_type.on_host_migration,
-  object_death: e_trigger_type.on_object_death,
+  initialization: e_trigger_type.initialization,
+  local_initialization: e_trigger_type.local_initialization,
+  host_migration: e_trigger_type.host_migration,
+  object_death: e_trigger_type.object_death,
   local: e_trigger_type.local,
   pregame: e_trigger_type.pregame,
 };
@@ -386,7 +387,7 @@ function compileTrigger(binding: MegaloProgram["triggerTable"][number]): c_trigg
   }
   trigger.m_execution_mode =
     EXECUTION_MODE_VALUES[binding.executionMode] ??
-    e_trigger_execution_mode.normal;
+    e_trigger_execution_mode.general;
   trigger.m_object_filter_index = binding.objectFilterIndex;
   trigger.m_first_condition = binding.firstCondition;
   trigger.m_condition_count = binding.conditionCount;
@@ -394,7 +395,7 @@ function compileTrigger(binding: MegaloProgram["triggerTable"][number]): c_trigg
   trigger.m_action_count = binding.actionCount;
   if (binding.objectFilter) {
     trigger.m_execution_mode =
-      e_trigger_execution_mode.for_each_object_with_label;
+      e_trigger_execution_mode.object_with_label;
     trigger.m_object_filter_index = binding.objectFilterIndex;
   }
   return trigger;

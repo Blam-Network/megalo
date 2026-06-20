@@ -41,10 +41,17 @@ export const MEGALO_MATH_OPS: string[] = [
   ...MEGALO_MATH_OP_SYMBOLS,
   "add",
   "subtract",
-  "multiply_by",
-  "divide_by",
+  "multiply",
+  "divide",
   "set_to",
-  "modulo_by",
+  "modulo",
+  "and",
+  "or",
+  "xor",
+  "not",
+  "lshift",
+  "rshift",
+  "abs",
 ];
 
 export const MEGALO_COMPARISON_OPS: string[] = [

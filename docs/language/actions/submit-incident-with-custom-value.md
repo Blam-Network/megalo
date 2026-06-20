@@ -1,12 +1,13 @@
 # submit_incident_with_custom_value
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Fires a game incident and passes a custom numeric value.
+
+<ActionParameters />
 
 ## Example
 

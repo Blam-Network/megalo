@@ -1,12 +1,18 @@
 # object_set_minimap_priority
 
-<!-- autogen:language-action -->
-
 <AvailabilityCard reach="partial" />
 
 ## Description
 
 Megalo action `object_set_minimap_priority`.
+
+<DocsBlock type="danger" title="Minimap Not Available">
+
+Minimap actions can be compiled for Alpha Halo: Reach builds, but no known Halo: Reach builds have a functioning Minimap menu rendering these functions useless.
+
+</DocsBlock>
+
+<ActionParameters />
 
 ## Example
 

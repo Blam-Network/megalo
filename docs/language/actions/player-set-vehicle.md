@@ -1,12 +1,13 @@
 # player_set_vehicle
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Forces a player into a vehicle reference.
+
+<ActionParameters />
 
 ## Example
 

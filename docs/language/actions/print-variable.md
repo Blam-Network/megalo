@@ -1,12 +1,13 @@
 # print_variable
 
-<!-- autogen:language-action -->
 
 <AvailabilityCard reach="yes" />
 
 ## Description
 
 Prints a variable value to the debug log.
+
+<ActionParameters />
 
 ## Example
 

@@ -13,23 +13,30 @@ const COMPARISON_TO_SYMBOL: Record<string, string> = {
 const MATH_TO_SYMBOL: Record<string, string> = {
   add: "+",
   subtract: "-",
-  multiply_by: "*",
-  divide_by: "/",
+  multiply: "*",
+  divide: "/",
   set_to: "=",
-  modulo_by: "%",
-  bitwise_and_with: "&",
-  bitwise_or_with: "|",
-  bitwise_xor_with: "^",
-  bitwise_not_with: "~",
-  shift_left_with: "<<",
-  shift_right_with: ">>",
+  modulo: "%",
+  and: "&",
+  or: "|",
+  xor: "^",
+  not: "~",
+  lshift: "<<",
+  rshift: ">>",
 };
 
-/** Short names used in official Reach `.txt` scripts (e.g. `multiply 60`). */
+/** Legacy blf enum names accepted when parsing older scripts. */
 const MATH_OP_ALIASES: Record<string, string> = {
-  multiply: "multiply_by",
-  divide: "divide_by",
-  modulo: "modulo_by",
+  multiply_by: "multiply",
+  divide_by: "divide",
+  modulo_by: "modulo",
+  bitwise_and_with: "and",
+  bitwise_or_with: "or",
+  bitwise_xor_with: "xor",
+  bitwise_not_with: "not",
+  shift_left_with: "lshift",
+  shift_right_with: "rshift",
+  set_to_absolute: "abs",
 };
 
 const SYMBOL_TO_COMPARISON = invert(COMPARISON_TO_SYMBOL);
