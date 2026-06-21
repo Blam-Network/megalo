@@ -14,6 +14,12 @@ The `.mglo` extension refers to a compiled Megalo variant, not a source `.txt` f
 
 The base file is read from the compile **output folder** — `maps/megalo` when using MegaloEdit.exe. Compile the parent script to produce its `.mglo` before building derived variants that reference it.
 
+<DocsBlock type="warning" title="Same megalo version">
+
+A derived script and its base `.mglo` must target the **same megalo encoding version**. Mixing builds (for example a TU1 base with an MCC-only derived script, or bases from different [Megalo versions](/versions/)) is not supported — compile the base and derived scripts against the same Reach build.
+
+</DocsBlock>
+
 ## What gets inherited
 
 A base file contributes its **entire compiled script** to the derived variant:
@@ -115,6 +121,5 @@ A script can use both — a derived script might `base` a compiled parent and `i
 
 ## See also
 
-- [Elements](/language/elements/) — element catalog
-- [Syntax & file format](/language/syntax) — includes and file structure
+- [Syntax & file format](/language/syntax) — includes, file structure, and [element model](/language/syntax#the-element-model)
 - [Example scripts](/language/examples) — full scripts without a base line

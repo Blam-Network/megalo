@@ -11,20 +11,23 @@ Spawns an object of the given type at a reference object, with optional filter, 
 
 ## Example
 
+### Version &lt;73
+
 ```megalo
 action create_object "area" main.team_a main
 ```
 
-Example from HREK `broken/dmiller_sve.txt`.
+From HREK `broken/dmiller_sve.txt`.
 
-## Build availability
+### Version 73+
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [2](/versions/49/) |
-| 73 | [2](/versions/73/) |
-| 106 | [2](/versions/106/) |
-| 107 | [2](/versions/107/) |
-| 107 (MCC) | [2](/versions/107-mcc/) |
+```megalo
+action create_object "warthog" at current_object set freebie
+```
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+## Supported Versions
+
+<ActionSupportedVersions />
+
+
+See also [action syntax](/language/elements/trigger/action).

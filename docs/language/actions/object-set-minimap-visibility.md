@@ -22,14 +22,9 @@ action object_set_minimap_visibility …
 
 No curated example yet — see [Megalo Versions](/versions/) for build availability.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [56](/versions/49/) |
-| 73 | — |
-| 106 | — |
-| 107 | — |
-| 107 (MCC) | — |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

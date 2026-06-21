@@ -15,14 +15,9 @@ Prints a variable value to the debug log.
 action print_variable …
 ```
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [18](/versions/49/) |
-| 73 | [18](/versions/73/) |
-| 106 | [18](/versions/106/) |
-| 107 | [18](/versions/107/) |
-| 107 (MCC) | [18](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

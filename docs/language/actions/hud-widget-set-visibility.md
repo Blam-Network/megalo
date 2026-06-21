@@ -17,14 +17,9 @@ action hud_widget_set_visibility obj_bfg current_player true
 
 Example from HREK `broken/kim-1flag-hill.txt`.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [49](/versions/49/) |
-| 73 | [50](/versions/73/) |
-| 106 | [50](/versions/106/) |
-| 107 | [50](/versions/107/) |
-| 107 (MCC) | [50](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

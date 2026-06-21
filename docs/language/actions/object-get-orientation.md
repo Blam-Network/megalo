@@ -15,14 +15,9 @@ Reads an object's orientation into an out-variable.
 action object_get_orientation …
 ```
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [27](/versions/49/) |
-| 73 | [27](/versions/73/) |
-| 106 | [27](/versions/106/) |
-| 107 | [27](/versions/107/) |
-| 107 (MCC) | [27](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

@@ -17,7 +17,7 @@ end
 
 ## override
 
-Sets a built-in engine option to a new default. Built-in options can vary by megalo version — see [Megalo Versions](/versions/) for more information.
+Sets a built-in engine option to a new default. Built-in options can vary by megalo version — see [Game options](/language/enums/game-options) for the full list.
 
 ```megalo
 game_options

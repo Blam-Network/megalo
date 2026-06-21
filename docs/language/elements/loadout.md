@@ -5,7 +5,11 @@
 
 </AvailabilityCard>
 
-Player loadout definitions.
+Player loadout definitions. Each `loadout` block describes one selectable row: display name, weapons, equipment, and grenades.
+
+![One loadout in the Reach respawn selection menu — Sprint, with sprint equipment, two frag grenades, Assault Rifle, and Magnum](/images/language/loadout.png)
+
+*Each entry in the loadout selection UI corresponds to a single `loadout` block in the gametype script.*
 
 ```megalo
 loadout loadout_scout

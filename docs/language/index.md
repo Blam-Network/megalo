@@ -20,7 +20,7 @@ A Megalo program is a sequence of **elements** that describe a gametype or custo
 
 | Concept | Role |
 |---------|------|
-| **Elements** | Block and leaf keywords at the script root — metadata, teams, variables, triggers, HUD widgets, string tables, and more. See [Elements](/language/elements/). |
+| **Elements** | Block and leaf keywords at the script root — metadata, teams, variables, triggers, HUD widgets, string tables, and more. See [The element model](/language/syntax#the-element-model); individual pages are listed under **Elements** in the sidebar. |
 | **Triggers** | Event handlers. Each trigger runs when its **conditions** are satisfied, then executes its **actions**. See [trigger](/language/elements/trigger). |
 | **Conditions** | Predicates such as `if`, `player_died`, `timer_expired`, or `object_in_area`. See [condition](/language/elements/trigger/condition). |
 | **Actions** | Imperative statements — `set`, `create_object`, `hud_post_message`, `for_each`, and dozens of others. See [action](/language/elements/trigger/action). |
@@ -58,17 +58,16 @@ The exact set of valid conditions and actions depends on the Reach build. See [M
 
 Work through these pages in order, or jump to a topic:
 
-1. [Syntax & file format](/language/syntax) — comments, tokens, naming, includes
+1. [Syntax & file format](/language/syntax) — comments, tokens, naming, includes, [element model](/language/syntax#the-element-model)
 2. [Base files](/language/base-files) — inheriting from a compiled parent variant
-3. [Elements](/language/elements/) — the element model and `TopLevelElement` catalog
-4. [Variable model](/language/variable-model) — types, scopes, constants, built-ins
-5. [trigger](/language/elements/trigger) — kinds, action scope, execution, `for_each`
-6. [condition](/language/elements/trigger/condition) — comparisons, events, `and` / `or`, negation
-7. [action](/language/elements/trigger/action) — opcodes, `set`, [math operations](/language/enums/math-operations), action families
-8. [References](/language/references) — player, team, object, timer operands
-9. [Example scripts](/language/examples) — annotated walkthroughs of minimal scripts
-10. [Object lists](/language/object-lists) — engine lookup tables for symbolic names
-11. [Compiler settings](/language/compiler-settings) — compile-time strictness and temporary overflow
+3. [Variable model](/language/variable-model) — types, scopes, constants, built-ins
+4. [trigger](/language/elements/trigger) — kinds, action scope, execution, `for_each`
+5. [condition](/language/elements/trigger/condition) — comparisons, events, `and` / `or`, negation
+6. [action](/language/elements/trigger/action) — opcodes, `set`, [math operations](/language/enums/math-operations), action families
+7. [References](/language/references) — player, team, object, timer operands
+8. [Example scripts](/language/examples) — annotated walkthroughs of minimal scripts
+9. [Object lists](/language/object-lists) — engine lookup tables for symbolic names
+10. [Compiler settings](/language/compiler-settings) — compile-time strictness and temporary overflow
 
 For using the TypeScript library, see the [usage guide](/guide/quick-start).
 

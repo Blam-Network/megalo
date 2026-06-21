@@ -15,7 +15,48 @@ A Megalo file is a top-to-bottom sequence of elements. There is no required orde
 7. `hud_widgets`, loadouts, statistics
 8. `trigger` blocks
 
-See [Elements](/language/elements/) for the full catalog.
+Individual element pages are listed under **Elements** in the sidebar.
+
+## The element model
+
+Megalo source is structured as nested elements:
+
+- **Block elements** open with a keyword and close with `end`. The keyword determines which child elements are legal inside.
+- **Field elements** are single lines inside a block (indented under their parent).
+- **Leaf elements** like `include` appear at the top level as standalone lines.
+
+The set of legal child elements is always determined by the parent. For example, inside a `game_options` block you may write `option`, `override`, `player_traits`, `lock`, or `hide` — but not `trigger` or `variables`.
+
+```megalo
+game_options                          ; block element opens
+	override teams_enabled false      ; field element
+	override score_to_win_round 25    ; field element
+
+	option kill_points                ; nested block element
+		option_name_kill_points
+		option_description_kill_points
+		1
+		0 points_0 ""
+		1 points_1 ""
+	end                               ; closes option
+
+	player_traits leader_traits       ; nested block element
+		leader_traits_name leader_traits_description
+		waypoint unchanged
+	end                               ; closes player_traits
+end                                   ; closes game_options
+```
+
+Some smaller blocks use a flat indented field list rather than nested `begin`/`end` pairs:
+
+```megalo
+engine_data
+	name slayer_title
+	description slayer_description
+	icon k_engine_icon_slayer
+	category slayer
+end
+```
 
 ## Comments
 
@@ -134,6 +175,5 @@ Megalo uses tabs for indentation inside block elements. Indentation is cosmetic 
 ## See also
 
 - [Compiler settings](/language/compiler-settings) — MegaloEdit compile flags (`enforceLocalizedIncludes`, etc.)
-- [Elements](/language/elements/) — the element model and catalog
 - [Base files](/language/base-files) — inheritance from compiled variants
 - [Example scripts](/language/examples) — annotated minimal scripts

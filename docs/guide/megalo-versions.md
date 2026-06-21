@@ -18,7 +18,7 @@ const program = tu1.decompileGameVariant(variant);
 const recompiled = tu1.compileGameVariant(program, variant);
 ```
 
-`mccDialect` and `tu1Dialect` are the same handlers exposed as named exports. Version pages are in [Megalo Versions](/versions/); per-opcode reference pages are under [Actions](/language/actions/).
+`mccDialect` and `tu1Dialect` are the same handlers exposed as named exports. Version pages are in [Megalo Versions](/versions/); per-opcode reference pages are listed under **Actions** in the sidebar.
 
 ## MCC vs TU1 differences
 

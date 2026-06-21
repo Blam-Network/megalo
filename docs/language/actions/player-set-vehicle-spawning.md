@@ -17,14 +17,9 @@ action player_set_vehicle_spawning …
 
 No curated example yet — see [Megalo Versions](/versions/) for build availability.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | — |
-| 73 | — |
-| 106 | — |
-| 107 | — |
-| 107 (MCC) | [103](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

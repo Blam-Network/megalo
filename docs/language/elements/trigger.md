@@ -7,7 +7,7 @@
 
 The core executable element. Each trigger is an event handler: the engine evaluates its conditions, and if they all pass, it executes the trigger's actions. When any condition fails, execution **halts** for the current evaluation — subsequent conditions and actions in the same trigger are skipped.
 
-A script may declare at most **320** triggers. `trigger` is **full-script-only** — it cannot be added in [base-derived scripts](/language/base-files).
+Compile-time limits including trigger count are listed under **Limits** on each [megalo version page](/versions/) — for example [49](/versions/49/#limits), [73](/versions/73/#limits), [107](/versions/107/#limits), or [107 (MCC)](/versions/107-mcc/#limits). `trigger` is **full-script-only** — it cannot be added in [base-derived scripts](/language/base-files).
 
 ## Syntax
 

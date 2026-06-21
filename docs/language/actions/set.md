@@ -17,14 +17,9 @@ action set temp modulo 5
 
 Example from HREK `broken/equipment_slayer.txt`.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [9](/versions/49/) |
-| 73 | [9](/versions/73/) |
-| 106 | [9](/versions/106/) |
-| 107 | [9](/versions/107/) |
-| 107 (MCC) | [9](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

@@ -17,14 +17,9 @@ action set_loadout …
 
 No curated example yet — see [Megalo Versions](/versions/) for build availability.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [78](/versions/49/) |
-| 73 | [77](/versions/73/) |
-| 106 | — |
-| 107 | — |
-| 107 (MCC) | — |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

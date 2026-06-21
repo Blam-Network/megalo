@@ -564,15 +564,34 @@ html.dark body {
   border-radius: 2px;
 }
 
+.vp-doc table:has(.version-game-label) {
+  display: table;
+  table-layout: auto;
+  width: 100%;
+}
+
 .vp-doc table:has(.version-index-link) {
   display: table;
   table-layout: auto;
   width: 100%;
 }
 
+.vp-doc table:has(.version-game-label) th:first-child,
+.vp-doc table:has(.version-game-label) td:first-child,
 .vp-doc table:has(.version-index-link) th:first-child,
-.vp-doc table:has(.version-index-link) td:first-child,
-.vp-doc table:has(.version-game-label) td:nth-child(2),
+.vp-doc table:has(.version-index-link) td:first-child {
+  white-space: nowrap;
+  width: 1%;
+}
+
+.vp-doc table:has(.version-game-label) th:nth-child(2),
+.vp-doc table:has(.version-game-label) td:nth-child(2) {
+  white-space: nowrap;
+  min-width: 9.5rem;
+  width: 12%;
+  padding-right: 1.25rem;
+}
+
 .vp-doc table:has(.version-index-link) td:nth-child(2) {
   white-space: nowrap;
   width: 1%;
@@ -678,4 +697,206 @@ html.dark body {
 
 .dark .vp-doc h1 + .availability-card {
   margin-top: 0;
+}
+
+.vp-doc .availability-cell {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.vp-doc .availability-cell--yes {
+  color: var(--vp-c-green-1);
+}
+
+.vp-doc .availability-cell--no {
+  color: #f87171;
+}
+
+.vp-doc .availability-cell--partial {
+  color: #facc15;
+}
+
+/* EnumVersionTable — override VitePress block-table layout for aligned columns + sticky head */
+.dark .vp-doc table.enum-version-table {
+  display: table !important;
+  overflow: visible !important;
+  border-collapse: separate !important;
+  border-spacing: 0;
+  width: max-content;
+  max-width: 100%;
+  margin: 1rem 0;
+  table-layout: auto;
+}
+
+.dark .vp-doc table.enum-version-table col.enum-version-table__col-name {
+  width: 0;
+}
+
+.dark .vp-doc table.enum-version-table col.enum-version-table__col-type {
+  width: 0;
+}
+
+.dark .vp-doc table.enum-version-table col.enum-version-table__col-game {
+  width: 3.5rem;
+}
+
+.dark .vp-doc table.enum-version-table thead th {
+  position: sticky;
+  top: var(--vp-nav-height, 64px);
+  z-index: 10;
+  background-color: var(--vp-c-bg-elv) !important;
+  box-shadow: 0 1px 0 var(--vp-c-divider);
+}
+
+.dark .vp-doc table.enum-version-table th,
+.dark .vp-doc table.enum-version-table td {
+  white-space: nowrap;
+}
+
+.dark .vp-doc table.enum-version-table .enum-version-table__name {
+  width: 1%;
+  padding-right: 1.25rem;
+}
+
+.dark .vp-doc table.enum-version-table .enum-version-table__type {
+  width: 1%;
+  padding-right: 1.25rem;
+}
+
+.dark .vp-doc table.enum-version-table .enum-version-table__type-link {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.dark .vp-doc table.enum-version-table .enum-version-table__type-link > code {
+  text-decoration: inherit;
+  text-underline-offset: inherit;
+}
+
+.dark .vp-doc table.enum-version-table .enum-version-table__type-link:hover > code {
+  color: var(--vp-c-brand-1);
+}
+
+.dark .vp-doc table.enum-version-table .enum-version-table__game {
+  min-width: 3.5rem;
+  text-align: center;
+}
+
+.dark .vp-doc table.enum-version-table .version-game-label {
+  gap: 0.4rem;
+}
+
+.dark .vp-doc table.enum-version-table .version-game-label__name {
+  line-height: 1.2;
+}
+
+/* ActionSupportedVersions — version + supported table on action pages */
+.dark .vp-doc table.action-supported-versions-table {
+  display: table !important;
+  overflow: visible !important;
+  border-collapse: separate !important;
+  border-spacing: 0;
+  width: max-content;
+  max-width: 100%;
+  margin: 1rem 0;
+  table-layout: auto;
+}
+
+.dark .vp-doc table.action-supported-versions-table col.action-supported-versions-table__col-version {
+  width: 0;
+}
+
+.dark .vp-doc table.action-supported-versions-table col.action-supported-versions-table__col-supported {
+  width: 5rem;
+}
+
+.dark .vp-doc table.action-supported-versions-table thead th {
+  position: sticky;
+  top: var(--vp-nav-height, 64px);
+  z-index: 10;
+  background-color: var(--vp-c-bg-elv) !important;
+  box-shadow: 0 1px 0 var(--vp-c-divider);
+}
+
+.dark .vp-doc table.action-supported-versions-table th,
+.dark .vp-doc table.action-supported-versions-table td {
+  white-space: nowrap;
+}
+
+.dark .vp-doc table.action-supported-versions-table .action-supported-versions-table__version {
+  width: 1%;
+  padding-right: 1.25rem;
+}
+
+.dark .vp-doc table.action-supported-versions-table .action-supported-versions-table__supported {
+  min-width: 5rem;
+  text-align: center;
+}
+
+.dark .vp-doc table.action-supported-versions-table .action-supported-versions-table__version-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.dark .vp-doc table.action-supported-versions-table .action-supported-versions-table__version-link:hover .version-game-label__name {
+  color: var(--vp-c-brand-1);
+  text-decoration: underline;
+}
+
+.megalo-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 24px 96px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .megalo-not-found {
+    padding: 64px 32px 120px;
+  }
+}
+
+.megalo-not-found__image {
+  display: block;
+  width: min(100%, 28rem);
+  height: auto;
+  margin: 0 auto 1.5rem;
+}
+
+.megalo-not-found__title {
+  margin: 0;
+  font-family: var(--megalo-font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.megalo-not-found__quote {
+  max-width: 28rem;
+  margin: 0.75rem auto 0;
+  color: var(--vp-c-text-2);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.megalo-not-found__link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  border: 1px solid var(--vp-c-brand-1);
+  border-radius: 16px;
+  padding: 0.35rem 1rem;
+  color: var(--vp-c-brand-1);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition:
+    border-color 0.25s,
+    color 0.25s;
+}
+
+.megalo-not-found__link:hover {
+  border-color: var(--vp-c-brand-2);
+  color: var(--vp-c-brand-2);
 }

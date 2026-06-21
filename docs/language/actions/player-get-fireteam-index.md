@@ -17,14 +17,9 @@ action player_get_fireteam_index current_player ftindex
 
 Example from HREK `broken/kim-1flag-hill.txt`.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [61](/versions/49/) |
-| 73 | [60](/versions/73/) |
-| 106 | [62](/versions/106/) |
-| 107 | [62](/versions/107/) |
-| 107 (MCC) | [62](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

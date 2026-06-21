@@ -17,14 +17,9 @@ action player_set_fireteam_tier …
 
 No curated example yet — see [Megalo Versions](/versions/) for build availability.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [69](/versions/49/) |
-| 73 | [68](/versions/73/) |
-| 106 | — |
-| 107 | — |
-| 107 (MCC) | — |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

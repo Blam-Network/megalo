@@ -15,14 +15,9 @@ Sets a player's primary respawn object.
 action player_set_primary_respawn_object …
 ```
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [60](/versions/49/) |
-| 73 | [59](/versions/73/) |
-| 106 | [61](/versions/106/) |
-| 107 | [61](/versions/107/) |
-| 107 (MCC) | [61](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

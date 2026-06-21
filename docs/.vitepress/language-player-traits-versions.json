@@ -1,0 +1,237 @@
+{
+  "entries": [
+    {
+      "name": "damage_resistance",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "percentage",
+      "typeKeywords": [
+        "invulnerable"
+      ]
+    },
+    {
+      "name": "body_recharge",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "percentage"
+    },
+    {
+      "name": "shield_recharge",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "percentage"
+    },
+    {
+      "name": "vampirism",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "percentage"
+    },
+    {
+      "name": "headshot_immunity",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "body_multiplier",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "percentage"
+    },
+    {
+      "name": "shield_multiplier",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "percentage"
+    },
+    {
+      "name": "assassination_immunity",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "damage_modifier",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "percentage",
+      "typeKeywords": [
+        "fatality"
+      ]
+    },
+    {
+      "name": "melee_damage_modifier",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "percentage",
+      "typeKeywords": [
+        "fatality"
+      ]
+    },
+    {
+      "name": "initial_primary_weapon",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "weapon"
+    },
+    {
+      "name": "initial_secondary_weapon",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "weapon"
+    },
+    {
+      "name": "initial_equipment",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "equipment"
+    },
+    {
+      "name": "initial_grenades",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "grenade_count"
+    },
+    {
+      "name": "recharging_grenades",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "infinite_ammo",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "bottomless_clip",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "weapon_pickup",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "drop_equipment",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "infinite_equipment",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "speed",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "percentage"
+    },
+    {
+      "name": "gravity",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "percentage"
+    },
+    {
+      "name": "vehicle_usage",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "vehicle_usage_setting"
+    },
+    {
+      "name": "jump_modifier",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "integer"
+    },
+    {
+      "name": "sprinting",
+      "reach": "≤73",
+      "halo4": "No",
+      "h2a": "No",
+      "type": "sprint_setting"
+    },
+    {
+      "name": "equipment_usage",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "equipment_usage_setting"
+    },
+    {
+      "name": "active_camo",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "active_camo_setting"
+    },
+    {
+      "name": "waypoint",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "waypoint_setting"
+    },
+    {
+      "name": "gamertag_visibility",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "waypoint_setting"
+    },
+    {
+      "name": "color",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "forced_change_color_setting"
+    },
+    {
+      "name": "tracker_mode",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "motion_tracker_setting"
+    },
+    {
+      "name": "tracker_range",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "percentage"
+    }
+  ]
+}

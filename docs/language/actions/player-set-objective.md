@@ -17,14 +17,9 @@ action player_set_objective current_player "+%n" 1
 
 Example from HREK `broken/calvinball.txt`.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [54](/versions/49/) |
-| 73 | [56](/versions/73/) |
-| 106 | [56](/versions/106/) |
-| 107 | [56](/versions/107/) |
-| 107 (MCC) | [56](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

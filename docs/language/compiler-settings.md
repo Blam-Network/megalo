@@ -4,6 +4,15 @@ Megalo source does not declare these options — they are **compile-time switche
 
 HREK **MegaloEdit** always compiles in **lenient mode** (permissive defaults). Bungie's internal build farm probably used stricter settings. The switches live in **ManagedMegalo.dll** (`ParsingHelper`, `MegaloCompiler`); MegaloEdit wires them in but does not expose them in the UI.
 
+MegaloEdit also exposes **input** and **output directory** settings (File → Settings). These paths control where the compiler looks for external files:
+
+| Setting | Used when resolving |
+|---------|---------------------|
+| **Input directory** | [`include`](/language/elements/include) and [`localized_include`](/language/elements/localized-include) paths |
+| **Output directory** | [`base`](/language/elements/base) references to compiled `.mglo` files |
+
+Include paths in source are relative to the input directory (and the including file). Base paths name a compiled variant in the output directory — by default `maps/megalo` under the HREK install when using MegaloEdit.exe. Compile the parent script first so its `.mglo` exists before building a derived script that references it. See [Base files](/language/base-files).
+
 ## localized_include strictness
 
 Controls whether a missing [`localized_include`](/language/elements/localized-include) is optional or fatal.
@@ -56,7 +65,7 @@ On MCC Reach, each [action scope](/language/elements/trigger#action-scope) has a
 
 When overflow is **enabled** (MegaloEdit default), the compiler may spill excess temporaries into **unused global variable slots** of the same type once the dedicated pool is full, up to the overflow cap. When overflow is **disabled**, running out of temporary slots fails the compile.
 
-This affects how much logic you can pack into a single scope — not syntax, but whether deeply nested `temporary` declarations are accepted. See [Variable model — Temporary variables](/language/variable-model#limits-mcc-reach) for scope nesting and TU1 behavior.
+This affects how much logic you can pack into a single scope — not syntax, but whether deeply nested `temporary` declarations are accepted. See [107 (MCC) — Limits](/versions/107-mcc/#limits) and [107 — Limits](/versions/107/#limits) for scope nesting and TU1 behavior.
 
 *ManagedMegalo.dll: `TemporaryVariablesCanOverflowIntoUnusedGlobalVariables` on `MegaloCompiler`.*
 
@@ -66,12 +75,15 @@ See also [Megalo versions](/guide/megalo-versions) (MCC vs TU1).
 
 | Setting | Lenient (MegaloEdit) | Strict | Language feature |
 |---------|---------------------|---------------------|------------------|
+| Input directory | — | — | [`include`](/language/elements/include), [`localized_include`](/language/elements/localized-include) |
+| Output directory | — | — | [`base`](/language/elements/base) (`.mglo` lookup) |
 | Localized includes | Missing file → warning | Missing file → error | [`localized_include`](/language/elements/localized-include) |
 | String literals | Warning | Error | String-table symbols vs `"quoted"` text |
 | Temporary overflow (MCC+) | Spill into free globals | Compile fails when pool full | [`temporary`](/language/elements/trigger#action-scope) in triggers |
 
 ## See also
 
+- [Base files](/language/base-files) — derived scripts and `.mglo` lookup
 - [`localized_include`](/language/elements/localized-include)
 - [Syntax — Includes](/language/syntax#includes)
 - [trigger — Action scope](/language/elements/trigger#action-scope)

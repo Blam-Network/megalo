@@ -17,14 +17,9 @@ action hud_widget_set_text obj_bfg "SECURE THE BFG"
 
 Example from HREK `broken/kim-1flag-hill.txt`.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [45](/versions/49/) |
-| 73 | [46](/versions/73/) |
-| 106 | [46](/versions/106/) |
-| 107 | [46](/versions/107/) |
-| 107 (MCC) | [46](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

@@ -1,0 +1,375 @@
+{
+  "entries": [
+    {
+      "name": "score_to_win_round",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "integer"
+    },
+    {
+      "name": "fire_teams_enabled",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "team_scoring_mode",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "team_scoring_method"
+    },
+    {
+      "name": "teams_enabled",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "round_time_limit",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "integer"
+    },
+    {
+      "name": "round_count",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "integer"
+    },
+    {
+      "name": "perfection_enabled",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "early_victory_win_count",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "integer"
+    },
+    {
+      "name": "sudden_death_time_limit",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "integer"
+    },
+    {
+      "name": "grace_period_time_limit",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "integer"
+    },
+    {
+      "name": "lives_per_round",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "integer"
+    },
+    {
+      "name": "team_lives_per_round",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "integer"
+    },
+    {
+      "name": "respawn_time",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "integer"
+    },
+    {
+      "name": "suicide_respawn_penalty",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "integer"
+    },
+    {
+      "name": "betrayal_respawn_penalty",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "integer"
+    },
+    {
+      "name": "respawn_time_growth",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "integer"
+    },
+    {
+      "name": "loadout_selection_time",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "integer"
+    },
+    {
+      "name": "respawn_traits",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "player_traits"
+    },
+    {
+      "name": "respawn_traits_duration",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "integer"
+    },
+    {
+      "name": "friendly_fire_enabled",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "betrayal_booting_enabled",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "enemy_voice_enabled",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "open_channel_voice_enabled",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "dead_player_voice_enabled",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "grenades_on_map",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "shortcuts_on_map",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "equipment_on_map",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "powerups_on_map",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "turrets_on_map",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "indestructible_vehicles",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "boolean"
+    },
+    {
+      "name": "base_player_traits",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "player_traits"
+    },
+    {
+      "name": "weapon_set",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "weapon_set"
+    },
+    {
+      "name": "vehicle_set",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "vehicle_set"
+    },
+    {
+      "name": "red_powerup_traits",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "player_traits"
+    },
+    {
+      "name": "red_powerup_duration",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "integer"
+    },
+    {
+      "name": "blue_powerup_traits",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "player_traits"
+    },
+    {
+      "name": "blue_powerup_duration",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "integer"
+    },
+    {
+      "name": "yellow_powerup_traits",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "player_traits"
+    },
+    {
+      "name": "yellow_powerup_duration",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "integer"
+    },
+    {
+      "name": "loadout_palette",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "loadout_palette"
+    },
+    {
+      "name": "tu1_always_spillover_damage",
+      "reach": "107+",
+      "halo4": "No",
+      "h2a": "No",
+      "type": "boolean"
+    },
+    {
+      "name": "tu1_armor_lock_stickies_remain",
+      "reach": "107+",
+      "halo4": "No",
+      "h2a": "No",
+      "type": "boolean"
+    },
+    {
+      "name": "tu1_attached_damage_bypass_shields",
+      "reach": "107+",
+      "halo4": "No",
+      "h2a": "No",
+      "type": "boolean"
+    },
+    {
+      "name": "tu1_active_camo_override_energy_curve",
+      "reach": "107+",
+      "halo4": "No",
+      "h2a": "No",
+      "type": "boolean"
+    },
+    {
+      "name": "tu1_sword_gun_clang_kills",
+      "reach": "107+",
+      "halo4": "No",
+      "h2a": "No",
+      "type": "boolean"
+    },
+    {
+      "name": "tu1_magnum_is_automatic",
+      "reach": "107+",
+      "halo4": "No",
+      "h2a": "No",
+      "type": "boolean"
+    },
+    {
+      "name": "tu1_headshot_weapon_reticule_bloom_multiplier",
+      "reach": "107+",
+      "halo4": "No",
+      "h2a": "No",
+      "type": "float"
+    },
+    {
+      "name": "tu1_armor_lock_damage_to_energy_transfer",
+      "reach": "107+",
+      "halo4": "No",
+      "h2a": "No",
+      "type": "float"
+    },
+    {
+      "name": "tu1_armor_lock_damage_to_energy_cap",
+      "reach": "107+",
+      "halo4": "No",
+      "h2a": "No",
+      "type": "float"
+    },
+    {
+      "name": "tu1_active_camo_override_energy_curve_min",
+      "reach": "107+",
+      "halo4": "No",
+      "h2a": "No",
+      "type": "float"
+    },
+    {
+      "name": "tu1_active_camo_override_energy_curve_max",
+      "reach": "107+",
+      "halo4": "No",
+      "h2a": "No",
+      "type": "float"
+    },
+    {
+      "name": "tu1_magnum_damage_multiplier",
+      "reach": "107+",
+      "halo4": "No",
+      "h2a": "No",
+      "type": "float"
+    },
+    {
+      "name": "tu1_magnum_fire_recovery_time_multiplier",
+      "reach": "107+",
+      "halo4": "No",
+      "h2a": "No",
+      "type": "float"
+    }
+  ]
+}

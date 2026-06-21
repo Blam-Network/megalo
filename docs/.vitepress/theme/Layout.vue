@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import DefaultTheme from "vitepress/theme";
+import NotFound from "./NotFound.vue";
 
 const { Layout: DefaultLayout } = DefaultTheme;
 </script>
@@ -10,7 +11,11 @@ const { Layout: DefaultLayout } = DefaultTheme;
       <div class="megalo-hero-bg-image" />
       <div class="megalo-hero-bg-overlay" />
     </div>
-    <DefaultLayout />
+    <DefaultLayout>
+      <template #not-found>
+        <NotFound />
+      </template>
+    </DefaultLayout>
   </div>
 </template>
 

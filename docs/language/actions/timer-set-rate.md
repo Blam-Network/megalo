@@ -17,14 +17,9 @@ action timer_set_rate period_timer 1
 
 Example from HREK `broken/1Flag_Boneyard_Extreme.txt`.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [17](/versions/49/) |
-| 73 | [17](/versions/73/) |
-| 106 | [17](/versions/106/) |
-| 107 | [17](/versions/107/) |
-| 107 (MCC) | [17](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

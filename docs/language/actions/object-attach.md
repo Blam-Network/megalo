@@ -17,14 +17,9 @@ action object_attach the_flag current_team.goal 0 0 0.15
 
 Example from HREK `broken/1Flag_Boneyard.txt`.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [33](/versions/49/) |
-| 73 | [33](/versions/73/) |
-| 106 | [33](/versions/106/) |
-| 107 | [33](/versions/107/) |
-| 107 (MCC) | [33](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

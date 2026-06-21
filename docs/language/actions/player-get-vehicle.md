@@ -17,14 +17,9 @@ action player_get_vehicle current_player test_for_vehicle
 
 Example from HREK `broken/bumpercars.txt`.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [40](/versions/49/) |
-| 73 | [40](/versions/73/) |
-| 106 | [40](/versions/106/) |
-| 107 | [40](/versions/107/) |
-| 107 (MCC) | [40](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

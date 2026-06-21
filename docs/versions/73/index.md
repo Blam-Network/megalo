@@ -4,21 +4,9 @@ Public Beta (Omaha Delta) megalo build. Action tables are available in @blamnetw
 
 | | |
 |---|---|
-| **Build** | Public Beta (`v09730_10_04_09_1309_omaha_delta`) |
-| **BLF import** | `@blamnetwork/blf/haloreach/v09730_10_04_09_1309_omaha_delta` |
-| **Library support** | Action tables only — not wired as a @blamnetwork/megalo dialect. |
-| **Action count** | 92 (excluding `none`) |
-
-Megalo encoding version **73**.
-
-## Supported Halo builds
-
-- `09730.10.04.09.1309.omaha_delta`
-- `09664.10.04.06.2121.omaha_beta`
-
-## Supported by @blamnetwork/megalo
-
-Not supported for compile or decompile in @blamnetwork/megalo.
+| **Game** | <ReachGameIcon /> |
+| **Megalo Version** | 73 |
+| **Supported Halo Versions** | `09730.10.04.09.1309.omaha_delta`<br/>`09664.10.04.06.2121.omaha_beta`<br/>`09449.10.03.25.1545.omaha_beta` |
 
 ## Changes from prior version
 
@@ -44,4 +32,8 @@ Compared to [49](/versions/49/).
 - `object_set_minimap_priority` (opcode 57)
 - `object_set_minimap_icon` (opcode 58)
 
-Per-action documentation lives under [Actions](/language/actions/).
+## Limits
+
+<VersionLimits />
+
+Per-action pages are listed under **Actions** in the sidebar.

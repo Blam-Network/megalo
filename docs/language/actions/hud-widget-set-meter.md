@@ -15,14 +15,9 @@ Configures meter parameters on a HUD widget.
 action hud_widget_set_meter …
 ```
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [47](/versions/49/) |
-| 73 | [48](/versions/73/) |
-| 106 | [48](/versions/106/) |
-| 107 | [48](/versions/107/) |
-| 107 (MCC) | [48](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

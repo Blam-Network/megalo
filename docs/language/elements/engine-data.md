@@ -25,6 +25,12 @@ end
 
 Values are string table symbol names, not literal quoted strings.
 
+<DocsBlock type="info" title="Variant name and description">
+
+The gametype `name` and `description` are stored in separate variant metadata fields on the wire, not in the script `m_script_strings` table. They do not count toward the **112** entry or **19,456** byte limits on [string_table](/language/elements/string-table).
+
+</DocsBlock>
+
 ## Base-derived scripts
 
 `engine_data` can appear in [base-derived scripts](/language/base-files) to override the inherited gametype metadata.

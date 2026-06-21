@@ -15,14 +15,9 @@ Animates a device between positions over time.
 action device_animate_position …
 ```
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [81](/versions/49/) |
-| 73 | [80](/versions/73/) |
-| 106 | [79](/versions/106/) |
-| 107 | [79](/versions/107/) |
-| 107 (MCC) | [79](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

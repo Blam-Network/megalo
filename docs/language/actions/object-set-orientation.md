@@ -17,14 +17,9 @@ action object_set_orientation …
 
 No curated example yet — see [Megalo Versions](/versions/) for build availability.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | — |
-| 73 | [92](/versions/73/) |
-| 106 | [91](/versions/106/) |
-| 107 | [91](/versions/107/) |
-| 107 (MCC) | [91](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

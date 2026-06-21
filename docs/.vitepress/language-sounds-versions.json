@@ -1,0 +1,1444 @@
+{
+  "entries": [
+    {
+      "name": "slayer",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ctf",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "flag_captured",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "flag_dropped",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "flag_recovered",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "flag_reset",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "flag_stolen",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "flag_taken",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "vip",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "new_vip",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "vip_killed",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "juggernaut",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "new_juggernaut",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "territories",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "territory_captured",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "territory_lost",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "assault",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bomb_armed",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bomb_detonated",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bomb_disarmed",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bomb_dropped",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bomb_reset",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bomb_returned",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bomb_taken",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "infection",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "infected",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "last_man_standing",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "new_zombie",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "oddball",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ball_spawned",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ball_taken",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ball_dropped",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ball_reset",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "king",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "hill_controlled",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "hill_contested",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "hill_moved",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "headhunter",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "stockpile",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "race",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "defense",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "offense",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "destination_moved",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "generator_armed",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "core_armed",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "generator_disarmed",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "core_disarmed",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "sudden_death",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "game_over",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bone_cv_defeat",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bone_cv_ph1_defeat",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bone_cv_ph1_intro",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bone_cv_ph1_victory",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bone_cv_ph2_defeat",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bone_cv_ph2_victory",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bone_cv_ph3_victory",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bone_cv_victory",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bone_sp_defeat",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bone_sp_ph1_intro",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bone_sp_ph1_victory",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bone_sp_ph2_intro",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bone_sp_ph2_victory",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bone_sp_ph3_intro",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bone_sp_ph3_victory",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "isle_cv_defeat",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "isle_cv_ph1_defeat",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "isle_cv_ph1_intro",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "isle_cv_ph2_intro",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "isle_cv_ph2_victory",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "isle_cv_ph3_intro",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "isle_cv_ph3_victory",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "isle_sp_defeat",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "isle_sp_ph1_defeat",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "isle_sp_ph1_extra",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "isle_sp_ph1_intro",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "isle_sp_ph1_victory",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "isle_sp_ph2_defeat",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "isle_sp_ph2_victory",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "isle_sp_ph3_victory",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "isle_sp_victory",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bone_sp_ph3_defeat",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "isle_cv_ph3_defeat",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "covy_big_win",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "covy_win1",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "covy_win2",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "invasion_beginning",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "unsc_big_win",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "unsc_win1",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "unsc_win2",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "power_down",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "reinforcements",
+      "reach": "106+",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "respawn_tick",
+      "reach": "106+",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "alpha_under_attack",
+      "reach": "106+",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "bravo_under_attack",
+      "reach": "106+",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "charlie_under_attack",
+      "reach": "106+",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_base1",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_base2",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_base3",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_base4",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_base5",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_base_contested",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_base_captured",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_base_gendown",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_score_tick",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "regicide_intro",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "king_crowned_regicide",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "king_crowned_regicide2",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "king_crowned_frompoints",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "king_crowned_frompoints2",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "king_killed",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "king_killed2",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "king_max_bonus",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "king_spree",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "king_tacular",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "king_reignofterror",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "king_slayer",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "king_execution",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "king_itsyou",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_offline_base",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_offline_base1",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_offline_base2",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_offline_base3",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_offline_base4",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_offline_base5",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_online_base",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_online_base1",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_online_base2",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_online_base3",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_online_base4",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_online_base5",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_enemy_base",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_enemy_base1",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_enemy_base2",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_enemy_base3",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_enemy_base4",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_enemy_base5",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_start_enemy_base",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_start_enemy_base1",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_start_enemy_base2",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_start_enemy_base3",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_start_enemy_base4",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_start_enemy_base5",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_team_base",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_team_base1",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_team_base2",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_team_base3",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_team_base4",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_team_base5",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_stop_team_base",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_stop_team_base1",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_stop_team_base2",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_stop_team_base3",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_stop_team_base4",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_cap_stop_team_base5",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_laststand_capped_all",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_laststand_capped_none",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_laststand_must_cap",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_title",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_title_kingdom",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_title_tyranny",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_obective",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_obective_kingdom",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_obective_tyranny",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_team_castle_locked",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_team_castle_unlocked",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_enemy_castle_locked",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_enemy_castle_unlocked",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_team_upgrade2_base1",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_team_upgrade3_base1",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_team_upgrade2_base2",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_team_upgrade3_base2",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_team_upgrade2_base3",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_team_upgrade3_base3",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_team_upgrade2_base4",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_team_upgrade3_base4",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_team_upgrade2_base5",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_team_upgrade3_base5",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_activate_cap_sfx",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_deactivate_cap_sfx",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_vehicle_terminal_use_sfx",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "dom_lost_base",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ca_dom_base_upgrade",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ca_dom_base_boot",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ca_dom_base_power_offline",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ca_dom_base_power_restored",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ca_dom_generator_power_offline",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ca_dom_generator_power_restored",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ca_dom_base_ambient_start",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ca_dom_base_ambient_stop",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ca_dom_shield_power_up",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ca_dom_shield_power_down",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ca_dom_base_terminal_use_start",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ca_dom_base_terminal_use_stop",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ca_dom_vehicle_terminal_use_start",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ca_dom_vehicle_terminal_use_stop",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ca_dom_generator_terminal_use_start",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ca_dom_generator_terminal_use_stop",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ca_dom_generic_stop",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "ca_dom_generic_start",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_disarmed",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_disarmed_site1",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_disarmed_site2",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_disarmed_site3",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_disarmed_site4",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_disarmed_site5",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_planted",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_planted_site1",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_planted_site2",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_planted_site3",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_planted_site4",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_planted_site5",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_site_available",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_site_moved",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_objective_attack",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_objective_defend",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_title",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_title_symmetric",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_title_grifball",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_title_oneshot",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_title_scorchedearth",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_destroyed_site1",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_destroyed_site2",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_destroyed_site3",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_destroyed_site4",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_destroyed_site5",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_arming_sfx",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_disarming_sfx",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "blam_bomb_explosion_sfx",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "escape_objective_attacker",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "escape_objective_defender",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "escape_objective_attacker_switches",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "escape_objective_defender_switches",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "escape_portal_moved",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "escape_portal_off",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "escape_portal_on",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "escape_portal_open",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "escape_switch_activated",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "escape_switch_portal_on",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "escape_switch_portal_off",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "escape_title",
+      "reach": "No",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    }
+  ]
+}

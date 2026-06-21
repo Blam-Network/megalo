@@ -8,7 +8,17 @@
     },
     "create_object": {
       "grammar": "<object_type> at <place_at_object> [set <object_reference_out>] [label <filter name>] [never_garbage] [suppress_effect] [absolute_orientation] [offset <x> <y> <z> (feet)] [variant <name>]",
-      "empty": false
+      "empty": false,
+      "versionGrammars": [
+        {
+          "label": "Version 73+",
+          "grammar": "<object_type> at <place_at_object> [set <object_reference_out>] [label <filter name>] [never_garbage] [suppress_effect] [absolute_orientation] [offset <x> <y> <z> (feet)] [variant <name>]"
+        },
+        {
+          "label": "Version <73",
+          "grammar": "<object_type> <object_reference_out> <place_at_object>"
+        }
+      ]
     },
     "delete_object": {
       "grammar": "<object>",
@@ -403,7 +413,7 @@
       "empty": false
     },
     "get_button_time": {
-      "grammar": "<player> <button> <milliseconds_out>",
+      "grammar": "<player> <scriptable_button> <milliseconds_out>",
       "empty": false
     },
     "team_set_vehicle_spawning": {

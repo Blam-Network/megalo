@@ -5,7 +5,11 @@
 
 </AvailabilityCard>
 
-Groups [`loadout`](/language/elements/loadout) definitions into selectable palette presets.
+Groups [`loadout`](/language/elements/loadout) definitions into selectable palette presets. When assigned through `game_options`, the palette appears as the respawn loadout selection menu.
+
+![Loadout selection menu in Reach multiplayer — a palette of five loadouts (Sprint, Armor Lock, Jet Pack, Active Camo, Hologram)](/images/language/loadout-palette.png)
+
+*The in-game palette UI. Each `item` line in a `loadout_palette` block becomes one selectable row.*
 
 ```megalo
 loadout_palette slayer_loadouts

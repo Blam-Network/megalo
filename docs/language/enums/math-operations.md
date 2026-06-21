@@ -38,6 +38,3 @@ action set_score add kill_points player killing_player
 action object_adjust_shield current_player set_to 100
 ```
 
-## Source
-
-[`e_math_operation`](https://github.com/Blam-Network/blf/blob/main/blf-ts/src/blam/haloreach_mcc/v_untracked_25_08_16_1352/game/megalogamengine/megalogamengine_actions.ts) in @blamnetwork/blf. MCC-only operators are documented in [Megalo MCC changes](https://blam-network.github.io/blf/guide/megalo-mcc-changes).

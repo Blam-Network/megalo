@@ -17,14 +17,9 @@ action boundary_set_visible hill true
 
 Example from HREK `broken/calvinball.txt`.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [22](/versions/49/) |
-| 73 | [22](/versions/73/) |
-| 106 | [22](/versions/106/) |
-| 107 | [22](/versions/107/) |
-| 107 (MCC) | [22](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

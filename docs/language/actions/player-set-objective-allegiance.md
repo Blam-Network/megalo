@@ -17,14 +17,9 @@ action player_set_objective_allegiance …
 
 No curated example yet — see [Megalo Versions](/versions/) for build availability.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | — |
-| 73 | — |
-| 106 | [57](/versions/106/) |
-| 107 | [57](/versions/107/) |
-| 107 (MCC) | [57](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

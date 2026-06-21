@@ -16,14 +16,9 @@ action random 0 5 randumb
 
 Example from HREK `broken/derekball.txt`.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [25](/versions/49/) |
-| 73 | [25](/versions/73/) |
-| 106 | [25](/versions/106/) |
-| 107 | [25](/versions/107/) |
-| 107 (MCC) | [25](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

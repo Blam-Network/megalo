@@ -17,14 +17,9 @@ action team_set_coop_spawning current_team true
 
 Example from HREK `broken/1Flag_Boneyard.txt`.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [55](/versions/49/) |
-| 73 | [57](/versions/73/) |
-| 106 | [59](/versions/106/) |
-| 107 | [59](/versions/107/) |
-| 107 (MCC) | [59](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

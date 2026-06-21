@@ -17,14 +17,9 @@ action set_respawn_filter my_spawn allies
 
 Example from HREK `broken/1Flag_Boneyard.txt`.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [13](/versions/49/) |
-| 73 | [13](/versions/73/) |
-| 106 | [13](/versions/106/) |
-| 107 | [13](/versions/107/) |
-| 107 (MCC) | [13](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

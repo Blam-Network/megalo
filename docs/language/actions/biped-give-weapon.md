@@ -17,14 +17,9 @@ action biped_give_weapon current_player "shotgun" primary
 
 Example from HREK `broken/1Flag_Boneyard_Extreme.txt`.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | — |
-| 73 | — |
-| 106 | [93](/versions/106/) |
-| 107 | [93](/versions/107/) |
-| 107 (MCC) | [93](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

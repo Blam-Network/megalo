@@ -4,21 +4,9 @@ Original Xbox 360 Reach launch megalo build (encoding version 106). Action opcod
 
 | | |
 |---|---|
-| **Build** | Release (`v11860_10_07_24_0147_omaha_release`) |
-| **BLF import** | `@blamnetwork/blf/haloreach/v11860_10_07_24_0147_omaha_release` |
-| **Library support** | Action tables only — not wired as a @blamnetwork/megalo dialect. |
-| **Action count** | 98 (excluding `none`) |
-
-Megalo encoding version **106**.
-
-## Supported Halo builds
-
-- `12065.11.08.24.1738.tu1actual` (read only)
-- `11860.10.07.24.0147.omaha_release`
-
-## Supported by @blamnetwork/megalo
-
-Not supported for compile or decompile in @blamnetwork/megalo.
+| **Game** | <ReachGameIcon /> |
+| **Megalo Version** | 106 |
+| **Supported Halo Versions** | `12065.11.08.24.1738.tu1actual` (read only)<br/>`11860.10.07.24.0147.omaha_release` |
 
 ## Changes from prior version
 
@@ -42,4 +30,8 @@ Compared to [73](/versions/73/).
 - `give_weapon` (opcode 73)
 - `set_loadout` (opcode 77)
 
-Per-action documentation lives under [Actions](/language/actions/).
+## Limits
+
+<VersionLimits />
+
+Per-action pages are listed under **Actions** in the sidebar.

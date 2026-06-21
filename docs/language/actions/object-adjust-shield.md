@@ -17,14 +17,9 @@ action object_adjust_shield current_player set_to 100
 
 Example from HREK `broken/derekball.txt`.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [63](/versions/49/) |
-| 73 | [62](/versions/73/) |
-| 106 | [64](/versions/106/) |
-| 107 | [64](/versions/107/) |
-| 107 (MCC) | [64](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

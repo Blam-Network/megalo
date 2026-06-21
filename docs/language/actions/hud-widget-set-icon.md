@@ -15,14 +15,9 @@ Sets the icon on a HUD widget.
 action hud_widget_set_icon …
 ```
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [48](/versions/49/) |
-| 73 | [49](/versions/73/) |
-| 106 | [49](/versions/106/) |
-| 107 | [49](/versions/107/) |
-| 107 (MCC) | [49](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

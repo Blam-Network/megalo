@@ -15,14 +15,9 @@ Snaps a device to a position without animation.
 action device_set_position_immediate …
 ```
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [82](/versions/49/) |
-| 73 | [81](/versions/73/) |
-| 106 | [80](/versions/106/) |
-| 107 | [80](/versions/107/) |
-| 107 (MCC) | [80](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

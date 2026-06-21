@@ -17,14 +17,9 @@ action navpoint_set_timer one_flag none
 
 Example from HREK `broken/1Flag_Boneyard.txt`.
 
-## Build availability
+## Supported Versions
 
-| Build | Opcode |
-|-------|--------|
-| 49 | [7](/versions/49/) |
-| 73 | [7](/versions/73/) |
-| 106 | [7](/versions/106/) |
-| 107 | [7](/versions/107/) |
-| 107 (MCC) | [7](/versions/107-mcc/) |
+<ActionSupportedVersions />
 
-See also the [Actions overview](/language/actions/) and [action syntax](/language/elements/trigger/action).
+
+See also [action syntax](/language/elements/trigger/action).

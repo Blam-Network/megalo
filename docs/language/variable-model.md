@@ -51,16 +51,9 @@ The scope keyword appears on the `variables` line itself (`variables global`, `v
 
 ### Limits
 
-Each scope has a fixed pool of custom variable slots per type:
+Custom variable slot counts are listed under **Limits** on each [megalo version page](/versions/) — for example [49](/versions/49/#limits), [73](/versions/73/#limits), [107](/versions/107/#limits), or [107 (MCC)](/versions/107-mcc/#limits). Exceeding a cap fails the compile.
 
-| Scope | `number` | `object` | `player` | `team` | `timer` |
-|-------|----------|----------|----------|--------|---------|
-| `global` | 12 | 16 | 8 | 8 | 8 |
-| `player` | 8 | 4 | 4 | 4 | 4 |
-| `team` | 8 | 6 | 4 | 4 | 4 |
-| `object` | 8 | 4 | 4 | 2 | 4 |
-
-Exceeding these limits fails the compile. On MCC Reach, [`temporary`](/language/elements/trigger#action-scope) variables may spill into unused global slots when overflow is enabled — see [Temporary variables — Limits (MCC Reach)](#limits-mcc-reach) and [Compiler settings](/language/compiler-settings#temporary-variable-overflow).
+On MCC Reach, [`temporary`](/language/elements/trigger#action-scope) variables may spill into unused global slots when overflow is enabled — see [107 (MCC) — Limits](/versions/107-mcc/#limits) and [Compiler settings](/language/compiler-settings#temporary-variable-overflow).
 
 ### Types
 
@@ -135,32 +128,15 @@ condition if special_death_type equal_to k_special_death_type_headshot
 action set_score add headshot_bonus player killing_player
 ```
 
-## Built-in globals
+## Built-in variables
 
-Megalo scripts can read engine state through built-in global names that are not declared in `variables` blocks. These appear in conditions and `set` operands like ordinary identifiers.
+Megalo scripts can read engine state through built-in variable names that are not declared in `variables` blocks. These appear in conditions and `set` operands like ordinary identifiers.
 
-Common built-in globals:
-
-| Global | Description |
-|--------|-------------|
-| `round` | Current round number |
-| `round_count` | Total rounds configured |
-| `round_time_limit` | Round time limit (minutes) |
-| `round_timer` | Elapsed round timer |
-| `score_to_win_round` | Score needed to win |
-| `teams_enabled` | Whether teams are active |
-| `fire_teams_enabled` | Whether fireteams are active |
-| `friendly_fire_enabled` | Friendly fire setting |
-| `lives_per_round` | Lives per player per round |
-| `respawn_time` | Respawn delay (seconds) |
-| `respawn_traits_duration` | Duration of respawn traits |
-| `sudden_death_timer` | Sudden death countdown |
-| `grace_period_timer` | Grace period countdown |
-| `grenades_on_map` | Whether grenades spawn on map |
+See [Built-in variables](/language/enums/built-in-variables) for the full list with types and per-game availability.
 
 Game options declared in `game_options` blocks also become readable constants (e.g. `kill_points`, `hidden_gametype`, `flag_return_time`).
 
-Built-in globals can be overridden in `game_options` using `override`:
+Built-in variables can be overridden in `game_options` using `override`:
 
 ```megalo
 game_options
@@ -170,7 +146,7 @@ game_options
 end
 ```
 
-See the `OverridableGameOption` enum for the full list of overridable engine options.
+See [Built-in variables](/language/enums/built-in-variables) and [Game options](/language/enums/game-options) for the full lists.
 
 ## Temporary variables
 
@@ -191,23 +167,7 @@ Valid types are `number`, `object`, `team`, and `player`. There is no `timer` te
 
 Temporaries are useful for storing getter action results or intermediate values without declaring a permanent [`variables`](#custom-variables) slot. Each `temporary` line also counts as one **action** toward the script's 1024-action limit, because the compiler emits an internal `set` for the initial value.
 
-### Limits (MCC Reach)
-
-On MCC Reach, each action scope has its own dedicated temporary pool per type. Nested scopes (for example a `for_each` inside a trigger) get separate pools; leaving a scope frees temporaries declared inside it.
-
-| Type | Dedicated temporaries | Max overflow into globals |
-|------|----------------------|---------------------------|
-| `number` | 10 | 12 |
-| `object` | 8 | 16 |
-| `team` | 6 | 8 |
-| `player` | 3 | 8 |
-
-When the dedicated pool is full, behavior depends on [compiler settings](/language/compiler-settings#temporary-variable-overflow):
-
-- **Overflow enabled** (MegaloEdit default) — excess temporaries spill into unused **global** slots of the same type, up to the overflow cap (which matches the [global variable limits](#limits) for that type).
-- **Overflow disabled** — the compile fails with *Too many temporary variables of this type*.
-
-On **Xbox 360 TU1**, there is no separate temporary pool — temporaries map directly to globals, so the relevant cap is the global variable table above.
+Temporary pool sizes and overflow caps depend on the megalo version. See **Limits** on the [version pages](/versions/) — [107 (MCC)](/versions/107-mcc/#limits) uses dedicated temporary pools per [action scope](/language/elements/trigger#action-scope); Xbox 360 builds such as [107](/versions/107/#limits) map temporaries directly to globals. Overflow behavior is controlled by [Compiler settings — Temporary variable overflow](/language/compiler-settings#temporary-variable-overflow).
 
 ## Special literals
 
@@ -230,3 +190,4 @@ action set current_player.body = my_body
 - [References](/language/references) — how variables appear as operands
 - [action](/language/elements/trigger/action) — the `set` action and [Math operations](/language/enums/math-operations)
 - [trigger](/language/elements/trigger) — `temporary` variables inside triggers
+- [Megalo versions](/versions/) — compile-time limits by encoding version

@@ -12,6 +12,12 @@ Bungie's Megalo editor (**MegaloEdit**) loads these files for autocomplete, synt
 
 These lists correspond to data in the `loadout_globals_definition` (`lgtd`), `megalo_string_id_table` (`msit`), and `multiplayer_object_type_list` (`motl`) tags.
 
+<DocsBlock type="info" title="Custom maps">
+
+Everything in the object lists corresponds to data in your tags. That lets you author Megalo scripts for custom maps with custom objects, weapons, vehicles, and other map-specific entries — not just stock Reach content.
+
+</DocsBlock>
+
 ## Format
 
 Each file is a simple lookup table:
@@ -34,8 +40,8 @@ These lists are **not** Megalo script sections. They are engine data that script
 | [`incidents.txt`](https://github.com/Blam-Network/megalo/blob/main/src/object_lists/incidents.txt) | ~470 | **Game incidents** for `submit_incident` and `submit_incident_with_custom_value`. Covers kills, medals, mode events (CTF, KOTH, Infection, …), survival, achievements, and announcer triggers. Incident ids are **1-based** (first line = incident `1`). |
 | [`loadout_palettes.txt`](https://github.com/Blam-Network/megalo/blob/main/src/object_lists/loadout_palettes.txt) | 15 | **Loadout palette presets** for `set_loadout_palette` and `override loadout_palette` (`slayer_loadouts`, `objective_loadouts`, firefight palettes, …). |
 | [`loadouts.txt`](https://github.com/Blam-Network/megalo/blob/main/src/object_lists/loadouts.txt) | ~80 | **Loadout display names** (`loadout_name_carter`, `loadout_name_ninja`, …). Used by the editor and UI when presenting loadout choices, not as action opcodes. |
-| [`weapon_sets.txt`](https://github.com/Blam-Network/megalo/blob/main/src/object_lists/weapon_sets.txt) | 16 | **Weapon restriction presets** (`rifles_only`, `no_snipers`, `melee`, …). MegaloEdit exposes these for built-in weapon-set game options. |
-| [`vehicle_sets.txt`](https://github.com/Blam-Network/megalo/blob/main/src/object_lists/vehicle_sets.txt) | 14 | **Vehicle restriction presets** for the `vehicle_set` game option (`mongoose_only`, `no_aircraft`, `all_vehicles`, …). |
+| <span id="weapon_sets">[`weapon_sets.txt`](https://github.com/Blam-Network/megalo/blob/main/src/object_lists/weapon_sets.txt)</span> | 16 | **Weapon restriction presets** (`rifles_only`, `no_snipers`, `melee`, …). MegaloEdit exposes these for the `weapon_set` game option. |
+| <span id="vehicle_sets">[`vehicle_sets.txt`](https://github.com/Blam-Network/megalo/blob/main/src/object_lists/vehicle_sets.txt)</span> | 14 | **Vehicle restriction presets** for the `vehicle_set` game option (`mongoose_only`, `no_aircraft`, `all_vehicles`, …). |
 | [`hud_widget_icons.txt`](https://github.com/Blam-Network/megalo/blob/main/src/object_lists/hud_widget_icons.txt) | 33 | **HUD widget icons** for `hud_widget_set_icon` (`slayer`, `ctf`, `koth`, `generic_icon_2`, …). |
 | [`strings.txt`](https://github.com/Blam-Network/megalo/blob/main/src/object_lists/strings.txt) | ~58 | **Device animation / string tokens** for `device_animate_position` and related device actions (map-specific animation names like `mp_boneyard_a_fly_in`, plus generic entries such as `default` and `none`). |
 
@@ -47,12 +53,6 @@ Most specialized lists are **subsets or views** of the master `objects.txt` tabl
 - `vehicles.txt` is a convenience list for vehicle pickers; vehicle types still resolve through `objects.txt` indices in compiled data.
 
 When in doubt, check whether a name exists in `objects.txt` — that is the authoritative object-type namespace for spawn and filter actions.
-
-## In @blamnetwork/megalo
-
-The library vendors copies of these files under [`src/object_lists/`](https://github.com/Blam-Network/megalo/tree/main/src/object_lists) and exposes the parsed tables from [`src/lookups_data.ts`](https://github.com/Blam-Network/megalo/blob/main/src/lookups_data.ts) (for example `MEGALO_OBJECTS`, `MEGALO_INCIDENTS`, `MEGALO_LOADOUT_PALETTES`). Decompile and compile use these names when turning binary operands back into source and vice versa.
-
-If 343 Industries or mod tools ship an updated HREK build with changed lists, sync `src/object_lists/` and regenerate `lookups_data.ts` to stay aligned with the editor.
 
 ## See also
 

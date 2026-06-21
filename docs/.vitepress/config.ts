@@ -5,6 +5,7 @@ import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import languageVersions from "./language-versions.json";
 import languageActions from "./language-actions.json";
+import { createSearchRenderHook, localSearchOptions } from "./search-enrichment";
 
 const configDir = path.dirname(fileURLToPath(import.meta.url));
 const highlightBundleUrl = pathToFileURL(
@@ -31,7 +32,6 @@ function normalizeFenceLang(lang: string | undefined): string {
 
 function elementsSidebar(): DefaultTheme.SidebarItem[] {
   return [
-    { text: "Overview", link: "/language/elements/" },
     { text: "string_table", link: "/language/elements/string-table" },
     {
       text: "game_options",
@@ -68,24 +68,37 @@ function elementsSidebar(): DefaultTheme.SidebarItem[] {
 }
 
 function actionsSidebar(): DefaultTheme.SidebarItem[] {
-  const items: DefaultTheme.SidebarItem[] = [
-    { text: "Overview", link: "/language/actions/" },
-  ];
-
-  for (const action of languageActions.actions) {
-    items.push({
-      text: action.name,
-      link: action.docLink,
-    });
-  }
-
-  return items;
+  return languageActions.actions.map((action) => ({
+    text: action.name,
+    link: action.docLink,
+  }));
 }
 
 function enumsSidebar(): DefaultTheme.SidebarItem[] {
   return [
-    { text: "Overview", link: "/language/enums/" },
     { text: "Math operations", link: "/language/enums/math-operations" },
+    {
+      text: "Game options",
+      link: "/language/enums/game-options",
+      items: [
+        { text: "Team Scoring Method", link: "/language/enums/game-options/team-scoring-method" },
+      ],
+    },
+    {
+      text: "Player traits",
+      link: "/language/enums/player-traits",
+      items: [
+        { text: "Grenade Count", link: "/language/enums/player-traits/grenade-count" },
+        { text: "Vehicle Usage Setting", link: "/language/enums/player-traits/vehicle-usage-setting" },
+        { text: "Sprinting", link: "/language/enums/player-traits/sprinting" },
+        { text: "Equipment Usage Setting", link: "/language/enums/player-traits/equipment-usage-setting" },
+        { text: "Active Camo Setting", link: "/language/enums/player-traits/active-camo-setting" },
+        { text: "Waypoint Setting", link: "/language/enums/player-traits/waypoint-setting" },
+        { text: "Forced Change Color Setting", link: "/language/enums/player-traits/forced-change-color-setting" },
+        { text: "Motion Tracker Setting", link: "/language/enums/player-traits/motion-tracker-setting" },
+      ],
+    },
+    { text: "Built-in variables", link: "/language/enums/built-in-variables" },
     { text: "Sounds", link: "/language/enums/sounds" },
   ];
 }
@@ -106,7 +119,7 @@ function megaloLanguageSidebar(): DefaultTheme.SidebarItem[] {
       items: actionsSidebar(),
     },
     {
-      text: "Enums",
+      text: "Options & Enums",
       collapsed: true,
       items: enumsSidebar(),
     },
@@ -181,12 +194,17 @@ export default defineConfig(async () => {
     themeConfig: {
       search: {
         provider: "local",
+        options: {
+          ...localSearchOptions,
+          _render: createSearchRenderHook(),
+        },
       },
       siteTitle:
         '<span class="megalo-site-title"><span class="megalo-scope">@blamnetwork/</span><span class="megalo-name">megalo</span></span>',
       nav: [
         { text: "Blam Network", link: "https://blam.network" },
         { text: "Guide", link: "/guide/quick-start" },
+        { text: "Language", link: "/language/", activeMatch: "/language/" },
         { text: "Changelog", link: "/changelog" },
         {
           text: "npm",

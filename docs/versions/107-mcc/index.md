@@ -4,21 +4,9 @@ Current Halo: The Master Chief Collection Reach megalo build. This is the defaul
 
 | | |
 |---|---|
-| **Build** | 16th Aug 2025 (`v_untracked_25_08_16_1352`) |
-| **BLF import** | `@blamnetwork/blf/haloreach_mcc/v_untracked_25_08_16_1352` |
-| **Megalo version** | `mcc` |
-| **Library support** | Fully supported by @blamnetwork/megalo (default megalo version). |
-| **Action count** | 106 (excluding `none`) |
-
-Megalo encoding version **107**.
-
-## Supported Halo builds
-
-All Halo: Reach MCC builds.
-
-## Supported by @blamnetwork/megalo
-
-Fully supported by @blamnetwork/megalo (default megalo dialect).
+| **Game** | <ReachGameIcon /> |
+| **Megalo Version** | 107 |
+| **Supported Halo Versions** | All Halo: Reach MCC builds. |
 
 ## Changes from prior version
 
@@ -39,4 +27,8 @@ Compared to [107](/versions/107/).
 
 Reach MCC also adds megalo language features beyond new action opcodes — [bit-shift math operators](/language/enums/math-operations), temporary explicit references, survival/firefight flags, and more. See [Megalo MCC changes](https://blam-network.github.io/blf/guide/megalo-mcc-changes) in the blf docs.
 
-Per-action documentation lives under [Actions](/language/actions/).
+## Limits
+
+<VersionLimits />
+
+Per-action pages are listed under **Actions** in the sidebar.
