@@ -17,6 +17,8 @@ Included files contribute their elements to the final script. This is how Bungie
 
 Paths are quoted and relative to the current file's directory. A missing include is a **hard compile error**.
 
+If a file was already loaded earlier in the same script, a second `include` of that path is skipped entirely — the directive line is omitted and the file is not merged again. This lets wrapper files (such as language-agnostic string tables) list every locale without re-processing files that were pulled in transitively. A file cannot include itself, directly or through a cycle; that is a compile error.
+
 ## String table wrappers
 
 String tables are often organized as a language-agnostic wrapper that includes per-language files:

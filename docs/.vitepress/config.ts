@@ -77,6 +77,7 @@ function actionsSidebar(): DefaultTheme.SidebarItem[] {
 function enumsSidebar(): DefaultTheme.SidebarItem[] {
   return [
     { text: "Math operations", link: "/language/enums/math-operations" },
+    { text: "Team or player target", link: "/language/enums/team-or-player-target" },
     {
       text: "Game options",
       link: "/language/enums/game-options",

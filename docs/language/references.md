@@ -85,9 +85,19 @@ teams
 end
 ```
 
+## Team or player target
+
+Some actions take a **team or player target** — a specific player, a specific team, or everyone. Syntax is `team <team_ref>`, `player <player_ref>`, or `everyone`. See [Team or player target](/language/enums/team-or-player-target) for the full operand reference.
+
+```megalo
+action set_score add 1 team attackers
+action play_sound team defenders bone_cv_ph1_intro
+action hud_post_message everyone none "Round started!"
+```
+
 ## Audience references
 
-Some actions take an audience operand that specifies who is affected:
+Other actions take an **audience** operand that specifies who is affected (visibility, pickup filters, and similar):
 
 | Audience | Meaning |
 |----------|---------|
@@ -99,10 +109,9 @@ Some actions take an audience operand that specifies who is affected:
 | `no_one` | Nobody |
 
 ```megalo
-action hud_post_message everyone "Round started!"
 action navpoint_set_visible current_object allies
 action set_pickup_filter one_flag enemies
-action play_sound team attackers bone_sp_ph1_intro
+action boundary_set_visible capture_zone everyone
 ```
 
 ## Built-in timer references

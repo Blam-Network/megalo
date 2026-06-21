@@ -5,7 +5,7 @@
 
 ## Description
 
-Posts a HUD message to a player, team, or everyone. The sound operand selects an [e_megalo_sound](/language/enums/sounds) token or `none`.
+Posts a HUD message to a [team or player target](/language/enums/team-or-player-target). The sound operand selects an [e_megalo_sound](/language/enums/sounds) token or `none`.
 
 <ActionParameters />
 
@@ -23,4 +23,5 @@ Example from HREK `broken/derekball.txt`.
 
 
 See also [action syntax](/language/elements/trigger/action).
+- [Team or player target](/language/enums/team-or-player-target) — target operand syntax
 - [Sounds](/language/enums/sounds) — `e_megalo_sound` tokens

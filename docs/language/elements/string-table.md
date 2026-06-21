@@ -20,6 +20,18 @@ A script may contain at most **112** string entries and **19,456** bytes of stri
 
 String tables are usually included through wrapper files — see [include](/language/elements/include).
 
+## Duplicate symbols
+
+Within a single `string_table` block, each symbol may appear only once.
+
+Across separate `string_table` blocks for the same language, MegaloEdit rejects duplicate symbols when both definitions are actually parsed. If an [`include`](/language/elements/include) file was already loaded earlier in the same script, a second `include` of that path is skipped entirely (MegaloEdit tracks included paths case-insensitively), so shared string files such as `strings/slayer_strings.txt` are not merged twice when multiple wrappers reference them.
+
+```text
+String table for language english already has a string for token foo defined
+```
+
+Shipped Reach scripts avoid this by defining each symbol once across their include tree. Re-defining a symbol in a later block or include is a compile error, not a silent override.
+
 ## Base-derived scripts
 
 `string_table` and string [`include`](/language/elements/include) directives can appear in [base-derived scripts](/language/base-files) to add localized strings.

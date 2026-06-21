@@ -5,7 +5,7 @@
 
 ## Description
 
-Fires a game incident with player/team context (from `incidents.txt`).
+Fires a game incident with [team or player target](/language/enums/team-or-player-target) context for cause and effect (from `incidents.txt`).
 
 <ActionParameters />
 

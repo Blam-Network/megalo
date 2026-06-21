@@ -1,6 +1,4 @@
 {
-  "source": "ManagedMegalo.dll (HREK)",
-  "version": "107-mcc",
   "actions": {
     "set_score": {
       "grammar": "<math_operation> <value> <team_or_player_target",
