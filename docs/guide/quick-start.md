@@ -10,7 +10,7 @@ npm install @blamnetwork/megalo
 
 ## Parse Megalo source
 
-Parse a minimal engine data section into an AST:
+Parse a minimal `engine_data` element into an AST:
 
 ```ts
 import { parse } from "@blamnetwork/megalo";

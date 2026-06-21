@@ -1,0 +1,123 @@
+{
+  "entries": [
+    {
+      "name": "if",
+      "type": "<left> <comparison> <right>",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "object_in_area",
+      "type": "<object> <area>",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "player_died",
+      "type": "<player> <killer_type>",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "team_disposition",
+      "type": "<team> <team> <disposition>",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "timer_expired",
+      "type": "<timer>",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "object_is_type",
+      "type": "<object> <type>",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "team_is_active",
+      "type": "<team>",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "object_out_of_bounds",
+      "type": "<object>",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "player_is_fire_team_leader",
+      "type": "<player>",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "player_assisted_with_kill",
+      "type": "<player> <player>",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "object_matches_filter",
+      "type": "<object> <filter>",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "player_is_active",
+      "type": "<player>",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "equipment_is_active",
+      "type": "<object>",
+      "reach": "73+",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "player_is_spartan",
+      "type": "<player>",
+      "reach": "73+",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "player_is_elite",
+      "type": "<player>",
+      "reach": "73+",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "player_is_editor",
+      "type": "<player>",
+      "reach": "73+",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    },
+    {
+      "name": "game_is_forge",
+      "type": "(none)",
+      "reach": "73+",
+      "halo4": "Yes",
+      "h2a": "Yes"
+    }
+  ]
+}

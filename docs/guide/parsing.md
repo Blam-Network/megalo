@@ -1,6 +1,6 @@
 # Parsing source
 
-Megalo source is plain text with section keywords (`engine_data`, `triggers`, `string_table`, and so on). The parser produces a `MegaloProgram` AST.
+Megalo source is plain text with element keywords (`engine_data`, `trigger`, `string_table`, and so on). The parser produces a `MegaloProgram` AST.
 
 ## `parse` and `tryParse`
 

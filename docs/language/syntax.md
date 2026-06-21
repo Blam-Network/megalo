@@ -80,7 +80,7 @@ Megalo source is tokenized into a small set of kinds:
 | Floating point | `1.5` |
 | Comment | `; ...` |
 
-### Quoted strings
+## String literals
 
 Double-quoted strings support these escape sequences:
 
@@ -94,7 +94,60 @@ Double-quoted strings support these escape sequences:
 
 Any other `\x` sequence passes through the backslash and the character literally.
 
-Keywords such as `trigger`, `condition`, `action`, `end`, and element names like `engine_data` are recognized as identifiers with special meaning in context.
+Quoted strings are Megalo **string literals**. The lexer decodes escape sequences and passes the resulting text to the compiler. Literals appear in three common roles:
+
+| Role | Example |
+|------|---------|
+| Include path | `include "strings/slayer_strings.txt"` |
+| String table entry | `slayer_title "Slayer"` inside [`string_table`](/language/elements/string-table) |
+| Action operand | `action hud_post_message everyone none "CTF"` |
+
+### String table symbols vs inline literals
+
+Most user-facing text in shipped scripts uses **string table symbols** — unquoted identifiers that point at localized entries:
+
+```megalo
+string_table english
+	slayer_title "Slayer"
+	slayer_description "Score points by killing players on the opposing team."
+end
+
+engine_data
+	name slayer_title
+	description slayer_description
+end
+
+trigger general
+	action hud_post_message everyone none invasion_title_spartan
+end
+```
+
+The `string_table` block defines the literal text once per language. Everywhere else, the script references the symbol (`slayer_title`, `invasion_title_spartan`) rather than repeating quoted text. That keeps gametype names, HUD strings, and objectives localizable.
+
+Some action operands accept **inline literals** instead — quoted text embedded directly in the trigger:
+
+```megalo
+action hud_post_message everyone none "CTF"
+action hud_widget_set_text watermark "Environment Artist"
+```
+
+The compiler stores inline literal text in the variant's script string table at compile time. Inline literals **cannot be localized** — the quoted text is fixed when you compile. Under [strict compiler settings](/language/compiler-settings#string-literal-strictness), literals where a string-table symbol is expected are forbidden. They are still handy during development (one-off messages, tooling scripts, `%n` format strings), but prefer `string_table` symbols when finalizing gametypes.
+
+### Format placeholders
+
+Several string operands support **`%n`**, which inserts a numeric operand that follows the literal in the action:
+
+```megalo
+action player_set_objective current_player "+%n" score_to_win_round
+```
+
+At runtime the engine substitutes the player's score-to-win value into the `%n` slot, producing text like `+25`. The same pattern appears in [`hud_post_message`](/language/actions/hud-post-message) and other dynamic-string actions.
+
+### Compiler strictness
+
+Many fields expect a string-table **symbol**, not a literal. For example, `engine_data name slayer_title` is normal; `engine_data name "Slayer"` compiles in MegaloEdit but emits a warning that the internal build farm would reject it. See [String literal strictness](/language/compiler-settings#string-literal-strictness).
+
+See also [String table references](/language/references#string-table-references) for how string operands are resolved in actions and conditions.
 
 ## Identifiers and naming
 
@@ -174,6 +227,8 @@ Megalo uses tabs for indentation inside block elements. Indentation is cosmetic 
 
 ## See also
 
+- [string_table](/language/elements/string-table) — defining localized strings
 - [Compiler settings](/language/compiler-settings) — MegaloEdit compile flags (`enforceLocalizedIncludes`, etc.)
 - [Base files](/language/base-files) — inheritance from compiled variants
 - [Example scripts](/language/examples) — annotated minimal scripts
+- [References](/language/references#string-table-references) — string operands in actions

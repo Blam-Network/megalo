@@ -67,7 +67,7 @@ function ensureHighlightVocabulary() {
     mathOps: MEGALO_MATH_OPS,
     comparisonOps: MEGALO_COMPARISON_OPS,
     triggerKinds: MEGALO_TRIGGER_KINDS,
-    sectionKeywords: [...new Set(MEGALO_KEYWORDS)].sort(),
+    elementKeywords: [...new Set(MEGALO_KEYWORDS)].sort(),
   };
 
   fs.writeFileSync(vocabularyPath, `${JSON.stringify(vocabulary, null, 2)}\n`);

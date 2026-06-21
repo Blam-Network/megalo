@@ -7,6 +7,10 @@
 
 **Conditions** are predicates inside triggers that control when actions run. When a condition evaluates to false, the trigger **halts** — subsequent conditions and actions in that trigger are skipped for the current evaluation.
 
+Condition names match `e_condition_type` in [@blamnetwork/blf](https://github.com/Blam-Network/blf/blob/main/blf-ts/src/blam/haloreach_mcc/v_untracked_25_08_16_1352/game/megalogamengine/megalogamengine_conditions.ts) (`none` is a wire sentinel and is not written in source).
+
+<EnumVersionTable enum="condition-types" />
+
 ## Syntax
 
 ```megalo
@@ -52,17 +56,7 @@ Both sides of a comparison can be variables, constants, built-in globals, game o
 
 ## Event conditions
 
-Event conditions test game state rather than comparing values:
-
-| Condition | Arguments | Description |
-|-----------|-----------|-------------|
-| `player_died` | `<player>` `<killer_type>` | Player died; killer type is `any`, `enemy`, `betrayal`, or `none` |
-| `timer_expired` | `<timer>` | Timer reached zero |
-| `object_in_area` | `<object/player>` `<area>` | Object or player is inside a boundary |
-| `object_out_of_bounds` | `<object>` | Object left the playable area |
-| `team_is_active` | `<team>` | Team still has living players |
-| `object_is_type` | `<object>` `<type>` | Object matches a type from object lists |
-| `object_matches_filter` | `<object>` `<filter>` | Object matches a map object filter |
+Event conditions test game state rather than comparing values. The table above lists every condition type; common examples:
 
 ```megalo
 condition player_died current_player enemy
@@ -160,10 +154,6 @@ trigger team
 	action apply_player_traits carrier flag_carrier_traits
 end
 ```
-
-## Version-specific conditions
-
-The exact set of condition types available depends on the Reach build. See [Megalo Versions](/versions/) for per-build condition tables. This page describes how conditions are written; the catalog of valid condition names is version-specific.
 
 ## See also
 

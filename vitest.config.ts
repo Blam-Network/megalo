@@ -5,8 +5,11 @@ export default defineConfig({
     include: ["src/**/*.test.ts", "tests/**/*.test.ts"],
     server: {
       deps: {
-        inline: ["@craftycodie/cstruct"],
+        inline: ["@craftycodie/cstruct", "@blamnetwork/blf"],
       },
     },
+  },
+  resolve: {
+    conditions: ["import", "module", "browser", "default"],
   },
 });

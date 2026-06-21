@@ -168,7 +168,7 @@ variables team
 end
 ```
 
-The trigger section (abbreviated):
+The trigger element (abbreviated):
 
 ```megalo
 ;set up flag spawns (only use one, even if more than one are on the map)

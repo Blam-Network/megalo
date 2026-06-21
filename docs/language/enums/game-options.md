@@ -14,4 +14,6 @@ Some overrides accept structured values rather than a simple scalar — for exam
 
 ## Related
 
+- [Weapon Set](/language/enums/game-options/weapon-set) — `weapon_set`
+- [Vehicle Set](/language/enums/game-options/vehicle-set) — `vehicle_set`
 - [Team Scoring Method](/language/enums/game-options/team-scoring-method) — `team_scoring_mode`

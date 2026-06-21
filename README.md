@@ -13,7 +13,7 @@ Built on [@blamnetwork/blf](https://blam-network.github.io/blf/) for BLF chunk I
 - **Decompiler** — compiled variant data back to source (`decompileGameVariant`, `decompileCustomVariant`, `emitSource`)
 - **MGLO** — encode/decode custom-variant megalo bitstreams (`encodeCustomVariantMglo`, `decodeCustomVariantMglo`, `exportMgloFromBlf`)
 - **BLF helpers** — extract, patch, and round-trip gametypes in BLF files (`decompileGvarFromBlf`, `patchGvarInBlf`, `roundtripGvarSource`, …)
-- **Megalo versions** — Reach MCC (default) and Xbox 360 TU1 (`getDialect`, `mccDialect`, `tu1Dialect`)
+- **Megalo versions** — Reach MCC (default) and Xbox 360 TU1 (`getMegaloVersion`, `mccVersion`, `tu1Version`)
 - **Includes** — `#include` expansion for multi-file scripts (`expandMegaloIncludes`)
 
 ## Install

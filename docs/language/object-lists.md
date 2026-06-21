@@ -26,7 +26,7 @@ Each file is a simple lookup table:
 - **Line order is the index** — the first line is index `0` (or id `1` where noted below). Blank lines in some lists (notably `incidents.txt`) still consume an index slot in the engine.
 - **Names are stable vocabulary** — you type them literally in Megalo source (`action create_object warthog …`, `submit_incident kill`, and so on).
 
-These lists are **not** Megalo script sections. They are engine data that scripts reference by name.
+These lists are **not** Megalo script elements. They are engine data that scripts reference by name.
 
 ## What each file is for
 
@@ -40,8 +40,8 @@ These lists are **not** Megalo script sections. They are engine data that script
 | [`incidents.txt`](https://github.com/Blam-Network/megalo/blob/main/src/object_lists/incidents.txt) | ~470 | **Game incidents** for `submit_incident` and `submit_incident_with_custom_value`. Covers kills, medals, mode events (CTF, KOTH, Infection, …), survival, achievements, and announcer triggers. Incident ids are **1-based** (first line = incident `1`). |
 | [`loadout_palettes.txt`](https://github.com/Blam-Network/megalo/blob/main/src/object_lists/loadout_palettes.txt) | 15 | **Loadout palette presets** for `set_loadout_palette` and `override loadout_palette` (`slayer_loadouts`, `objective_loadouts`, firefight palettes, …). |
 | [`loadouts.txt`](https://github.com/Blam-Network/megalo/blob/main/src/object_lists/loadouts.txt) | ~80 | **Loadout display names** (`loadout_name_carter`, `loadout_name_ninja`, …). Used by the editor and UI when presenting loadout choices, not as action opcodes. |
-| <span id="weapon_sets">[`weapon_sets.txt`](https://github.com/Blam-Network/megalo/blob/main/src/object_lists/weapon_sets.txt)</span> | 16 | **Weapon restriction presets** (`rifles_only`, `no_snipers`, `melee`, …). MegaloEdit exposes these for the `weapon_set` game option. |
-| <span id="vehicle_sets">[`vehicle_sets.txt`](https://github.com/Blam-Network/megalo/blob/main/src/object_lists/vehicle_sets.txt)</span> | 14 | **Vehicle restriction presets** for the `vehicle_set` game option (`mongoose_only`, `no_aircraft`, `all_vehicles`, …). |
+| <span id="weapon_sets">[`weapon_sets.txt`](https://github.com/Blam-Network/megalo/blob/main/src/object_lists/weapon_sets.txt)</span> | 16 | **Weapon restriction presets** for `override weapon_set` in [`game_options`](/language/elements/game-options). See [Weapon Set](/language/enums/game-options/weapon-set) for sentinel tokens (`none`, `default`, `random`) and the full preset list. |
+| <span id="vehicle_sets">[`vehicle_sets.txt`](https://github.com/Blam-Network/megalo/blob/main/src/object_lists/vehicle_sets.txt)</span> | 14 | **Vehicle restriction presets** for `override vehicle_set` (`mongoose_only`, `no_aircraft`, `all_vehicles`, …). See [Vehicle Set](/language/enums/game-options/vehicle-set) for sentinel tokens and indices. |
 | [`hud_widget_icons.txt`](https://github.com/Blam-Network/megalo/blob/main/src/object_lists/hud_widget_icons.txt) | 33 | **HUD widget icons** for `hud_widget_set_icon` (`slayer`, `ctf`, `koth`, `generic_icon_2`, …). |
 | [`strings.txt`](https://github.com/Blam-Network/megalo/blob/main/src/object_lists/strings.txt) | ~58 | **Device animation / string tokens** for `device_animate_position` and related device actions (map-specific animation names like `mp_boneyard_a_fly_in`, plus generic entries such as `default` and `none`). |
 

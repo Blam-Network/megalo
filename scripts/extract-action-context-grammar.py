@@ -27,7 +27,8 @@ except ImportError:
     sys.exit(1)
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "docs" / ".vitepress" / "action-context-grammar.json"
+OUT_DOCS = ROOT / "docs" / ".vitepress" / "action-context-grammar.json"
+OUT_SRC = ROOT / "src" / "versions" / "action-context-grammar.json"
 DEFAULT_DLL = Path(
     r"C:\Program Files (x86)\Steam\steamapps\common\HREK\bin\ManagedMegalo.dll"
 )
@@ -128,11 +129,14 @@ def main() -> None:
 
     payload = {
         "source": f"ManagedMegalo.dll ({dll_path.name})",
-        "dialect": "107-mcc",
+        "version": "107-mcc",
         "actions": actions,
+        "conditions": {},
     }
-    OUT.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
-    print(f"Wrote {len(actions)} action grammars to {OUT}")
+    text = json.dumps(payload, indent=2) + "\n"
+    OUT_DOCS.write_text(text, encoding="utf-8")
+    OUT_SRC.write_text(text, encoding="utf-8")
+    print(f"Wrote {len(actions)} action grammars to {OUT_DOCS} and {OUT_SRC}")
 
 
 if __name__ == "__main__":

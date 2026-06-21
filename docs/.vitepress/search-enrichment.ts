@@ -5,6 +5,7 @@ import languageActions from "./language-actions.json";
 import languageGameOptionsVersions from "./language-game-options-versions.json";
 import languagePlayerTraitsVersions from "./language-player-traits-versions.json";
 import languageBuiltInVariablesVersions from "./language-built-in-variables-versions.json";
+import languageConditionTypesVersions from "./language-condition-types-versions.json";
 import languageSoundsVersions from "./language-sounds-versions.json";
 import languageVersions from "./language-versions.json";
 
@@ -26,6 +27,7 @@ const enumTables: Record<string, { entries: Array<Record<string, unknown>> }> =
     "player-traits": languagePlayerTraitsVersions,
     "game-options": languageGameOptionsVersions,
     "built-in-variables": languageBuiltInVariablesVersions,
+    "condition-types": languageConditionTypesVersions,
     sounds: languageSoundsVersions,
   };
 

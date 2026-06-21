@@ -82,6 +82,8 @@ function enumsSidebar(): DefaultTheme.SidebarItem[] {
       link: "/language/enums/game-options",
       items: [
         { text: "Team Scoring Method", link: "/language/enums/game-options/team-scoring-method" },
+        { text: "Weapon Set", link: "/language/enums/game-options/weapon-set" },
+        { text: "Vehicle Set", link: "/language/enums/game-options/vehicle-set" },
       ],
     },
     {

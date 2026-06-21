@@ -5,6 +5,7 @@ import GameLabel from "./GameLabel.vue";
 import gameOptionsVersions from "../language-game-options-versions.json";
 import playerTraitsVersions from "../language-player-traits-versions.json";
 import builtInVariablesVersions from "../language-built-in-variables-versions.json";
+import conditionTypesVersions from "../language-condition-types-versions.json";
 import soundsVersions from "../language-sounds-versions.json";
 
 type GameKey = "reach" | "halo4" | "h2a";
@@ -18,7 +19,7 @@ type EnumVersionEntry = Record<GameKey, AvailabilityValue> & {
 
 const props = defineProps<{
   /** Enum table data source. */
-  enum: "sounds" | "game-options" | "player-traits" | "built-in-variables";
+  enum: "sounds" | "game-options" | "player-traits" | "built-in-variables" | "condition-types";
 }>();
 
 const GAME_COLUMNS: { key: GameKey }[] = [
@@ -32,6 +33,7 @@ const DATA: Record<typeof props.enum, EnumVersionEntry[]> = {
   "game-options": gameOptionsVersions.entries as EnumVersionEntry[],
   "player-traits": playerTraitsVersions.entries as EnumVersionEntry[],
   "built-in-variables": builtInVariablesVersions.entries as EnumVersionEntry[],
+  "condition-types": conditionTypesVersions.entries as EnumVersionEntry[],
 };
 
 const entries = computed(() => DATA[props.enum] ?? []);
@@ -40,7 +42,12 @@ const showTypeColumn = computed(
   () =>
     props.enum === "game-options" ||
     props.enum === "player-traits" ||
-    props.enum === "built-in-variables",
+    props.enum === "built-in-variables" ||
+    props.enum === "condition-types",
+);
+
+const typeColumnLabel = computed(() =>
+  props.enum === "condition-types" ? "Arguments" : "Type",
 );
 
 const TYPE_LINKS: Record<string, string> = {
@@ -55,8 +62,8 @@ const TYPE_LINKS: Record<string, string> = {
   forced_change_color_setting: "/language/enums/player-traits/forced-change-color-setting",
   motion_tracker_setting: "/language/enums/player-traits/motion-tracker-setting",
   team_scoring_method: "/language/enums/game-options/team-scoring-method",
-  weapon_set: "/language/object-lists#weapon_sets",
-  vehicle_set: "/language/object-lists#vehicle_sets",
+  weapon_set: "/language/enums/game-options/weapon-set",
+  vehicle_set: "/language/enums/game-options/vehicle-set",
 };
 
 function typeLink(type: string | undefined): string | undefined {
@@ -88,7 +95,7 @@ function cellClass(value: AvailabilityValue): "yes" | "no" | "partial" {
     <thead>
       <tr>
         <th class="enum-version-table__name">Name</th>
-        <th v-if="showTypeColumn" class="enum-version-table__type">Type</th>
+        <th v-if="showTypeColumn" class="enum-version-table__type">{{ typeColumnLabel }}</th>
         <th
           v-for="game in GAME_COLUMNS"
           :key="game.key"

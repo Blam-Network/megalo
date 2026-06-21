@@ -5,4 +5,4 @@ export const MEGALO_CONDITIONS: string[] = highlightVocabulary.conditions;
 export const MEGALO_MATH_OPS: string[] = highlightVocabulary.mathOps;
 export const MEGALO_COMPARISON_OPS: string[] = highlightVocabulary.comparisonOps;
 export const MEGALO_TRIGGER_KINDS: string[] = highlightVocabulary.triggerKinds;
-export const MEGALO_SECTION_KEYWORDS: string[] = highlightVocabulary.sectionKeywords;
+export const MEGALO_ELEMENT_KEYWORDS: string[] = highlightVocabulary.elementKeywords;

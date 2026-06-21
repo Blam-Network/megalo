@@ -98,6 +98,19 @@ end
 
 Defines a named trait set selectable in the lobby. See [player_traits](/language/elements/game-options/player-traits).
 
+## weapon_set and vehicle_set
+
+Restrict weapons or vehicles using presets from [`weapon_sets.txt`](/language/object-lists#weapon_sets) and [`vehicle_sets.txt`](/language/object-lists#vehicle_sets). Accepts sentinel tokens or a named preset:
+
+```megalo
+game_options
+	override weapon_set default
+	override vehicle_set no_vehicles
+end
+```
+
+See [Weapon Set](/language/enums/game-options/weapon-set) and [Vehicle Set](/language/enums/game-options/vehicle-set) for full preset tables.
+
 ## Limits
 
 A script may declare at most **16** custom lobby options (`option` / `ranged_option`) and **16** player trait sets.
