@@ -9,7 +9,7 @@ Marks the start of a nested sub-trigger block.
 
 <DocsBlock type="warning" title="Not a typical action">
 
-While `begin` is technically an action, the language treats it more like an element. The `begin` action cannot be invoked with the typical action syntax. See the [begin element](/language/elements/begin) page for more information.
+While `begin` is technically an action, the language treats it more like an element. See the [begin element](/language/elements/begin) page for more information.
 
 </DocsBlock>
 
@@ -36,6 +36,12 @@ end
 ```
 
 From Reach MCC `tu1_winter_contingency.txt` — see the [begin element](/language/elements/begin) page for a full walkthrough.
+
+<DocsBlock type="note" title="Action syntax">
+
+Technically, writing `action begin ... end` compiles and behaves the same as `begin ... end`, but this is probably not the intended syntax.
+
+</DocsBlock>
 
 ## Supported Versions
 

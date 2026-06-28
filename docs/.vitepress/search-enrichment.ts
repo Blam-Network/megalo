@@ -151,7 +151,7 @@ function enrichMarkdown(src: string, relativePath: string): string {
     enriched = enrichActionPage(enriched, actionSlug);
   }
 
-  if (normalizedPath.includes("language/enums/")) {
+  if (src.includes("<EnumVersionTable")) {
     enriched = enrichEnumPage(enriched);
   }
 

@@ -23,7 +23,7 @@
     },
     {
       "name": "team_disposition",
-      "type": "<team> <team> <disposition>",
+      "type": "<team> <disposition> <team>",
       "reach": "Yes",
       "halo4": "Yes",
       "h2a": "Yes"
