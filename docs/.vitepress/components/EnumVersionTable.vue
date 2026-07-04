@@ -53,6 +53,7 @@ const typeColumnLabel = computed(() =>
 const TYPE_LINKS: Record<string, string> = {
   player_traits: "/language/elements/game-options/player-traits",
   loadout_palette: "/language/elements/loadout-palette",
+  equipment: "/language/object-lists",
   grenade_count: "/language/enums/player-traits/grenade-count",
   vehicle_usage_setting: "/language/enums/player-traits/vehicle-usage-setting",
   sprint_setting: "/language/enums/player-traits/sprinting",

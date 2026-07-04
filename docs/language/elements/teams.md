@@ -23,7 +23,7 @@ Each team is a nested `team` … `end` block. Team fields include:
 | `name` | String table symbol for the team name |
 | `designator` | Role (`defenders`, `attackers`, `third_party`, …) |
 | `model` | Player model (`spartan`, `elite`, or `by_designator`) |
-| `color` | Four RGBA values |
+| `color` | Three RGB values |
 | `fireteam_count` | Number of fireteams |
 
 <DocsBlock type="warning" title="MCC Support">
