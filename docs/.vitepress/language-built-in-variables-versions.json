@@ -8,13 +8,6 @@
       "type": "integer"
     },
     {
-      "name": "symmetry_unused",
-      "reach": "Yes",
-      "halo4": "Yes",
-      "h2a": "Yes",
-      "type": "boolean"
-    },
-    {
       "name": "symmetric_gametype",
       "reach": "Yes",
       "halo4": "Yes",

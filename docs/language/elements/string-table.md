@@ -14,13 +14,30 @@ string_table english
 end
 ```
 
-Each block names a language (`english`, `french`, `german`, etc.). String names are referenced by symbol elsewhere in the script (e.g. `engine_data name slayer_title`).
+Each block names a language identifier. String names are referenced by symbol elsewhere in the script (e.g. `engine_data name slayer_title`).
 
 Only strings that are actually referenced in the script are written into the compiled gametype. Symbols defined in `string_table` but never used elsewhere are omitted from the output and do not count toward the limits below.
 
 A compiled gametype may contain at most **112** string entries and **19,456** bytes of string data total across all languages.
 
 String tables are usually included through wrapper files — see [include](/language/elements/include).
+
+## Supported languages
+
+MegaloEdit accepts these language identifiers after `string_table`:
+
+- `english`
+- `japanese`
+- `german`
+- `french`
+- `spanish`
+- `mexican_spanish`
+- `italian`
+- `korean`
+- `traditional_chinese`
+- `simplified_chinese`
+- `portuguese`
+- `polish`
 
 ## Duplicate symbols
 
