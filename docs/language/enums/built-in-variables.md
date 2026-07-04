@@ -10,14 +10,6 @@ Names match `e_custom_variable_type` indices **13–43** in [@blamnetwork/blf](h
 
 The **Type** column describes the numeric or boolean value read from each global. Entries from `score_to_win_round` through `yellow_powerup_duration` mirror [Game options](/language/enums/game-options) overrides — the same name can be read in conditions and written with `override`.
 
-**`round`** — current round index. Megalo scripts spell this identifier **`round_index`** (`e_custom_variable_type.round` in blf).
-
-**`symmetry_unused`** — internal wire type only. Not a Megalo identifier. ManagedMegalo uses this type when reading **`symmetric_gametype`** outside pregame triggers.
-
-**`symmetric_gametype`** — whether the gametype is symmetric. Readable everywhere; writable with [`set`](/language/actions/set) inside pregame triggers only (HREK invasion scripts toggle it at match start).
-
-**`object_death_damage_type`** — damage type index for the current `object_death` trigger. Integer comparisons only (for example `greater_than 34`). Only valid inside [`object_death`](/language/elements/trigger) trigger bodies.
-
 ## Example
 
 ```megalo
