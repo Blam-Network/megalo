@@ -16,7 +16,10 @@ The **Type** column describes the numeric or boolean value read from each global
 condition if score_to_win_round not_equal_to 0
 condition if teams_enabled equal_to 1
 condition if round_time_limit greater_than 0
+condition timer_expired round_timer
+condition if current_player.team equal_to attackers
 action set symmetric_gametype set_to 0
+action play_sound team defenders bone_cv_ph1_intro
 ```
 
 ```megalo
@@ -29,5 +32,6 @@ end
 ## See also
 
 - [Variable model — Built-in variables](/language/variable-model#built-in-variables)
+- [Team designators](/language/references#team-designators)
 - [Game options](/language/enums/game-options)
 - [game_options](/language/elements/game-options)

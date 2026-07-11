@@ -62,6 +62,7 @@ const TYPE_LINKS: Record<string, string> = {
   waypoint_setting: "/language/enums/player-traits/waypoint-setting",
   forced_change_color_setting: "/language/enums/player-traits/forced-change-color-setting",
   motion_tracker_setting: "/language/enums/player-traits/motion-tracker-setting",
+  team: "/language/references#team-designators",
   team_scoring_method: "/language/enums/game-options/team-scoring-method",
   weapon_set: "/language/enums/game-options/weapon-set",
   vehicle_set: "/language/enums/game-options/vehicle-set",

@@ -36,6 +36,62 @@
       "type": "timer"
     },
     {
+      "name": "attackers",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "team"
+    },
+    {
+      "name": "defenders",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "team"
+    },
+    {
+      "name": "third_party",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "team"
+    },
+    {
+      "name": "fourth_party",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "team"
+    },
+    {
+      "name": "fifth_party",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "team"
+    },
+    {
+      "name": "sixth_party",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "team"
+    },
+    {
+      "name": "seventh_party",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "team"
+    },
+    {
+      "name": "eighth_party",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "team"
+    },
+    {
       "name": "score_to_win_round",
       "reach": "Yes",
       "halo4": "Yes",
