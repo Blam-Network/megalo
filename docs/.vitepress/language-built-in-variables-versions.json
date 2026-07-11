@@ -15,6 +15,27 @@
       "type": "boolean"
     },
     {
+      "name": "round_timer",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "timer"
+    },
+    {
+      "name": "sudden_death_timer",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "timer"
+    },
+    {
+      "name": "grace_period_timer",
+      "reach": "Yes",
+      "halo4": "Yes",
+      "h2a": "Yes",
+      "type": "timer"
+    },
+    {
       "name": "score_to_win_round",
       "reach": "Yes",
       "halo4": "Yes",
