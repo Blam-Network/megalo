@@ -29,6 +29,7 @@ const route = useRoute();
 const GRAMMAR_OPERAND_LINKS: Record<string, string> = {
   math_operation: "/language/enums/math-operations",
   team_or_player_target: "/language/enums/team-or-player-target",
+  dynamic_string: "/language/enums/dynamic-strings",
   scriptable_button: "/language/actions/get-button-time#scriptable-buttons",
 };
 

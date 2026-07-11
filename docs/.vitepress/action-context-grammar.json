@@ -235,11 +235,11 @@
       "empty": false
     },
     "player_set_objective_allegiance": {
-      "grammar": "<player> <dynamic_string> <engine_icon_index",
+      "grammar": "<player> <dynamic_string> <engine_icon_index>",
       "empty": false
     },
     "player_set_objective_allegiance_icon": {
-      "grammar": "<player> <dynamic_string> <engine_icon_index",
+      "grammar": "<player> <dynamic_string> <engine_icon_index>",
       "empty": false
     },
     "team_set_coop_spawning": {

@@ -135,13 +135,13 @@ The compiler stores inline literal text in the variant's script string table at 
 
 ### Format placeholders
 
-Several string operands support **`%n`**, which inserts a numeric operand that follows the literal in the action:
+Several string operands are [dynamic strings](/language/enums/dynamic-strings): the text may contain `%` placeholders (`%n`, `%p`, `%t`, `%o`, `%s`), and matching reference operands follow the string in the action:
 
 ```megalo
 action player_set_objective current_player "+%n" score_to_win_round
 ```
 
-At runtime the engine substitutes the player's score-to-win value into the `%n` slot, producing text like `+25`. The same pattern appears in [`hud_post_message`](/language/actions/hud-post-message) and other dynamic-string actions.
+At runtime the engine substitutes the player's score-to-win value into the `%n` slot, producing text like `+25`. See [Dynamic strings](/language/enums/dynamic-strings) for the full placeholder table, limits, and which actions use them.
 
 ### Compiler strictness
 

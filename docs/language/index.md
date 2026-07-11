@@ -64,7 +64,7 @@ Work through these pages in order, or jump to a topic:
 4. [trigger](/language/elements/trigger) — kinds, action scope, execution, `for_each`
 5. [condition](/language/elements/trigger/condition) — comparisons, events, `and` / `or`, negation
 6. [action](/language/elements/trigger/action) — opcodes, `set`, [math operations](/language/enums/math-operations), action families
-7. [References](/language/references) — player, team, object, timer operands
+7. [References](/language/references) — player, team, object, timer operands; see also [dynamic strings](/language/enums/dynamic-strings)
 8. [Example scripts](/language/examples) — annotated walkthroughs of minimal scripts
 9. [Object lists](/language/object-lists) — engine lookup tables for symbolic names
 10. [Compiler settings](/language/compiler-settings) — compile-time strictness and temporary overflow

@@ -165,7 +165,7 @@ action player_set_objective current_player slayer_objective score_to_win_round
 action navpoint_set_text current_object nav_weapon_drop
 ```
 
-These are not quoted strings in the source — they are identifier references resolved through the string table at runtime.
+These are not quoted strings in the source — they are identifier references resolved through the string table at runtime. When the string contains `%` placeholders, following operands fill those slots — see [Dynamic strings](/language/enums/dynamic-strings).
 
 ## Filter references
 
