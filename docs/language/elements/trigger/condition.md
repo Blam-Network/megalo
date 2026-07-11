@@ -70,10 +70,12 @@ condition object_is_type current_object "area"
 ### player_died killer types
 
 ```megalo
-condition player_died current_player any       ; any death
-condition player_died current_player enemy     ; killed by an enemy
-condition player_died current_player betrayal  ; team kill
-condition not player_died current_player enemy ; not killed by enemy (suicide, etc.)
+condition player_died current_player environment
+condition player_died current_player suicide
+condition player_died current_player enemy
+condition player_died current_player betrayal
+condition player_died current_player quit_game
+condition not player_died current_player enemy
 ```
 
 ## Combining conditions
